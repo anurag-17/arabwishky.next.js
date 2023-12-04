@@ -1,27 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend&display=swap'); */
+@font-face{
+    font-family : 'Inter';
+    src: url(../public/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    font-style: normal;
+}
+@font-face{
+  font-family : 'Cooperative';
+  src: url(../public//cooperative/Hafontia\ -\ Cooperative\ Regular.otf);
+  font-style: normal;
+}
+@font-face{
+  font-family : 'Assistant';
+  src: url(../public/Assistant/Assistant-VariableFont_wght.ttf);
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+#heading1{
+  font-family: 'Inter';
+  /* font-family: 'Lexend'; */
+  font-weight: 700;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+#poster-img{
+  background-image: url(../public//images/poster.webp);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    background-position: top center;
+    padding-bottom: 30px;
+}
+
+#head1{
+  background: linear-gradient(267deg, #C1B505 15.48%, #BE4E28 100.83%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: 'Cooperative';
+  font-weight: 400;
+}
+#head2{
+  font-family: 'Cooperative';
+  font-weight: 400;
+}
+#para2{
+  font-family: 'Cooperative';
+  font-weight: 700;
+}
+#pera{
+  font-family: 'Assistant';
+  font-weight: 400;
+}
+#pera3{
+  font-family: 'Assistant';
+  font-weight: 600;
+}
+#pera4{
+  font-family: 'Assistant';
+  font-weight: 700;
+}
+#button{
+  font-family: 'Assistant';
+  font-weight: 700;
+}
+#imgbg{
+  background-image: url(../public//images/img-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  background-position: bottom;
+  padding-bottom: 0px;
+ 
+}
+#div3{
+  background-image: url(../public//images/div3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  background-position: bottom;
+  padding-bottom: 0px;
+ 
+}
+#div4{
+  background-image: url(../public//images/div4.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  background-position: bottom;
+  padding-bottom: 0px;
+ 
 }
