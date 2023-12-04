@@ -228,7 +228,7 @@ const page = () => {
                 2xl:text-[25px] 2xl:leading-[50px]"
                   id="para2"
                 >
-                  ג'ין
+                  {/* ג'ין */}
                 </h1>
               </div>
               <div>
@@ -306,7 +306,7 @@ const page = () => {
                        "
                     id="pera3"
                   >
-                    וויסקי 1888 גראן רזרב 700 מ"ל
+                    {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
                   </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
@@ -348,7 +348,7 @@ const page = () => {
                        "
                     id="pera3"
                   >
-                    וויסקי 1888 גראן רזרב 700 מ"ל
+                    {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
                   </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
@@ -390,7 +390,7 @@ const page = () => {
                        "
                     id="pera3"
                   >
-                    וויסקי 1888 גראן רזרב 700 מ"ל
+                    {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
                   </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
@@ -434,7 +434,7 @@ const page = () => {
                        "
                     id="pera3"
                   >
-                    וויסקי 1888 גראן רזרב 700 מ"ל
+                    {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
                   </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
