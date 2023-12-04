@@ -227,9 +227,7 @@ const page = () => {
                  xl:text-[18px] xl:leading-[40px]
                 2xl:text-[25px] 2xl:leading-[50px]"
                   id="para2"
-                >
-                  ג'ין
-                </h1>
+                > ג'ין</h1>
               </div>
               <div>
                 <Image
@@ -245,9 +243,7 @@ const page = () => {
                  xl:text-[18px] xl:leading-[40px]
                 2xl:text-[25px] 2xl:leading-[50px]"
                   id="para2"
-                >
-                  סופר פרימיום
-                </h1>
+                > סופר פרימיום</h1>
               </div>
               <div>
                 <Image
@@ -266,9 +262,7 @@ const page = () => {
                  xl:text-[18px] xl:leading-[40px]
                 2xl:text-[25px] 2xl:leading-[50px]"
                   id="para2"
-                >
-                  מתכוני קוקטיילים
-                </h1>
+                > מתכוני קוקטיילים</h1>
               </div>
             </div>
 
@@ -282,9 +276,7 @@ const page = () => {
           2xl:text-[60px] 2xl:leading-[70px] 2xl:mb-12 2xl:mt:48
           "
                 id="head2"
-              >
-                טעימה ממבצעי החודש
-              </h1>
+              > טעימה ממבצעי החודש</h1>
               <div className="flex flex-col lg:flex-row lg:gap-8 xl:gap-16 2xl:gap-20 justify-center">
                 <div
                   className=" sm:w-2/6 sm:my-10 md:w-1/3 md:my-10 mx-auto lg:w-48 
@@ -305,9 +297,7 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  >
-                    וויסקי 1888 גראן רזרב 700 מ"ל
-                  </h1>
+                  >וויסקי 1888 גראן רזרב 700 מ"ל</h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
@@ -347,9 +337,7 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  >
-                    וויסקי 1888 גראן רזרב 700 מ"ל
-                  </h1>
+                  > וויסקי 1888 גראן רזרב 700 מ"ל</h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
@@ -389,9 +377,7 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  >
-                    וויסקי 1888 גראן רזרב 700 מ"ל
-                  </h1>
+                  > וויסקי 1888 גראן רזרב 700 מ"ל</h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
@@ -407,9 +393,7 @@ const page = () => {
                   lg:text-[14px]  lg:mt-8 lg:py-1 lg:px-6 
                    xl:text-[16px]  xl:mt-8 xl:py-2 xl:px-7
                    2xl:text-[20px]  2xl:mt-12 2xl:py-3 2xl:px-12"
-                    >
-                      הוספה לסל{" "}
-                    </button>
+                    > הוספה לסל</button>
                   </div>
                 </div>
                 <div
@@ -433,9 +417,7 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  >
-                    וויסקי 1888 גראן רזרב 700 מ"ל
-                  </h1>
+                  >וויסקי 1888 גראן רזרב 700 מ"ל </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
@@ -451,9 +433,7 @@ const page = () => {
                   lg:text-[14px]  lg:mt-8 lg:py-1 lg:px-6 
                    xl:text-[16px]  xl:mt-8 xl:py-2 xl:px-7
                    2xl:text-[20px]  2xl:mt-12 2xl:py-3 2xl:px-12"
-                    >
-                      הוספה לסל{" "}
-                    </button>
+                    >הוספה לסל</button>
                   </div>
                 </div>
               </div>
