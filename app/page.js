@@ -46,36 +46,36 @@ const page = () => {
             >
               <ul className="flex gap-7 my-auto 2xl:w-1/3 ">
                 <Link href="#">
-                  {" "}
+                  
                   <Image
                     src={menu}
                     alt="icon"
                     className=" sm:w-6 md:w-6 lg:w-7 xl:w-8 2xl:w-12 "
-                  />{" "}
+                  />
                 </Link>
                 <Link href="#">
-                  {" "}
+                  
                   <Image
                     src={trash}
                     alt="icon"
                     className=" sm:w-6 md:w-6 lg:w-7 xl:w-8 2xl:w-12 "
-                  />{" "}
+                  />
                 </Link>
                 <Link href="#">
-                  {" "}
+                  
                   <Image
                     src={userr}
                     alt="icon"
                     className=" sm:w-6 md:w-6 lg:w-7 xl:w-8 2xl:w-12 "
-                  />{" "}
+                  />
                 </Link>
                 <Link href="#">
-                  {" "}
+                  
                   <Image
                     src={search}
                     alt="icon"
                     className=" absolute sm:w-3 sm:ml-9 sm:mt-2  md:w-4 lg:w-7 md:ml-9 md:mt-2 xl:w-4 2xl:w-6 xl:ml-10 xl:mt-3 2xl:mt-4 "
-                  />{" "}
+                  />
                 </Link>
                 <input
                   type="search"
@@ -194,12 +194,12 @@ const page = () => {
                 </h1>
               </div>
               <div>
-                {" "}
+                
                 <Image
                   src={Rectangle2}
                   alt="icon"
                   className=" lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-64 2xl:h-64 "
-                />{" "}
+                />
                 <h1
                   className="text-center 
                   sm:text-[12px] sm:leading-[25px]
@@ -218,7 +218,7 @@ const page = () => {
                   src={Rectangle3}
                   alt="icon"
                   className=" lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-64 2xl:h-64 "
-                />{" "}
+                />
                 <h1
                   className="text-center 
                   sm:text-[12px] sm:leading-[25px]
@@ -234,7 +234,7 @@ const page = () => {
                   src={Rectangle4}
                   alt="icon"
                   className=" lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-64 2xl:h-64 "
-                />{" "}
+                />
                 <h1
                   className="text-center 
                   sm:text-[12px] sm:leading-[25px]
@@ -253,7 +253,7 @@ const page = () => {
                   lg:w-32 lg:h-32 
                   xl:w-40 xl:h-40
                    2xl:w-64 2xl:h-64 "
-                />{" "}
+                />
                 <h1
                   className="text-center 
                   sm:text-[12px] sm:leading-[25px]
@@ -314,7 +314,7 @@ const page = () => {
                    xl:text-[16px]  xl:mt-8 xl:py-2 xl:px-7
                    2xl:text-[20px]  2xl:mt-12 2xl:py-3 2xl:px-12"
                     >
-                      הוספה לסל{" "}
+                      הוספה לסל
                     </button>
                   </div>
                 </div>
@@ -354,7 +354,7 @@ const page = () => {
                    xl:text-[16px]  xl:mt-8 xl:py-2 xl:px-7
                    2xl:text-[20px]  2xl:mt-12 2xl:py-3 2xl:px-12"
                     >
-                      הוספה לסל{" "}
+                      הוספה לסל
                     </button>
                   </div>
                 </div>
@@ -551,7 +551,7 @@ const page = () => {
                 >
                   חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות משחקים
                   אל, בדף ב יכול בויקיפדיה. או לערכים אווירונאוטיקה אחר, כלל
-                  פיסיקה צרפתית אגרונומיה אל,{" "}
+                  פיסיקה צרפתית אגרונומיה אל,
                 </p>
                 <div className="flex justify-end">
                   <button
@@ -608,17 +608,17 @@ const page = () => {
                 xl:text-[20px] 2xl:text-[30px] leading-[30px] text-center lg:text-right"
                   id="head2"
                 >
-                  {" "}
+                  
                   בוא נהיה חברים!
                 </h1>
                 <ul className="flex justify-center gap-4 my-2 lg:justify-end lg:gap-5 lg:my-3 xl:gap-7 xl:my-5  lg:text-right">
                   <li>
-                    {" "}
+                    
                     <Image src={instaa} />
                     {""}
                   </li>
                   <li>
-                    {" "}
+                    
                     <Image src={facebookk} />
                     {""}
                   </li>
