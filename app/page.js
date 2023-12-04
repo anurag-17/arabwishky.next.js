@@ -31,6 +31,7 @@ import visa from "../public/images/visa.jpg";
 import giftcaed from "../public/images/giftcaed.svg";
 
 const page = () => {
+  const a = "ג'ין"
   return (
     <>
       <section>
@@ -227,7 +228,8 @@ const page = () => {
                  xl:text-[18px] xl:leading-[40px]
                 2xl:text-[25px] 2xl:leading-[50px]"
                   id="para2"
-                > ג'ין</h1>
+                > {a}
+                </h1>
               </div>
               <div>
                 <Image
