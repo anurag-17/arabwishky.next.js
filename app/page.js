@@ -80,7 +80,7 @@ const page = () => {
                 </Link>
                 <input
                   type="search"
-                  className="cursor-pointer relative bg-transparent border border-[#C1B505] p-0
+                  className="cursor-pointer text-white relative bg-transparent border border-[#C1B505] p-0 
                   sm:p-[2px] sm:w-5/12
                   md:p-1 md:w-2/4
                   lg:h-8
@@ -155,8 +155,8 @@ const page = () => {
                 <Image
                   src="/images/Rectangle 15.svg"
                   alt="icon"
-                  height={247}
-                  width={247}
+                  height={160}
+                  width={160}
                 />
                 <h1
                   className="text-center 
@@ -217,8 +217,8 @@ const page = () => {
                   src="/images/Rectangle 11.png"
                   alt="icon"
                   // className=" lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-64 2xl:h-64 "
-                  height={247}
-                  width={247}
+                  height={160}
+                  width={160}
                 />
                 <h1
                   className="text-center 
@@ -463,7 +463,7 @@ const page = () => {
               מבצעים
             </h1>
 
-            <div className="flex sm:flex-col lg:flex-row justify-center lg:1/3">
+            <div className="flex sm:flex-col lg:flex-row justify-center lg:1/3 pb-20">
               <div className="sm:mx-auto  sm:w-1/3 lg:mx-0 lg:w-1/4 xl:w-1/4 ">
                 <Image
                   src={Group11}
