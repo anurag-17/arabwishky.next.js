@@ -36,7 +36,7 @@ const page = () => {
     <>
       <section>
         <div>
-          <div className=" pb-10" id="poster-img">
+          <div className=" " id="poster-img">
             <nav
               className="flex justify-around 
               sm:py-3
@@ -75,7 +75,7 @@ const page = () => {
                   <Image
                     src={search}
                     alt="icon"
-                    className=" absolute sm:w-3 sm:ml-9 sm:mt-2  md:w-4 lg:w-7 md:ml-9 md:mt-2 xl:w-4 2xl:w-6 xl:ml-10 xl:mt-3 2xl:mt-4 "
+                    className=" absolute sm:w-3 sm:ml-9 sm:mt-2  md:w-4 lg:w-3 lg:mt-2 md:ml-9 md:mt-2 xl:w-4 2xl:w-6 xl:ml-10 xl:mt-3 2xl:mt-4 "
                   />
                 </Link>
                 <input
@@ -102,7 +102,7 @@ const page = () => {
             </nav>
             <div>
               <h1
-                className="lg:text-right ml-auto text-center sm:text-30px sm:w-3/12 sm:mt-12 sm:mr-16 sm:leading-40px md:text-35px md:w-3/12 md:mt-12 md:mr-20 md:leading-45px lg:text-45px lg:w-3/12 lg:mt-16 lg:mr-28 lg:leading-55px xl:text-60px xl:leading-65px xl:w-3/12 xl:mt-32 xl:mr-52 2xl:text-90px 2xl:leading-100px 2xl:w-3/12 2xl:mt-48 2xl:mr-72"
+                className="lg:text-right ml-auto text-center sm:text-[30px] sm:w-3/12 sm:mt-12 sm:mr-16 sm:leading-[40px] md:text-[35px] md:w-3/12 md:mt-12 md:mr-20 md:leading-[45px] lg:text-[45px] lg:w-3/12 lg:mt-16 lg:mr-28 lg:leading-[55px] xl:text-[60px] xl:leading-[65px] xl:w-3/12 xl:mt-32 xl:mr-52 2xl:text-[90px] 2xl:leading-[100px] 2xl:w-3/12 2xl:mt-48 2xl:mr-72"
                 id="head1"
               >
                 ויסקי בלנדד סקוטי חדש
@@ -127,7 +127,7 @@ const page = () => {
                   sm:text-[14px] sm:mr-16 sm:mt-4 sm:py-1 sm:px-5
                   md:text-[16px] md:mr-20 md:mt-4 md:py-2 md:px-7
                   lg:text-[18px] lg:mr-28 lg:mt-8 lg:py-2 lg:px-7
-                   xl:text-[18px] xl:mr-52 xl:mt-8 xl:py-2 xl:px-8
+                   xl:text-[18px] xl:mr-52 xl:mt-8 xl:py-2 xl:px-8 
                    2xl:text-[25px] 2xl:mr-72 2xl:mt-12 2xl:py-3 2xl:px-12"
                 >
                   קנה עכשיו
@@ -419,7 +419,7 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  >וויסקי 1888 גראן רזרב 700 מ"ל </h1>
+                  >וויסקי 1888 גראן רזרב 700 מ"ל</h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
