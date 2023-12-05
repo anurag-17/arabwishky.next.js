@@ -9,9 +9,9 @@ import trash from "../public/images/trash.webp";
 import userr from "../public/images/userr.webp";
 import Rectangle1 from "../public/images/Rectangle 9.svg";
 import Rectangle2 from "../public/images/Rectangle 10.svg";
-import Rectangle3 from "../public/images/Rectangle 11.webp";
+import Rectangle3 from "../public/images/Rectangle 11.png";
 import Rectangle4 from "../public/images/Rectangle 12.svg";
-import Rectangle5 from "../public/images/Rectangle 13.webp";
+import Rectangle5 from "../public/images/Rectangle 13.png";
 import Rectangle6 from "../public/images/Rectangle 15.svg";
 import bottle1 from "../public/images/bottle1.webp";
 import bottle2 from "../public/images/bottle2.webp";
@@ -153,12 +153,10 @@ const page = () => {
               <div>
               
                 <Image
-                  src={Rectangle6}
+                  src="/images/Rectangle 15.svg"
                   alt="icon"
-                  className="    
-                  lg:w-32 lg:h-32 
-                  xl:w-40 xl:h-40 
-                  2xl:w-64 2xl:h-64 "
+                  height={247}
+                  width={247}
                 />
                 <h1
                   className="text-center 
@@ -216,9 +214,11 @@ const page = () => {
 
               <div>
                 <Image
-                  src={Rectangle3}
+                  src="/images/Rectangle 11.png"
                   alt="icon"
-                  className=" lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-64 2xl:h-64 "
+                  // className=" lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-64 2xl:h-64 "
+                  height={247}
+                  width={247}
                 />
                 <h1
                   className="text-center 
@@ -449,15 +449,15 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className=" sm:py-20 lg:py-10 xl:py-16 2xl:py-28" id="div3">
+          <div className=" pb-20 sm:py-20 lg:py-10 xl:py-16 2xl:py-28" id="div3">
             <h1
               className="text-center text-white 
               sm:my-5 sm:text-[35px] sm:leading-[40px] sm:mt-5
               md:my-5 md:text-[35px] md:leading-[40px]
               lg:my-5 lg:text-[35px] lg:leading-[40px] lg:mt-0
-          xl:text-[45px] xl:leading-[50px]
-          2xl:text-[60px] 2xl:leading-[60px]
-          "
+           xl:text-[45px] xl:leading-[50px]
+           2xl:text-[60px] 2xl:leading-[60px]
+           "
               id="head2"
             >
               מבצעים
@@ -495,21 +495,16 @@ const page = () => {
                   פיסיקה צרפתית אגרונומיה אל,
                 </p>
 
-                <div className="mx-auto">
+                <div className="mx-auto ">
                   <button
-                    className="border border-[#C1B505] text-[#C1B505]   lg:float-right md:text-[18px] md:py-1 md:px-8 md:my-3  lg:text-[18px] lg:py-1 lg:px-8 lg:my-3 xl:text-[18px] xl:py-1 xl:px-8 xl:my-3
+                    className=" border border-[#C1B505] text-[#C1B505]   lg:float-right md:text-[18px] md:py-1 md:px-8 md:my-3  lg:text-[18px] lg:py-1 lg:px-8 lg:my-3 xl:text-[18px] xl:py-1 xl:px-8 xl:my-3
                     2xl:text-[25px] 2xl:py-2 2xl:px-12 2xl:my-5"
                     id="pera4"
                   >
                     קנה עכשיו
                   </button>
                 </div>
-                {/* <div className="float-right">
-                 
-                </div>
-                <del className="text-white my-auto lg:text-[16px]"  id="pera4">
-                    ₪ 125.00
-                  </del> */}
+              
               </div>
             </div>
           </div>
@@ -579,8 +574,8 @@ const page = () => {
               </div>
             </div>
             <div className="bg-[#9B2A0C] sm:py-10  lg:py-16 xl:py-20 2xl:p-28">
-              <div className="flex flex-col lg:flex-row lg:w-9/12 xl:w-7/12 mx-auto">
-                <div className="xl:w-8/12 lg:w-6/12 mx-auto lg:mx-0 my-5 lg:my-0">
+              <div className="flex flex-col lg:flex-row lg:w-9/12 xl:w-5/12 mx-auto">
+                <div className="xl:w-6/12 lg:w-6/12 mx-auto lg:mx-0 my-5 lg:my-0">
                   <span
                     className="bg-[#C1B505] sm:p-2 lg:p-[10px] xl:p-[14px] 2xl:p-[22px] 2xl:px-[30px] rounded-md rounded-r-none"
                     id="pera4"
@@ -593,7 +588,7 @@ const page = () => {
                     className="bg-[#A9482E] cursor-pointer rounded-md rounded-l-none sm:p-2 lg:p-2 xl:p-3 xl:w-8/12 2xl:w-8/12  2xl:p-5 text-right "
                   />
                 </div>
-                <div className="text-center xl:4/12 lg:6/12 lg:text-right">
+                <div className="lg:flex lg:flex-col lg:justify-end text-center xl:4/12 lg:6/12 lg:text-right">
                   <h1
                     className="text-white sm:text-[25px] lg:text-[30px] xl:text-[35px] 2xl:text-[50px]"
                     id="head2"
