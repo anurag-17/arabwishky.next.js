@@ -299,7 +299,9 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  >וויסקי 1888 גראן רזרב 700 מ"ל</h1>
+                  >
+                  {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
+                  </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
@@ -339,7 +341,9 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  > וויסקי 1888 גראן רזרב 700 מ"ל</h1>
+                  > 
+                  {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
+                  </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
@@ -379,7 +383,9 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  > וויסקי 1888 גראן רזרב 700 מ"ל</h1>
+                  > 
+                  {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
+                  </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
@@ -419,7 +425,9 @@ const page = () => {
                      2xl:text-[22px] 2xl:leading-[60px]
                        "
                     id="pera3"
-                  >וויסקי 1888 גראן רזרב 700 מ"ל</h1>
+                  >
+                  {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
+                  </h1>
                   <h1
                     className="text-center lg:text-[20px] xl:text-[25px] xl:leading-[20px] 2xl:text-[35px] 2xl:leading-[40px]"
                     id="pera4"
