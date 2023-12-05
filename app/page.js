@@ -80,7 +80,7 @@ const page = () => {
                 </Link>
                 <input
                   type="search"
-                  className="relative bg-transparent border border-[#C1B505] p-0
+                  className="cursor-pointer relative bg-transparent border border-[#C1B505] p-0
                   sm:p-[2px] sm:w-5/12
                   md:p-1 md:w-2/4
                   lg:h-8
@@ -590,7 +590,7 @@ const page = () => {
                   <input
                     type="search"
                     placeholder="הזן את כתובת הדואר האלקטרוני שלך"
-                    className="bg-[#A9482E] rounded-md rounded-l-none sm:p-2 lg:p-2 xl:p-3 xl:w-8/12 2xl:w-8/12  2xl:p-5 text-right "
+                    className="bg-[#A9482E] cursor-pointer rounded-md rounded-l-none sm:p-2 lg:p-2 xl:p-3 xl:w-8/12 2xl:w-8/12  2xl:p-5 text-right "
                   />
                 </div>
                 <div className="text-center xl:4/12 lg:6/12 lg:text-right">
@@ -624,12 +624,12 @@ const page = () => {
                 <ul className="flex justify-center gap-4 my-2 lg:justify-end lg:gap-5 lg:my-3 xl:gap-7 xl:my-5  lg:text-right">
                   <li>
                     
-                    <Image src={instaa} />
+                    <Image src={instaa} className="cursor-pointer" />
                     {""}
                   </li>
                   <li>
                     
-                    <Image src={facebookk} />
+                    <Image src={facebookk} className="cursor-pointer" />
                     {""}
                   </li>
                 </ul>
@@ -663,10 +663,10 @@ const page = () => {
                   צור קשר
                 </h1>
                 <ul className="text-white xl:my-5 text-center lg:text-right">
-                  <li className="lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
+                  <li className=" cursor-pointer lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
                     alcohol.market@gmail.com
                   </li>
-                  <li className="lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
+                  <li className=" cursor-pointer lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
                     +38 9878 5897 598
                   </li>
                 </ul>
@@ -680,13 +680,13 @@ const page = () => {
                   קישורים אחרים
                 </h1>
                 <ul className="text-white xl:my-5 text-center lg:text-right">
-                  <li className="  lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
+                  <li className="  cursor-pointer lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
                     אלכוהול לאירועים
                   </li>
-                  <li className="lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
+                  <li className=" cursor-pointer lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
                     מתנות ומארזים
                   </li>
-                  <li className="lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
+                  <li className="cursor-pointer lg:my-1 xl:my-2 2xl:my-3 lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
                     מוצרים נלווים
                   </li>
                 </ul>
@@ -694,7 +694,7 @@ const page = () => {
               <div className="my-5 lg:my-0 w-1/3 mx-auto lg:w-full lg:mx-0">
                 <ul>
                   <h1
-                    className="text-[#B15953]
+                    className="cursor-pointer text-[#B15953]
                     text-center sm:text-[40px]
                    lg:text-[30px] leading-normal
                    xl:text-[35px] 
@@ -707,7 +707,7 @@ const page = () => {
               </div>
             </div>
             <hr />
-            <h1 className="text-white text-center tex">
+            <h1 className="text-white text-center tex my-2">
               © 2023 לולו. כל הזכויות שמורות.
             </h1>
           </footer>
