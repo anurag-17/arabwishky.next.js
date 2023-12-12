@@ -25,7 +25,7 @@ import div44 from "../public/images/div44.png";
 import div455 from "../public/images/div455.webp";
 import instaa from "../public/images/instagg.svg";
 import facebookk from "../public/images/facebookk.svg";
-import american from "../public/images/american (1).jpeg";
+import american from "../public/images/american.jpeg";
 import mastercard from "../public/images/mastercard.jpg";
 import visa from "../public/images/visa.jpg";
 import giftcaed from "../public/images/giftcaed.svg";
