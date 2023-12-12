@@ -496,7 +496,7 @@ const page = () => {
             </div>
           </div>
           <div className=" lg:pt-16 " id="div3">
-            <div className="flex flex-col mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] 2xl:py-28 xl:py-20 ">
+            <div className="flex flex-col mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] 2xl:py-28 xl:py-20">
               <h1
                 className="text-center text-white 
               sm:my-5 sm:text-[35px] sm:leading-[40px] sm:mt-5
