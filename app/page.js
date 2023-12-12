@@ -7,17 +7,17 @@ import insta from "../public/images/INSTA.webp";
 import search from "../public/images/search.webp";
 import trash from "../public/images/trash.webp";
 import userr from "../public/images/userr.webp";
-import Rectangle1 from "../public/images/Rectangle 9.svg";
-import Rectangle2 from "../public/images/Rectangle 10.svg";
-import Rectangle3 from "../public/images/Rectangle 11.png";
-import Rectangle4 from "../public/images/Rectangle 12.svg";
-import Rectangle5 from "../public/images/Rectangle 13.png";
-import Rectangle6 from "../public/images/Rectangle 15.svg";
+import Rectangle1 from "../public/images/Rectangle9.svg";
+import Rectangle2 from "../public/images/Rectangle10.svg";
+import Rectangle3 from "../public/images/Rectangle11.png";
+import Rectangle4 from "../public/images/Rectangle12.svg";
+import Rectangle5 from "../public/images/Rectangle13.png";
+import Rectangle6 from "../public/images/Rectangle15.svg";
 import bottle1 from "../public/images/bottle1.webp";
 import bottle2 from "../public/images/bottle2.webp";
 import bottle3 from "../public/images/bottle3.webp";
 import bottle4 from "../public/images/bottle4.webp";
-import Group11 from "../public/images/Group 11.webp";
+import Group11 from "../public/images/Group11.webp";
 import div411 from "../public/images/div411.webp";
 import div422 from "../public/images/div422.webp";
 import div433 from "../public/images/div433.webp";
@@ -157,7 +157,7 @@ const page = () => {
                 <div className="flex gap-5 justify-center">
                   <div>
                     <Image
-                      src="/images/Rectangle 15.svg"
+                      src="/images/Rectangle15.svg"
                       alt="icon"
                       height={247}
                       width={247}
@@ -225,7 +225,7 @@ const page = () => {
 
                   <div>
                     <Image
-                      src="/images/Rectangle 11.png"
+                      src="/images/Rectangle11.png"
                       alt="icon"
                       className=" 
                   lg:w-32 
@@ -270,7 +270,7 @@ const page = () => {
                   </div>
                   <div>
                     <Image
-                      src="/images/Rectangle 13.png"
+                      src="/images/Rectangle13.png"
                       alt="icon"
                       height={247}
                       width={247}
