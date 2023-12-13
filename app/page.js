@@ -524,8 +524,9 @@ const page = () => {
           </div>
 
 
-          <div className=" lg:pt-16 " id="div3">
+          <div className=" lg:pt-16" id="div3">
             <div className="flex flex-col mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[280px] 2xl:py-28 xl:py-20">
+              <div>
               <h1
                 className="text-center text-white 
                 text-[16px] 
@@ -539,6 +540,7 @@ const page = () => {
               >
                 מבצעים
               </h1>
+              </div>
 
               <div className="flex  lg:flex-row my-auto justify-between  sm:flex-col 2xl:mt-[65px]  ">
                 <div className="  my-auto  2xl:w-[535px] xl:w-[265px] w-2/6 ">
@@ -591,7 +593,7 @@ const page = () => {
                     <div className=" ">
                       <button
                         className=" border border-[#C1B505] text-[#C1B505] 
-                        text-[8px] py-[2px] px-[8px] my-0
+                        text-[8px] py-[2px] px-[8px] mb-2
                          lg:px-4   md:text-[18px] md:py-1 md:px-8 md:my-3  lg:text-[14px] lg:py-1  lg:my-3 xl:text-[18px] xl:py-1 xl:px-8 xl:my-3
                     2xl:text-[20px] 2xl:leading-[30px] 2xl:py-[10px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-2"
                         id="pera4"
@@ -622,19 +624,19 @@ const page = () => {
                 </div>
                 <div className="flex flex-wrap gap-[10px] mt-[10px] lg:mt-0 mx-auto 2xl:gap-[30px]  2xl:w-[630px] xl:gap-[20px] lg:gap-[12px] lg:pb-12 xl:pb-16 2xl:pb-20">
                   <Image
-                    className="w-[120px] md:w-[240px] sm:w-[200px] lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
+                    className="w-[135px] md:w-[240px] sm:w-[200px] lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div422}
                   />
                   <Image
-                    className="w-[120px] md:w-[240px] sm:w-[200px]  lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
+                    className="w-[135px] md:w-[240px] sm:w-[200px]  lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div44}
                   />
                   <Image
-                    className=" w-[120px] mb-0 md:w-[240px] sm:w-[200px]  lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
+                    className=" w-[135px] mb-0 md:w-[240px] sm:w-[200px]  lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div433}
                   />
                   <Image
-                    className=" w-[120px] mb-0 md:w-[240px] sm:w-[200px]   lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
+                    className=" w-[135px] mb-0 md:w-[240px] sm:w-[200px]   lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div455}
                   />
                 </div>
