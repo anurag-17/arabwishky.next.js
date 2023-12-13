@@ -45,7 +45,7 @@ const page = () => {
               xl:py-8 
               2xl:py-10 "
             >
-              <div className="flex mx-auto justify-between 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] w-[250px]">
+              <div className="flex mx-auto justify-between 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] w-[280px]">
                 <ul className="flex  ">
                   <ul className="flex gap-2 justify-around my-auto 2xl:gap-[70px] xl:gap-[40px] lg:gap-[35px] ">
                     <Link href="#">
@@ -102,10 +102,10 @@ const page = () => {
                 </ul>
               </div>
             </nav>
-            <div className=" flex justify-end mx-auto  2xl:w-[1200px] xl:w-[850px] lg:w-[650px] w-[250px]">
+            <div className=" flex justify-end mx-auto  2xl:w-[1200px] xl:w-[850px] lg:w-[650px] w-[280px]">
               <div className=" text-right">
                 <h1
-                  className="text-[16px] leading-[18px] w-[100px]  mt-5
+                  className="text-[16px] leading-[18px] w-[100px]  mt-3
                   lg:text-right ml-auto  sm:text-[30px] sm:mt-12 sm:leading-[40px] md:text-[35px] md:mt-12 md:leading-[45px] lg:text-[45px]  lg:mt-14 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[65px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-32 2xl:w-[564px]"
                   id="head1"
                 >
@@ -113,7 +113,7 @@ const page = () => {
                 </h1>
 
                 <p
-                  className="text-white text-right ml-auto text-[4px] leading-[6px] w-[135px] mt-2 w-
+                  className="text-white text-right ml-auto text-[6px] leading-[8px] w-[135px] mt-2 w-
                sm:text-[14px] sm:leading-[20px] sm:mt-2 
                md:text-[14px] md:leading-[25px] md:mt-2   
                lg:text-[10px] lg:leading-[20px] lg:mt-10 lg:w-[320px]  
@@ -147,7 +147,7 @@ const page = () => {
               <div className="2xl:w-[1200px] xl:w-[850px] lg:w-[650px]">
                 <h1
                   className="text-center text-black 
-                text-[14px] mt-5 mb-3
+                text-[14px] mt-5 mb-1
               sm:text-[25px] sm:leading-[40px] sm:my-5
               md:text-[25px] md:leading-[40px] md:my-5
              lg:text-[25px] lg:leading-[30px] lg:my-5
@@ -166,7 +166,7 @@ const page = () => {
                       height={247}
                       width={247}
                       className=" 
-                      w-32 mx-auto
+                      w-40 mx-auto
                   lg:w-32 
                   xl:w-40 
                   2xl:w-64 "
@@ -192,7 +192,7 @@ const page = () => {
                       height={247}
                       width={247}
                       className=" 
-                      w-32 mx-auto
+                      w-40 mx-auto
                   lg:w-32 
                   xl:w-40 
                   2xl:w-64  "
@@ -216,7 +216,7 @@ const page = () => {
                       alt="icon"
                       height={247}
                       width={247}
-                      className="  w-32 mx-auto
+                      className="  w-40 mx-auto
                        lg:w-32  
                        xl:w-40  
                        2xl:w-64 "
@@ -240,7 +240,7 @@ const page = () => {
                       src="/images/Rectangle11.png"
                       alt="icon"
                       className=" 
-                      w-32 mx-auto
+                      w-40 mx-auto
                   lg:w-32 
                   xl:w-40 
                   2xl:w-64 "
@@ -267,7 +267,7 @@ const page = () => {
                       alt="icon"
                       height={247}
                       width={247}
-                      className="  w-32 mx-auto
+                      className="  w-40 mx-auto
                        lg:w-32 xl:w-40  2xl:w-64  "
                     />
                     <h1
@@ -291,7 +291,7 @@ const page = () => {
                       height={247}
                       width={247}
                       className=" 
-                      w-32 mx-auto
+                      w-40 mx-auto
                        sm:w-64
                   lg:w-32  
                   xl:w-40  
@@ -525,7 +525,7 @@ const page = () => {
 
 
           <div className=" lg:pt-16 " id="div3">
-            <div className="flex flex-col mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[250px] 2xl:py-28 xl:py-20">
+            <div className="flex flex-col mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[280px] 2xl:py-28 xl:py-20">
               <h1
                 className="text-center text-white 
                 text-[16px] 
@@ -552,7 +552,7 @@ const page = () => {
                 <div className=" text-right  2xl:my-24  2xl:w-[665px] xl:w-[585px] w-4/6">
                   <div className="text-right items-end">
                     <h1
-                      className=" text-white text-[12px] w-[120px] ml-[45px]
+                      className=" text-white text-[12px] w-[120px] ml-[65px]
                     sm:text-[25px] sm:leading-[40px]
                     md:text-[30px] md:leading-[40px]
                     lg:w-[200px] lg:text-[20px] lg:leading-[25px] lg:mt-16 lg:ml-20
@@ -563,7 +563,7 @@ const page = () => {
                       קבל 20% הנחה על ההזמנה הראשונה שלך
                     </h1>
                     <p
-                      className="flex justify-end text-right text-white text-[6px] w-[140px] ml-[26px]
+                      className="flex justify-end text-right text-white text-[8px] w-[140px] ml-[45px]
                 sm:text-[15px] sm:leading-[25px] sm:my-5 
                 md:text-[15px] md:leading-[25px] md:my-5 
                 lg:text-[12px] lg:leading-[16px] lg:my-5 lg:w-[280px]
@@ -605,7 +605,7 @@ const page = () => {
             </div>
           </div>
           <div className="2xl:h lg:h-screen xl:py-16 lg:pt-10 pt-10" id="div4">
-            <div className="mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[250px]">
+            <div className="mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[280px]">
               <h1
                 className="text-center text-white 2xl:text-[50px] 2xl:leading-[60px] xl:text-[35px] xl:leading-[40px] lg:text-[22px] lg:leading-[30px]"
                 id="head2"
@@ -620,7 +620,7 @@ const page = () => {
                     src={div411}
                   />
                 </div>
-                <div className="flex flex-wrap gap-[10px] mt-[10px] mx-auto 2xl:gap-[30px]  2xl:w-[630px] xl:gap-[20px] lg:gap-[12px] lg:pb-12 xl:pb-16 2xl:pb-20">
+                <div className="flex flex-wrap gap-[10px] mt-[10px] lg:mt-0 mx-auto 2xl:gap-[30px]  2xl:w-[630px] xl:gap-[20px] lg:gap-[12px] lg:pb-12 xl:pb-16 2xl:pb-20">
                   <Image
                     className="w-[120px] md:w-[240px] sm:w-[200px] lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div422}
@@ -642,9 +642,9 @@ const page = () => {
             </div>
           </div>
           <div className="bg-[#F6F5E6] ">
-            <div className="flex justify-center pb-10 lg:justify-between flex-col lg:flex-row mx-auto sm:py-12  lg:py-16 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[250px]">
+            <div className="flex justify-center pb-10 lg:justify-between flex-col lg:flex-row mx-auto sm:py-12  lg:py-16 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[280px]">
               <div className="w-full 2xl:mt-24 mx-auto pt-10 ">
-                <Image src={giftcaed} className="2xl:w-[573px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px] lg:w-[250px]"/>
+                <Image src={giftcaed} className="2xl:w-[573px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px] lg:w-[280px]"/>
               </div>
               <div className="w-full 2xl:mt-36 2xl:w-[421px] xl:w-[340px] xl:mt-24 mx-auto">
                 <h1
@@ -677,7 +677,7 @@ const page = () => {
               </div>
             </div>
             <div className="bg-[#9B2A0C] sm:py-10  lg:py-16 xl:py-20 2xl:p-16 mx-auto">
-              <div className="flex flex-col lg:flex-row mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] w-[250px]">
+              <div className="flex flex-col lg:flex-row mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] w-[280px]">
                 <div className=" w-full lg:w-8/12 mx-auto lg:mx-0  lg:my-0">
                   <span
                     className="bg-[#C1B505] text-[#FFFFFF] text-[10px] py-1 px-2  rounded-sm
@@ -711,7 +711,7 @@ const page = () => {
             </div>
           </div>
           <footer className="bg-black lg:pt-12 xl:pt-24 pt-5">
-            <div className="flex flex-col-reverse lg:flex-row justify-between mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[250px]">
+            <div className="flex flex-col-reverse lg:flex-row justify-between mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] w-[280px]">
               <div className=" lg:my-0  lg:w-full lg:mx-0">
                 <h1
                   className=" mt-2 text-[10px]  text-white lg:text-[14px] lg:leading-[20px]
@@ -803,7 +803,7 @@ const page = () => {
                 </ul>
               </div>
             </div>
-            <hr className="opacity-[20%] text-[#FFFFFF] mt-4 w-[250px]
+            <hr className="opacity-[20%] text-[#FFFFFF] mt-4 w-[280px]
             2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] mx-auto 2xl:mt-5" />
             <h1 className="text-white text-center text-[8px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] xl:py-3 py-2">
               © 2023 לולו. כל הזכויות שמורות.
