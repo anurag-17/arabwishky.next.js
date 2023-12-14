@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,9 +30,11 @@ import american from "../public/images/american.jpeg";
 import mastercard from "../public/images/mastercard.jpg";
 import visa from "../public/images/visa.jpg";
 import giftcaed from "../public/images/giftcaed.svg";
+import Carousal from "./carousal";
 
 const page = () => {
-  const a = "ג'ין";
+ 
+
   return (
     <>
       <section>
@@ -144,7 +147,9 @@ const page = () => {
             </div>
           </div>
 
-          <div className=" bg-[#F6F5E6]  lg:py-10  xl:py-20 2xl:py-32 ">
+          <div className=" bg-[#F6F5E6] relative  lg:py-10  xl:py-20 2xl:py-32 ">
+          <img src="images/Frame-left.png" className="absolute left-0 2xl:w-[155px] 2xl:h-[265px] xl:w-[125px] xl:h-[215px] lg:w-[75px] lg:h-[145px] md:w-[75px] md:h-[145px]  sm:w-[75px] sm:h-[145px]  sm:top-[52%] w-[75px] h-[145px] top-[55%] md:top-[52%] xl:top-[52%] lg:top-[52%]"/>
+          <img src="images/Frame-right.png" className="absolute right-0 2xl:w-[124px] 2xl:h-[260px] xl:w-[94px] xl:h-[180px] lg:w-[64px] lg:h-[140px] md:w-[64px] md:h-[140px] sm:w-[64px] sm:h-[140px] sm:top-[82%] w-[64px] h-[140px] top-[82%] md:top-[82%] xl:top-[82.5%] lg:top-[79.5%]"/>
             <div className="flex justify-center">
               <div className="2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] ">
                 <h1
@@ -268,7 +273,7 @@ const page = () => {
                       id="para2"
                     >
                       {" "}
-                      {a}
+                      hello
                     </h1>
                   </div>
                   <div>
@@ -348,7 +353,7 @@ const page = () => {
                       "
                     >
                       <div
-                        className=" mt-3 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
+                        className=" mt-3 lg:mt-0 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
                         id="imgbg"
                       >
                         <Image
@@ -395,7 +400,7 @@ const page = () => {
                       "
                     >
                       <div
-                        className=" mt-3 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
+                        className=" mt-3 lg:mt-0 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
                         id="imgbg"
                       >
                         <Image
@@ -520,7 +525,7 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-right border-2 border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5
+                          className="text-right border-2 border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
                  text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
@@ -537,97 +542,8 @@ const page = () => {
             </div>
           </div>
 
-          <div className=" sm:pt-8  lg:pt-16" id="div3">
-            <div className="flex flex-col mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px] 2xl:py-28 xl:py-20">
-              <div>
-                <h1
-                  className="text-center text-white 
-                text-[16px] 
-              sm:my-0 sm:text-[30px] sm:leading-[40px] 
-              md:my-0 md:text-[35px] md:leading-[45px]
-              lg:my-0 lg:text-[30px] lg:leading-[40px] lg:mt-0
-              xl:text-[35px] xl:leading-45px]
-              2xl:text-[50px] 2xl:leading-[60px]
-               "
-                  id="head2"
-                >
-                  מבצעים
-                </h1>
-              </div>
-
-              <div className="flex  lg:flex-row my-auto justify-between   2xl:mt-[65px]  ">
-                <div className="  lg:my-auto  2xl:w-[535px] xl:w-[265px] w-2/6 ">
-                  <Image
-                    src={Group11}
-                    className="mx-auto 
-                    w-[100px] h-[130px] sm:w-[160px] sm:h-[250px]
-                     2xl:w-[426px] 2xl:h-[638px] xl:w-[360px] xl:h-auto lg:w-[240px] lg:h-auto"
-                  />
-                </div>
-                <div className=" text-right  2xl:my-24  2xl:w-[665px] xl:w-[585px] w-4/6">
-                  <div className="text-right items-end">
-                    <h1
-                      className=" text-white text-[12px] w-[120px] ml-[65px]
-                    sm:text-[25px] sm:leading-[40px] sm:mt-0 sm:w-[250px] sm:ml-[105px]
-                    md:text-[30px] md:leading-[40px] md:ml-[150px]
-                    lg:w-[200px] lg:text-[20px] lg:leading-[25px] lg:mt-16 lg:ml-20
-                    xl:w-[240px] xl:text-[25px] xl:leading-[35px] xl:ml-[59%]
-                    2xl:text-[40px] 2xl:leading-[50px] 2xl:w-[415px] 2xl:mt-0"
-                      id="head2"
-                    >
-                      קבל 20% הנחה על ההזמנה הראשונה שלך
-                    </h1>
-                    <p
-                      className="flex justify-end text-right text-white text-[8px] w-[140px] ml-[45px]
-                sm:text-[14px] sm:leading-[20px] sm:my-0 sm:w-[310px]
-                md:text-[15px] md:leading-[25px] md:my-5 md:ml-[70px] md:w-[330px]
-                lg:text-[12px] lg:leading-[16px] lg:my-5 lg:w-[280px]
-                xl:text-[16px] xl:leading-[25px] xl:my-7 xl:w-[400px] xl:ml-[185px]
-                2xl:text-[18px] 2xl:leading-[28px] 2xl:my-7 2xl:w-[421px]"
-                    >
-                      חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות
-                      משחקים אל, בדף ב יכול בויקיפדיה. או לערכים אווירונאוטיקה
-                      אחר, כלל פיסיקה צרפתית אגרונומיה אל,
-                    </p>
-                    <div
-                      className="flex justify-end lg:gap-2 2xl:my-14 my-2"
-                      id="pera4"
-                    >
-                      <del
-                        className="text-[#834F42] opacity-[23%]
-                      w-[100px] sm:[200px] lg:w-[161px]"
-                      >
-                        <h2
-                          className="text-right text-[10px] sm:[12px] md:[14px]
-                        lg:text-[16px] xl:text-[20px] 2xl:text-[22px] xl:leading-[50px] "
-                        >
-                          ₪ 125.00
-                        </h2>
-                      </del>
-                      <h1
-                        className="text-right text-[#FFFFFF] text-[12px] sm:[14px] md:[20px]
-                       lg:text-[16px] xl:text-[28px] 2xl:text-[34px] xl:leading-[50px] xl:w-[161px] "
-                      >
-                        ₪ 125.00
-                      </h1>
-                    </div>
-
-                    <div className=" ">
-                      <button
-                        className=" border border-[#C1B505] text-[#C1B505] 
-                        text-[8px] py-[2px] px-[8px] mb-2 
-                        sm:mb-14 
-                         lg:px-4   md:text-[18px] md:py-1 md:px-8 md:mt-3 md:mb-10  lg:text-[14px] lg:py-1  lg:my-3 xl:text-[18px] xl:py-1 xl:px-8 xl:my-3
-                    2xl:text-[20px] 2xl:leading-[30px] 2xl:py-[10px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-2"
-                        id="pera4"
-                      >
-                        קנה עכשיו
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="2xl:h-screen" id="div3">
+            <Carousal/>
           </div>
           <div className="2xl:h lg:h-screen xl:py-16 lg:pt-10 pt-10" id="div4">
             <div className="mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px]  w-[280px]">
@@ -848,87 +764,7 @@ const page = () => {
             </h1>
           </footer>
 
-         <div className="bg-black">
-         <div
-  id="animation-carousel"
-  className="relative w-full"
-  data-carousel="static"
->
-  {/* Carousel wrapper */}
-  <div className="relative h-56  rounded-lg md:h-96">
-    {/* Item 1 */}
-    <div className="w-60 duration-200 ease-linear" data-carousel-item="">
-      <img
-           src="/images/Rectangle15.svg"
-
-        className="absolute block w-60 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-    {/* Item 2 */}
-    <div className="w-60 duration-200 ease-linear" data-carousel-item="">
-      <img
-             src="/images/Rectangle11.png"
-
-        className="absolute block w-48 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-        alt="..."
-      />
-    </div>
-    {/* Item 3 */}
- 
-  </div>
-  {/* Slider controls */}
-  <button
-    type="button"
-    className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-    data-carousel-prev=""
-  >
-    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-      <svg
-        className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 6 10"
-      >
-        <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M5 1 1 5l4 4"
-        />
-      </svg>
-      <span className="sr-only">Previous</span>
-    </span>
-  </button>
-  <button
-    type="button"
-    className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-    data-carousel-next=""
-  >
-    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-      <svg
-        className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 6 10"
-      >
-        <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="m1 9 4-4-4-4"
-        />
-      </svg>
-      <span className="sr-only">Next</span>
-    </span>
-  </button>
-</div>
-
-         </div>
+         
         </div>
       </section>
     </>

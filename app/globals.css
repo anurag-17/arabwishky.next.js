@@ -81,7 +81,7 @@ font-family: 'Cooperative';
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
-  /* background-position: bottom;  */
+  background-position: right; 
   padding-bottom: 0px;
  
 }
