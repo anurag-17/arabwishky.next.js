@@ -33,8 +33,6 @@ import giftcaed from "../public/images/giftcaed.svg";
 import Carousal from "./carousal";
 
 const page = () => {
- 
-
   return (
     <>
       <section>
@@ -148,8 +146,14 @@ const page = () => {
           </div>
 
           <div className=" bg-[#F6F5E6] relative  lg:py-10  xl:py-20 2xl:py-32 ">
-          <img src="images/Frame-left.png" className="absolute left-0 2xl:w-[155px] 2xl:h-[265px] xl:w-[125px] xl:h-[215px] lg:w-[75px] lg:h-[145px] md:w-[75px] md:h-[145px]  sm:w-[75px] sm:h-[145px]  sm:top-[52%] w-[75px] h-[145px] top-[55%] md:top-[52%] xl:top-[52%] lg:top-[52%]"/>
-          <img src="images/Frame-right.png" className="absolute right-0 2xl:w-[124px] 2xl:h-[260px] xl:w-[94px] xl:h-[180px] lg:w-[64px] lg:h-[140px] md:w-[64px] md:h-[140px] sm:w-[64px] sm:h-[140px] sm:top-[82%] w-[64px] h-[140px] top-[82%] md:top-[82%] xl:top-[82.5%] lg:top-[79.5%]"/>
+            <img
+              src="images/Frame-left.png"
+              className="absolute left-0 2xl:w-[155px] 2xl:h-[265px] xl:w-[125px] xl:h-[215px] lg:w-[75px] lg:h-[145px] md:w-[75px] md:h-[145px]  sm:w-[75px] sm:h-[145px]  sm:top-[52%] w-[75px] h-[145px] top-[55%] md:top-[52%] xl:top-[52%] lg:top-[52%]"
+            />
+            <img
+              src="images/Frame-right.png"
+              className="absolute right-0 2xl:w-[124px] 2xl:h-[260px] xl:w-[94px] xl:h-[180px] lg:w-[64px] lg:h-[140px] md:w-[64px] md:h-[140px] sm:w-[64px] sm:h-[140px] sm:top-[82%] w-[64px] h-[140px] top-[82%] md:top-[82%] xl:top-[82.5%] lg:top-[79.5%]"
+            />
             <div className="flex justify-center">
               <div className="2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] ">
                 <h1
@@ -543,15 +547,36 @@ const page = () => {
           </div>
 
           <div className="2xl:h-screen" id="div3">
-            <Carousal/>
+            <Carousal />
           </div>
-          <div className="2xl:h lg:h-screen xl:py-16 lg:pt-10 pt-10 relative" id="div4">
+          <div
+            className="2xl:h lg:h-screen xl:py-16 lg:pt-10 pt-10 relative"
+            id="div4"
+          >
+            <img
+              src="images/glas.svg"
+              className="absolute lg:w-16 lg:top-[35%] xl:ml-20 xl:w-24  2xl:w-40  xl:top-[35%] xl:left-20 vert-move "
+            />
+            <img
+              src="images/glas2.svg"
+              className="absolute lg:w-16 xl:w-24  2xl:w-32  xl:top-[38%] lg:top-[35%] right-0 vert-move "
+            />
 
-          <img src="images/glas.svg" className="absolute xl:w-24  2xl:w-40  xl:top-[35%] xl:left-20 vert-move "/>
-          <img src="images/glas2.svg" className="absolute xl:w-24  2xl:w-32  xl:top-[35%] right-0 vert-move "/>
-          <img src="images/star.svg" className="absolute xl:w-24  2xl:w-32  top-16 left-96 zoom-in-out-box"/>
-          <img src="images/star2.svg" className="absolute xl:w-32  2xl:w-40  bottom-32 left-80 starroted"/>
-
+            <img
+              src="images/star.svg"
+              className="absolute
+           lg:w-12 lg:top-3 lg:left-44
+           xl:w-24 xl:top-28 xl:left-48 
+           2xl:w-32 2xl:top-16 2xl:left-96  
+           zoom-in-out-box"
+            />
+            <img
+              src="images/star2.svg"
+              className="absolute 
+           lg:w-24 lg:bottom-4 lg:left-32
+          xl:w-32 xl:bottom-20 xl:left-44
+           2xl:w-40 2xl:bottom-32 2xl:left-80  starroted"
+            />
 
             <div className="mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px]  w-[280px]">
               <h1
@@ -646,6 +671,26 @@ const page = () => {
                     xl:w-5/6 cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-2 xl:p-3  2xl:p-6 text-right mt-5 "
                   />
                 </div>
+
+                {/* <div class="flex">
+                  <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
+                    <svg
+                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    id="website-admin"
+                    class="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="elonmusk"
+                  />
+                </div> */}
                 <div className="text-right my-2  mx-auto lg:w-4/12 lg:flex lg:flex-col lg:justify-between lg:text-right ">
                   <h1
                     className=" text-white text-[16px] sm:text-[25px] lg:text-[25px] xl:text-[35px] xl:leading-[50px] 2xl:text-[50px] 2xl:leading-[60px]"
@@ -770,8 +815,6 @@ const page = () => {
               © 2023 לולו. כל הזכויות שמורות.
             </h1>
           </footer>
-
-         
         </div>
       </section>
     </>
