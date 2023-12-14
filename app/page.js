@@ -545,7 +545,14 @@ const page = () => {
           <div className="2xl:h-screen" id="div3">
             <Carousal/>
           </div>
-          <div className="2xl:h lg:h-screen xl:py-16 lg:pt-10 pt-10" id="div4">
+          <div className="2xl:h lg:h-screen xl:py-16 lg:pt-10 pt-10 relative" id="div4">
+
+          <img src="images/glas.svg" className="absolute xl:w-24  2xl:w-40  xl:top-[35%] xl:left-20 vert-move "/>
+          <img src="images/glas2.svg" className="absolute xl:w-24  2xl:w-32  xl:top-[35%] right-0 vert-move "/>
+          <img src="images/star.svg" className="absolute xl:w-24  2xl:w-32  top-16 left-96 zoom-in-out-box"/>
+          <img src="images/star2.svg" className="absolute xl:w-32  2xl:w-40  bottom-32 left-80 starroted"/>
+
+
             <div className="mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px]  w-[280px]">
               <h1
                 className=" text-center text-white 2xl:text-[50px] 2xl:leading-[60px] xl:text-[35px] xl:leading-[40px] lg:text-[22px] lg:leading-[30px]"
