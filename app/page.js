@@ -394,7 +394,7 @@ const page = () => {
                            xl:w-60  2xl:w-80
                       "
                     >
-                     <div
+                      <div
                         className=" mt-3 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
                         id="imgbg"
                       >
@@ -416,7 +416,7 @@ const page = () => {
                         {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
                       </h1>
                       <h1
-                          className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
+                        className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
                          lg:text-[14px] xl:text-[22px] xl:leading-[20px] xl:mt-2 2xl:text-[34px] 2xl:leading-[30px] 2xl:mt-2"
                         id="pera4"
                       >
@@ -509,7 +509,7 @@ const page = () => {
                         id="pera3"
                       >
                         {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
-                        </h1>
+                      </h1>
                       <h1
                         className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
                          lg:text-[14px] xl:text-[22px] xl:leading-[20px] xl:mt-2 2xl:text-[34px] 2xl:leading-[30px] 2xl:mt-2"
@@ -537,12 +537,11 @@ const page = () => {
             </div>
           </div>
 
-
           <div className=" sm:pt-8  lg:pt-16" id="div3">
             <div className="flex flex-col mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px] 2xl:py-28 xl:py-20">
               <div>
-              <h1
-                className="text-center text-white 
+                <h1
+                  className="text-center text-white 
                 text-[16px] 
               sm:my-0 sm:text-[30px] sm:leading-[40px] 
               md:my-0 md:text-[35px] md:leading-[45px]
@@ -550,10 +549,10 @@ const page = () => {
               xl:text-[35px] xl:leading-45px]
               2xl:text-[50px] 2xl:leading-[60px]
                "
-                id="head2"
-              >
-                מבצעים
-              </h1>
+                  id="head2"
+                >
+                  מבצעים
+                </h1>
               </div>
 
               <div className="flex  lg:flex-row my-auto justify-between   2xl:mt-[65px]  ">
@@ -590,16 +589,25 @@ const page = () => {
                       משחקים אל, בדף ב יכול בויקיפדיה. או לערכים אווירונאוטיקה
                       אחר, כלל פיסיקה צרפתית אגרונומיה אל,
                     </p>
-                    <div className="flex justify-end lg:gap-2 2xl:my-14 my-2" id="pera4">
-                      <del className="text-[#834F42] opacity-[23%]
-                      w-[100px] sm:[200px] lg:w-[161px]">
-                        <h2 className="text-right text-[10px] sm:[12px] md:[14px]
-                        lg:text-[16px] xl:text-[20px] 2xl:text-[22px] xl:leading-[50px] ">
+                    <div
+                      className="flex justify-end lg:gap-2 2xl:my-14 my-2"
+                      id="pera4"
+                    >
+                      <del
+                        className="text-[#834F42] opacity-[23%]
+                      w-[100px] sm:[200px] lg:w-[161px]"
+                      >
+                        <h2
+                          className="text-right text-[10px] sm:[12px] md:[14px]
+                        lg:text-[16px] xl:text-[20px] 2xl:text-[22px] xl:leading-[50px] "
+                        >
                           ₪ 125.00
                         </h2>
                       </del>
-                      <h1 className="text-right text-[#FFFFFF] text-[12px] sm:[14px] md:[20px]
-                       lg:text-[16px] xl:text-[28px] 2xl:text-[34px] xl:leading-[50px] xl:w-[161px] ">
+                      <h1
+                        className="text-right text-[#FFFFFF] text-[12px] sm:[14px] md:[20px]
+                       lg:text-[16px] xl:text-[28px] 2xl:text-[34px] xl:leading-[50px] xl:w-[161px] "
+                      >
                         ₪ 125.00
                       </h1>
                     </div>
@@ -630,8 +638,10 @@ const page = () => {
                 דילים לאירועים
               </h1>
               <div className="flex flex-col mx-auto sm:flex-col lg:mb-20 lg:flex-row 2xl:gap-[30px] 2xl:mt-16 xl:gap-[20px] xl:mt-12  lg:mt-6  lg:gap-[12px] ">
-                <div className=" w-full h-auto mx-auto
-                2xl:w-[539px] xl:w-[750px] lg:w-[620px]">
+                <div
+                  className=" w-full h-auto mx-auto
+                2xl:w-[539px] xl:w-[750px] lg:w-[620px]"
+                >
                   <Image
                     className=" mx-auto lg:mx-0 md:w-full lg:w-[450px] lg:h-[350px] xl:w-[500px] xl:h-[420px]  2xl:w-[539px]  2xl:h-[630px]  "
                     src={div411}
@@ -661,7 +671,10 @@ const page = () => {
           <div className="bg-[#F6F5E6] ">
             <div className="flex justify-center pb-10 lg:justify-between flex-col lg:flex-row mx-auto sm:py-12  lg:py-16 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
               <div className="w-full 2xl:mt-24 mx-auto pt-10 sm:pt-0 ">
-                <Image src={giftcaed} className="2xl:w-[573px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px]  lg:w-[280px] sm:w-[300px] md:w-[350px] mx-auto lg:mx-0"/>
+                <Image
+                  src={giftcaed}
+                  className="2xl:w-[573px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px]  lg:w-[280px] sm:w-[300px] md:w-[350px] mx-auto lg:mx-0"
+                />
               </div>
               <div className="w-full 2xl:mt-36 2xl:w-[421px] xl:w-[340px] xl:mt-24 mx-auto">
                 <h1
@@ -739,11 +752,17 @@ const page = () => {
                 </h1>
                 <ul className=" my-2 flex justify-center gap-4 2xl:my-6 lg:justify-end lg:gap-5 lg:my-3 xl:gap-7 xl:my-4  lg:text-right">
                   <li>
-                    <Image src={instaa} className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full " />
+                    <Image
+                      src={instaa}
+                      className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full "
+                    />
                     {""}
                   </li>
                   <li>
-                    <Image src={facebookk} className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full" />
+                    <Image
+                      src={facebookk}
+                      className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full"
+                    />
                     {""}
                   </li>
                 </ul>
@@ -820,13 +839,96 @@ const page = () => {
                 </ul>
               </div>
             </div>
-            <hr className="opacity-[20%] text-[#FFFFFF] mt-4 w-[280px] sm:w-[500px] 
-            2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] mx-auto 2xl:mt-5" />
+            <hr
+              className="opacity-[20%] text-[#FFFFFF] mt-4 w-[280px] sm:w-[500px] 
+            2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] mx-auto 2xl:mt-5"
+            />
             <h1 className="text-white text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] xl:py-3 py-2">
               © 2023 לולו. כל הזכויות שמורות.
             </h1>
           </footer>
-          
+
+         <div className="bg-black">
+         <div
+  id="animation-carousel"
+  className="relative w-full"
+  data-carousel="static"
+>
+  {/* Carousel wrapper */}
+  <div className="relative h-56  rounded-lg md:h-96">
+    {/* Item 1 */}
+    <div className="w-60 duration-200 ease-linear" data-carousel-item="">
+      <img
+           src="/images/Rectangle15.svg"
+
+        className="absolute block w-60 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        alt="..."
+      />
+    </div>
+    {/* Item 2 */}
+    <div className="w-60 duration-200 ease-linear" data-carousel-item="">
+      <img
+             src="/images/Rectangle11.png"
+
+        className="absolute block w-48 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        alt="..."
+      />
+    </div>
+    {/* Item 3 */}
+ 
+  </div>
+  {/* Slider controls */}
+  <button
+    type="button"
+    className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    data-carousel-prev=""
+  >
+    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg
+        className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M5 1 1 5l4 4"
+        />
+      </svg>
+      <span className="sr-only">Previous</span>
+    </span>
+  </button>
+  <button
+    type="button"
+    className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+    data-carousel-next=""
+  >
+    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+      <svg
+        className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 6 10"
+      >
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="m1 9 4-4-4-4"
+        />
+      </svg>
+      <span className="sr-only">Next</span>
+    </span>
+  </button>
+</div>
+
+         </div>
         </div>
       </section>
     </>
