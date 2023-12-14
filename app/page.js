@@ -13,7 +13,7 @@ import Rectangle2 from "../public/images/Rectangle10.svg";
 import Rectangle3 from "../public/images/Rectangle11.png";
 import Rectangle4 from "../public/images/Rectangle12.svg";
 import Rectangle5 from "../public/images/Rectangle13.png";
-import Rectangle6 from "../public/images/Rectangle15.svg";
+import Rectangle6 from "../public/images/Rectangle15.png";
 import bottle1 from "../public/images/bottle1.webp";
 import bottle2 from "../public/images/bottle2.webp";
 import bottle3 from "../public/images/bottle3.webp";
@@ -168,7 +168,7 @@ const page = () => {
                 <div className="flex flex-col lg:flex-row gap-5 justify-center">
                   <div>
                     <Image
-                      src="/images/Rectangle15.svg"
+                      src="/images/Rectangle15.png"
                       alt="icon"
                       height={247}
                       width={247}
