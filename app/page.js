@@ -37,14 +37,14 @@ const page = () => {
     <>
       <section>
         <div>
-          <div className="lg:h-screen " id="poster-img">
+          <div className="lg:h-screen lg:w-full " id="poster-img">
             <nav
               className=" 
               sm:py-3
               md:py-4
             lg:py-6
               xl:py-8 
-              2xl:py-10 "
+              2xl:py-5 "
             >
               <div className="flex mx-auto justify-between 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
                 <ul className="flex  ">
@@ -81,17 +81,17 @@ const page = () => {
                   <input
                     placeholder="חפש מוצרים"
                     type="search"
-                    className=" w-1/2  
-                    rounded-md bg-[#FFFFFF0D] text-right cursor-pointer text-[#878787] relative  border border-1 border-[#878787] p-0 
+                    className=" w-1/2  my-auto focus:outline-none
+                    rounded-md bg-[#FFFFFF0D] text-right cursor-pointer text-[#878787] relative p-0 
                   sm:p-[2px] sm:w-5/12
                   md:p-1 md:w-2/4
                   lg:h-8
                   xl:h-10
-                  2xl:h-14  2xl:w-[437px]"
+                  2xl:h-14  2xl:w-[437px] nav-input"
                   />
                 </ul>
                 <ul className="">
-                  <h1
+                  {/* <h1
                     className="text-[#B15953] 
                     sm:text-[20px]
                     md:text-[25px]
@@ -101,7 +101,16 @@ const page = () => {
                     id="heading1"
                   >
                     Logo
-                  </h1>
+                  </h1> */}
+                  <img
+                    src="images/logo.webp"
+                    className="2xl:w-[146px] 2xl:h-[146px]
+                  xl:w-[100px] xl:h-[100px]
+                  lg:w-[80px] lg:h-[80px]
+                  md:w-[60px] md:h-[60px]
+                  sm:w-[45px] sm:h-[45px]
+                  w-[20px] h-[20px]"
+                  />
                 </ul>
               </div>
             </nav>
@@ -130,13 +139,13 @@ const page = () => {
                 <div className="flex lg:mb-36 2xl:mt-8 mt-3 mb-7">
                   <button
                     id="button"
-                    className=" border border-1 lg:border-2border-2 border-[#C1B505] text-right ml-auto text-[#C1B505] 
+                    className=" border text-center border-[#C1B505] ml-auto text-[#C1B505] 
                     text-[4px] px-[7px] 
                   sm:text-[14px] sm:mt-4 sm:py-[2px] sm:px-4 sm:mb-8
                   md:text-[16px] md:mt-4 md:py-1 md:px-5 md:mb-12
                   lg:text-[14px] lg:mt-8 lg:py-1 lg:px-6
                    xl:text-[18px] xl:mt-8 xl:py-[6px] xl:px-8 
-                   2xl:text-[25px]  2xl:mt-12 2xl:py-3 2xl:px-12"
+                   2xl:text-[25px]  2xl:mt-12  2xl:w-[208px] 2xl:h-[54px]"
                   >
                     קנה עכשיו
                   </button>
@@ -145,7 +154,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className=" bg-[#F6F5E6] relative  lg:py-10  xl:py-20 2xl:py-32 ">
+          <div className=" bg-[#F6F5E6] relative  lg:py-10  xl:py-20 2xl:pt-32 ">
             <img
               src="images/Frame-left.png"
               className="absolute left-0 2xl:w-[155px] 2xl:h-[265px] xl:w-[125px] xl:h-[215px] lg:w-[75px] lg:h-[145px] md:w-[75px] md:h-[145px]  sm:w-[75px] sm:h-[145px]  sm:top-[52%] w-[75px] h-[145px] top-[55%] md:top-[52%] xl:top-[52%] lg:top-[52%]"
@@ -155,7 +164,7 @@ const page = () => {
               className="absolute right-0 2xl:w-[124px] 2xl:h-[260px] xl:w-[94px] xl:h-[180px] lg:w-[64px] lg:h-[140px] md:w-[64px] md:h-[140px] sm:w-[64px] sm:h-[140px] sm:top-[82%] w-[64px] h-[140px] top-[82%] md:top-[82%] xl:top-[82.5%] lg:top-[79.5%]"
             />
             <div className="flex justify-center">
-              <div className="2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] ">
+              <div className=" w-full ">
                 <h1
                   className="text-center text-black 
                 text-[14px] mt-5 mb-1
@@ -163,7 +172,7 @@ const page = () => {
               md:text-[25px] md:leading-[40px] md:mt-9 md:mb-4
              lg:text-[25px] lg:leading-[30px] lg:my-5
               xl:text-[35px] xl:leading-[50px] xl:my-7
-              2xl:text-[50px] 2xl:leading-[60px] 2xl:my-10
+              2xl:text-[50px] 2xl:leading-[60px] 2xl:mt-[120]
               "
                   id="head2"
                 >
@@ -182,7 +191,7 @@ const page = () => {
                       md:w-56
                   lg:w-32 
                   xl:w-40 
-                  2xl:w-64 "
+                  2xl:w-[247px] 2xl:h-[247px] "
                     />
                     <h1
                       className="text-center 
@@ -191,9 +200,9 @@ const page = () => {
                 md:t6xt-[18px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[25px] 2xl:leading-[50px]
+                2xl:text-[20px] 2xl:leading-[30px]
              "
-                      id="para2"
+                      id="pera4"
                     >
                       מתכוני קוקטיילים
                     </h1>
@@ -210,7 +219,7 @@ const page = () => {
                       md:w-56
                   lg:w-32 
                   xl:w-40 
-                  2xl:w-64  "
+                  2xl:w-[247px] 2xl:h-[247px]"
                     />
                     <h1
                       className="text-center
@@ -219,8 +228,8 @@ const page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[25px] 2xl:leading-[50px]"
-                      id="para2"
+                2xl:text-[20px] 2xl:leading-[30px]"
+                      id="pera4"
                     >
                       טקילה
                     </h1>
@@ -236,7 +245,7 @@ const page = () => {
                       md:w-56
                        lg:w-32  
                        xl:w-40  
-                       2xl:w-64 "
+                       2xl:w-[247px] 2xl:h-[247px]"
                     />
                     <h1
                       className="text-center 
@@ -245,8 +254,8 @@ const page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[25px] 2xl:leading-[50px]"
-                      id="para2"
+                2xl:text-[20px] 2xl:leading-[30px]"
+                      id="pera4"
                     >
                       וויסקי
                     </h1>
@@ -262,7 +271,7 @@ const page = () => {
                       md:w-56
                   lg:w-32 
                   xl:w-40 
-                  2xl:w-64 "
+                  2xl:w-[247px] 2xl:h-[247px]"
                       height={247}
                       width={247}
                     />
@@ -273,8 +282,8 @@ const page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[25px] 2xl:leading-[50px]"
-                      id="para2"
+                2xl:text-[20px] 2xl:leading-[30px]"
+                      id="pera4"
                     >
                       {" "}
                       hello
@@ -289,7 +298,8 @@ const page = () => {
                       className="  w-40 mx-auto
                       sm:w-48
                       md:w-56
-                       lg:w-32 xl:w-40  2xl:w-64  "
+                       lg:w-32 xl:w-40 
+                        2xl:w-[247px] 2xl:h-[247px] "
                     />
                     <h1
                       className="text-center 
@@ -298,8 +308,8 @@ const page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[25px] 2xl:leading-[50px]"
-                      id="para2"
+                2xl:text-[20px] 2xl:leading-[30px]"
+                      id="pera4"
                     >
                       {" "}
                       סופר פרימיום
@@ -313,12 +323,11 @@ const page = () => {
                       width={247}
                       className=" 
                       w-40 mx-auto
-                      
                       sm:w-48
                       md:w-56
                   lg:w-32  
                   xl:w-40  
-                   2xl:w-64 "
+                  2xl:w-[247px] 2xl:h-[247px]"
                     />
                     <h1
                       className="text-center 
@@ -327,8 +336,8 @@ const page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[25px] 2xl:leading-[50px]"
-                      id="para2"
+                2xl:text-[20px] 2xl:leading-[30px]"
+                      id="pera4"
                     >
                       {" "}
                       מתכוני קוקטיילים
@@ -336,7 +345,7 @@ const page = () => {
                   </div>
                 </div>
 
-                <div className="2xl:mt-32 mx:auto 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] ">
+                <div className="2xl:mt-32 mx:auto 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] mx-auto">
                   <h1
                     className="text-center text-black mt-5
                 sm:text-[25px] sm:leading-[25px] sm:mt-14  
@@ -350,32 +359,32 @@ const page = () => {
                     {" "}
                     טעימה ממבצעי החודש
                   </h1>
-                  <div className="flex flex-col lg:flex-row lg:gap-4 xl:gap-6 2xl:gap-10 justify-center">
+                  <div className="flex flex-col lg:flex-row lg:gap-4 xl:gap-6 2xl:gap-[40px] justify-center">
                     <div
                       className="  sm:my-10  md:my-10 mx-auto lg:w-48 
                            xl:w-60  2xl:w-80
                       "
                     >
                       <div
-                        className=" mt-3 lg:mt-0 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
+                        className=" mt-3 lg:mt-0 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px] 2xl:pb-10"
                         id="imgbg"
                       >
                         <Image
                           src={bottle1}
                           alt="icon"
                           className="w-[100px] h-[258px] sm:w-[120px] sm:h-[300px] md:w-[140px] md:h-[350px]
-                           mx-auto lg:w-[90px] lg:h-[250px] xl:w-[130px] xl:h-[360px] 2xl:w-[170px] 2xl:h-[448px]"
+                           mx-auto lg:w-[90px] lg:h-[250px] xl:w-[130px] xl:h-[360px] 2xl:w-[170px] 2xl:h-[448px] "
                         />
                       </div>
                       <h1
                         className="text-center  sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
                         lg:text-[8px] lg:leading-[16px] lg:mt-3
-                    xl:text-[10px] xl:leading-[20px] xl:mt-5
-                     2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
+                        xl:text-[10px] xl:leading-[20px] xl:mt-5
+                        2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
                        "
                         id="pera3"
                       >
-                        {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
+                        וויסקי 1888 גראן רזרב 700 מ"ל
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
@@ -387,12 +396,12 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-right border border-1 lg:border-2 border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[8px] py-[2px] px-[8px] mt-1 mb-5
-                    sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
-                  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
-                  lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                   xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
-                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:py-3 2xl:px-12"
+                          className="text-center border  border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[8px] py-[2px] px-[8px] mt-1 mb-5
+                                   sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
+                                md:text-[14px]  md:mt-6 md:py-1 md:px-6 
+                               lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
+                                  xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
+                                            2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
                         >
                           הוספה לסל
                         </button>
@@ -422,7 +431,7 @@ const page = () => {
                        "
                         id="pera3"
                       >
-                        {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
+                        וויסקי 1888 גראן רזרב 700 מ"ל
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
@@ -434,12 +443,12 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-right border-2 border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[8px] py-[2px] px-[8px] mt-1 mb-5
+                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[8px] py-[2px] px-[8px] mt-1 mb-5
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
                     md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                     lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
                     xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
-                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:py-3 2xl:px-12"
+                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
                         >
                           הוספה לסל
                         </button>
@@ -469,7 +478,7 @@ const page = () => {
                        "
                         id="pera3"
                       >
-                        {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
+                        וויסקי 1888 גראן רזרב 700 מ"ל
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
@@ -481,12 +490,12 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-right border-2 border-[#C1B505] ml-auto text-[#C1B505] mx-auto mt-1 mb-5
+                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mt-1 mb-5
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
                  text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
                    xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
-                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:py-3 2xl:px-12"
+                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
                         >
                           {" "}
                           הוספה לסל
@@ -517,7 +526,7 @@ const page = () => {
                        "
                         id="pera3"
                       >
-                        {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
+                        וויסקי 1888 גראן רזרב 700 מ"ל
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
@@ -529,12 +538,12 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-right border-2 border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 
+                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
                  text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
                    xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
-                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:py-3 2xl:px-12"
+                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
                         >
                           הוספה לסל
                         </button>
@@ -546,7 +555,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="2xl:h-screen" id="div3">
+          <div className="2xl:h-screen " id="div3">
             <Carousal />
           </div>
           <div
@@ -555,29 +564,28 @@ const page = () => {
           >
             <img
               src="images/glas.svg"
-              className="absolute lg:w-16 lg:top-[35%] xl:ml-20 xl:w-24  2xl:w-40  xl:top-[35%] xl:left-20 vert-move "
+              className="absolute opacity-[0.1] lg:w-16 lg:top-[35%] xl:w-24 xl:left-[-20px] 2xl:w-40  xl:top-[18%] 2xl:left-[-40px] vert-move"
             />
             <img
               src="images/glas2.svg"
-              className="absolute lg:w-16 xl:w-24  2xl:w-32  xl:top-[38%] lg:top-[35%] right-0 vert-move "
+              className="absolute opacity-[0.1] lg:w-16 xl:w-24  2xl:w-32  xl:xl:top-[28%] 2xl:xl:top-[38%] lg:top-[35%] right-0 vert-move "
             />
 
             <img
               src="images/star.svg"
-              className="absolute
+              className="absolute opacity-[0.3]
            lg:w-12 lg:top-3 lg:left-44
-           xl:w-24 xl:top-28 xl:left-48 
-           2xl:w-32 2xl:top-16 2xl:left-96  
+           xl:w-24 xl:top-16 xl:left-56 
+           2xl:w-[76px] 2xl:h-[76px] 2xl:top-16 2xl:left-96  
            zoom-in-out-box"
             />
             <img
               src="images/star2.svg"
               className="absolute 
            lg:w-24 lg:bottom-4 lg:left-32
-          xl:w-32 xl:bottom-20 xl:left-44
-           2xl:w-40 2xl:bottom-32 2xl:left-80  starroted"
+          xl:w-[180px] xl:bottom-24 xl:left-32
+          2xl:w-[200px] 2xl:h-[240px] 2xl:bottom-14 2xl:left-52  starroted"
             />
-
             <div className="mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px]  w-[280px]">
               <h1
                 className=" text-center text-white 2xl:text-[50px] 2xl:leading-[60px] xl:text-[35px] xl:leading-[40px] lg:text-[22px] lg:leading-[30px]"
@@ -585,6 +593,10 @@ const page = () => {
               >
                 דילים לאירועים
               </h1>
+            <img src="images/ring.svg" className=" z-10 absolute  
+            xl:w-[50px] xl:h-[106px] xl:top-[87px] xl:right-[240px]
+            2xl:h-[106px] 2xl:top-[118px] 2xl:right-[325px]" />
+
               <div className="flex flex-col mx-auto sm:flex-col lg:mb-20 lg:flex-row 2xl:gap-[30px] 2xl:mt-16 xl:gap-[20px] xl:mt-12  lg:mt-6  lg:gap-[12px] ">
                 <div
                   className=" w-full h-auto mx-auto
@@ -595,15 +607,36 @@ const page = () => {
                     src={div411}
                   />
                 </div>
-                <div className="flex flex-wrap gap-[10px] mt-[10px] lg:mt-0 mx-auto 2xl:gap-[30px]  2xl:w-[630px] xl:gap-[20px] lg:gap-[12px] lg:pb-12 xl:pb-16 2xl:pb-20">
+                <div className=" relative  flex flex-wrap gap-[10px] mt-[10px] lg:mt-0 mx-auto 2xl:gap-[30px]  2xl:w-[630px] xl:gap-[20px] lg:gap-[12px] lg:pb-12 xl:pb-16 2xl:pb-16">
+
                   <Image
                     className="w-[135px] md:w-[290px] mx-auto sm:w-[240px] lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div422}
                   />
-                  <Image
-                    className="w-[135px] md:w-[290px] mx-auto sm:w-[240px]  lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
-                    src={div44}
-                  />
+
+                  <div className=" flex bg-[#9B2A0C] text-white rounded-[10px] w-[135px] md:w-[290px] mx-auto sm:w-[240px]  lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px] ">
+                    <div className="mx-auto my-auto">
+                      <h1
+                        id="head2"
+                        className="   mx-auto text-right
+                        xl:w-[150px] xl:h-[80px] xl:text-[28px] xl:leading-[40px] 
+                         2xl:w-[209px] 2xl:h-[100px] 2xl:text-[40px] 2xl:leading-[50px] "
+                      >
+                        קבלו 30% הנחה על עסקת אירועים
+                      </h1>{" "}
+                      <button
+                        id="button"
+                        className=" text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 
+                    sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
+                 text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
+                  lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
+                   xl:text-[14px] xl:leading-[20px] xl:mt-4 xl:py-2 xl:px-7 xl:w-[150px] xl:h-[37px]
+                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-8  2xl:w-[208px] 2xl:h-[54px]"
+                      >
+                        הוספה לסל
+                      </button>
+                    </div>
+                  </div>
                   <Image
                     className=" w-[135px] mb-0 md:w-[290px] mx-auto sm:w-[240px]  lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div433}
@@ -612,6 +645,10 @@ const page = () => {
                     className=" w-[135px] mb-0 md:w-[290px] mx-auto sm:w-[240px]   lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div455}
                   />
+                </div>
+                <div className="z-10 absolute bottom-60 right-28 opacity-[0.2] 2xl:w-[150px]">
+                  <img src="images/minis.svg" className=" mx-auto 2xl:w-[76px] 2xl:h-[76px]"/>
+                  <img src="images/miniss.svg" className=" 2xl:w-[46px] 2xl:h-[46px]"/>
                 </div>
               </div>
             </div>
@@ -632,7 +669,9 @@ const page = () => {
                   כרטיס נטען
                 </h1>
                 <p
-                  className=" text-right  start text-[12px] leading-[15px] sm:text-[16px] sm:leading-[25px] sm:w-[350px] sm:ml-[30%]  md:w-[350px] md:ml-[42%] md:text-[16px] md:leading-[25px] lg:ml-0 lg:text-[12px] lg:leading-[20px] lg:mt-3 xl:mt-5 xl:text-[14px] xl:leading-[20px] 2xl:text-[18px] 2xl:leading-28px] 2xl:mt-8"
+                  className=" text-right  start text-[12px] leading-[15px] sm:text-[16px] sm:leading-[25px] sm:w-[350px] sm:ml-[30%]  md:w-[350px] md:ml-[42%] md:text-[16px] md:leading-[25px] lg:ml-0 lg:text-[12px] lg:leading-[20px] lg:mt-3 
+                   xl:text-[14px] xl:leading-[20px] xl:mt-5 xl:w-[305px]
+                   2xl:w-[421px] 2xl:h-[84px] 2xl:text-[18px] 2xl:leading-28px] 2xl:mt-8"
                   id="pera"
                 >
                   חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות משחקים
@@ -642,12 +681,12 @@ const page = () => {
                 <div className="flex justify-end">
                   <button
                     id="button"
-                    className="text-right border-2 border-[#C1B505] ml-auto text-[#C1B505] text-[10px] py-[2px] px-[10px] my-2
+                    className="text-center border border-[#C1B505] ml-auto text-[#C1B505] text-[10px] py-[2px] px-[10px] my-2
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
                   md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:mt-8 lg:py-1 lg:px-6 
                    xl:text-[14px]  xl:mt-8 xl:py-2 xl:px-10
-                   2xl:text-[20px]  2xl:mt-14 2xl:mb-60 2xl:py-3 2xl:px-[70px]"
+                   2xl:text-[20px]  2xl:mt-14 2xl:mb-60 2xl:w-[208px] 2xl:h-[54px]"
                   >
                     מתנה עכשיו
                   </button>
@@ -655,11 +694,11 @@ const page = () => {
               </div>
             </div>
             <div className="bg-[#9B2A0C] sm:py-10  lg:py-16 xl:py-20 2xl:p-16 mx-auto">
-              <div className="flex flex-col lg:flex-row mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
+              <div className="flex flex-col items-center lg:flex-row mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
                 <div className=" w-full lg:w-8/12 mx-auto lg:mx-0  lg:my-0 sm:w-1/2">
                   <span
                     className="bg-[#C1B505] text-[#FFFFFF] text-[10px] py-1 px-2  rounded-sm sm:p-2 md:p-3
-                     lg:p-[10px] xl:p-[14px] 2xl:p-[24px] 2xl:px-[30px] lg:rounded-md rounded-r-none lg:rounded-r-none 2xl:text-[20px] 2xl:leading-[30px]"
+                     lg:p-[10px] xl:p-[14px] 2xl:p-[18px] 2xl:px-[30px] lg:rounded-md rounded-r-none lg:rounded-r-none 2xl:text-[20px] 2xl:leading-[30px]"
                     id="pera4"
                   >
                     הירשם
@@ -667,30 +706,13 @@ const page = () => {
                   <input
                     type="search"
                     placeholder="הזן את כתובת הדואר האלקטרוני שלך"
-                    className="bg-[#A9482E]  sm:w-[82%]  md:w-[77%] sm:p-2 md:p-3
-                    xl:w-5/6 cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-2 xl:p-3  2xl:p-6 text-right mt-5 "
+                    className="bg-[#A9482E]   my-auto focus:outline-none
+                    sm:w-[82%]  md:w-[77%] sm:p-2 md:p-3
+                    xl:w-5/6 cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-2 xl:p-3  2xl:p-6 text-right mt-0"
                   />
                 </div>
 
-                {/* <div class="flex">
-                  <span class="inline-flex items-center px-3 text-sm text-gray-900 bg-gray-200 border rounded-e-0 border-gray-300 rounded-s-md dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600">
-                    <svg
-                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
-                    </svg>
-                  </span>
-                  <input
-                    type="text"
-                    id="website-admin"
-                    class="rounded-none rounded-e-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="elonmusk"
-                  />
-                </div> */}
+              
                 <div className="text-right my-2  mx-auto lg:w-4/12 lg:flex lg:flex-col lg:justify-between lg:text-right ">
                   <h1
                     className=" text-white text-[16px] sm:text-[25px] lg:text-[25px] xl:text-[35px] xl:leading-[50px] 2xl:text-[50px] 2xl:leading-[60px]"
@@ -708,7 +730,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <footer className="bg-black lg:pt-12 xl:pt-24 pt-5">
+          <footer className="bg-[#060201] lg:pt-12 xl:pt-24 pt-5">
             <div className="flex flex-col-reverse lg:flex-row justify-between mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px]  w-[280px]">
               <div className=" lg:my-0  lg:w-full lg:mx-0">
                 <h1
@@ -719,6 +741,13 @@ const page = () => {
                   בוא נהיה חברים!
                 </h1>
                 <ul className=" my-2 flex justify-center gap-4 2xl:my-6 lg:justify-end lg:gap-5 lg:my-3 xl:gap-7 xl:my-4  lg:text-right">
+                <li>
+                    <Image
+                      src={facebookk}
+                      className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full"
+                    />
+                    {""}
+                  </li>
                   <li>
                     <Image
                       src={instaa}
@@ -726,16 +755,10 @@ const page = () => {
                     />
                     {""}
                   </li>
-                  <li>
-                    <Image
-                      src={facebookk}
-                      className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full"
-                    />
-                    {""}
-                  </li>
+               
                 </ul>
                 <p
-                  className=" text-[8px] sm:text-[10px] md:text-[12px] my-2 text-center lg:text-right text-white lg:text-[12px] xl:text-[14px] xl:leading-[24px] 2xl:text-[18px] 2xl:leading-[26px]"
+                  className=" text-[8px] sm:text-[10px] md:text-[12px] my-2 text-center lg:text-right text-[#FFFFFF] lg:text-[12px] xl:text-[14px] xl:leading-[24px] 2xl:text-[18px] 2xl:leading-[26px]"
                   id="pera"
                 >
                   קנייתך באתר מאובטחת ומוכרת ע”י חברות האשראי
@@ -763,24 +786,24 @@ const page = () => {
                 >
                   צור קשר
                 </h1>
-                <ul className="text-[8px] sm:text-[10px] md:text-[12px] my-2 text-white xl:my-6 text-center lg:text-right">
-                  <li className=" cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px]">
+                <ul className="text-[8px] sm:text-[10px] md:text-[12px] my-2 xl:my-6 text-center lg:text-right">
+                  <li className=" text-[#FFFFFF] cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px]">
                     alcohol.market@gmail.com
                   </li>
-                  <li className=" cursor-pointer sm:my-2 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px]">
+                  <li className=" text-[#FFFFFF] cursor-pointer sm:my-2 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px]">
                     +38 9878 5897 598
                   </li>
                 </ul>
               </div>
               <div className=" lg:my-0  mx-auto lg:w-3/4 lg:mx-0 ">
                 <h1
-                  className="text-[10px] sm:text-[12px] md:text-[14px] mt-2  text-white lg:text-[14px] lg:leading-[20px]
+                  className="text-[10px] sm:text-[12px] md:text-[14px] mt-2  text-[#FFFFFF]  lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] xl:leading-[30px] 2xl:leading-[26px] 2xl:text-[18px] text-center lg:text-right"
                   id="head2"
                 >
                   קישורים אחרים
                 </h1>
-                <ul className="text-[8px] sm:text-[10px] md:text-[12px] sm:my-3 my-2 text-white xl:my-6 text-center lg:text-right">
+                <ul className="text-[8px] sm:text-[10px] md:text-[12px] sm:my-3 my-2 text-[#FFFFFF]  xl:my-6 text-center lg:text-right">
                   <li className="  cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
                     אלכוהול לאירועים
                   </li>
@@ -793,17 +816,16 @@ const page = () => {
                 </ul>
               </div>
               <div className=" lg:my-0 lg:w-3/6 xl:w-4/6 lg:mx-0">
-                <ul>
-                  <h1
-                    className="cursor-pointer text-[#B15953] text-center text-[20px] 
-                   lg:text-right sm:text-[25px]
-                   lg:text-[20px] leading-normal
-                   xl:text-[30px] xl:leading-[35px]
-                  2xl:text-[48px] 2xl:leading-[35px] "
-                    id="heading1"
-                  >
-                    Logo
-                  </h1>
+                <ul className="flex justify-end">
+                <img
+                    src="images/logo.webp"
+                    className=" 2xl:w-[146px] 2xl:h-[146px]
+                  xl:w-[100px] xl:h-[100px]
+                  lg:w-[80px] lg:h-[80px]
+                  md:w-[60px] md:h-[60px]
+                  sm:w-[45px] sm:h-[45px]
+                  w-[20px] h-[20px]"
+                  />
                 </ul>
               </div>
             </div>
@@ -811,7 +833,7 @@ const page = () => {
               className="opacity-[20%] text-[#FFFFFF] mt-4 w-[280px] sm:w-[500px] 
             2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] mx-auto 2xl:mt-5"
             />
-            <h1 className="text-white text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] xl:py-3 py-2">
+            <h1 className="text-[#FFFFFF]  text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] xl:py-3 py-2">
               © 2023 לולו. כל הזכויות שמורות.
             </h1>
           </footer>

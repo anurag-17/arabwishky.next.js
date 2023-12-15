@@ -13,10 +13,10 @@ const Carousal = () => {
   };
 
   return (
-    <div className="pt-2 sm:pt-5 sm:pb-5 md:pt-8 lg:pt-10 xl:pt-1 xl:pb-7 2xl:pt-0 ">
+    <div className="pt-2 sm:pt-5 sm:pb-5 md:pt-8 lg:pt-10 xl:pt-[1px]  2xl:pt-0 ">
       <div
         id="animation-carousel"
-        className="relative  mx-auto xl:my-20 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px] 2xl:py-0 2xl:my-0 xl:py-0"
+        className="relative  mx-auto xl:my-10  2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px] 2xl:py-0 2xl:my-0 xl:py-0"
         data-carousel="static"
       >
         {/* Carousel wrapper */}
@@ -46,8 +46,8 @@ const Carousal = () => {
                   </h1>
                 </div>
 
-                <div className="flex  mt-1 lg:flex-row my-auto justify-between   2xl:mt-[65px]  ">
-                  <div className=" lg:my-auto  2xl:w-[535px] w-2/6 sm:w-2/6 lg:w-2/6 md:mt-4 lg:mt-5 ">
+                <div className="flex md:flex-row mt-1 lg:flex-row my-auto justify-between   2xl:mt-[20px]  ">
+                  <div className=" lg:my-auto  2xl:w-[535px] w-2/6 sm:w-2/6 lg:w-2/6 md:mt-4 lg:mt-5 xl:mt-0 ">
                     <img
                       src="images/Group11.webp"
                       className="mx-auto 
@@ -69,6 +69,7 @@ const Carousal = () => {
                         קבל 20% הנחה על ההזמנה הראשונה שלך
                       </h1>
                       <p
+                      id="pera"
                         className="flex justify-end text-right text-white text-[7px] w-[130px] ml-[15px] mt-1
                 sm:text-[9px] sm:leading-[12px] sm:my-2 sm:w-[220px] 
                sm:ml-[45px] md:text-[11px] md:leading-[18px] md:my-4 md:ml-[52px] md:w-[280px]
@@ -81,11 +82,11 @@ const Carousal = () => {
                         אחר, כלל פיסיקה צרפתית אגרונומיה אל,
                       </p>
                       <div
-                        className="flex justify-end lg:gap-2 2xl:my-14 my-2 2xl:mr-[4%] mr-4 sm:mr-0"
+                        className="flex justify-end lg:gap-2 2xl:my-8 my-2 2xl:mr-[4%] mr-4 sm:mr-0"
                         id="pera4"
                       >
                         <del
-                          className="text-[#834F42] opacity-[23%]
+                          className="text-[#ffffffe6] opacity-[23%]
                     lg:w-[161px] "
                         >
                           <h2
@@ -147,7 +148,7 @@ const Carousal = () => {
                   </h1>
                 </div>
 
-                <div className="flex  mt-1 lg:flex-row my-auto justify-between   2xl:mt-[65px]  ">
+                <div className="flex  mt-1 lg:flex-row my-auto justify-between   2xl:mt-[20px] ">
                   <div className=" lg:my-auto  2xl:w-[535px] w-2/6 sm:w-2/6 lg:w-2/6 md:mt-4 lg:mt-5 xl:mt-0">
                     <img
                       src="images/Group22.webp"
@@ -248,7 +249,7 @@ const Carousal = () => {
                   </h1>
                 </div>
 
-                <div className="flex  mt-1 lg:flex-row my-auto justify-between   2xl:mt-[65px]  ">
+                <div className="flex  mt-1 lg:flex-row my-auto justify-between   2xl:mt-[20px] ">
                   <div className=" lg:my-auto  2xl:w-[535px] w-2/6 sm:w-2/6 lg:w-2/6 md:mt-4 lg:mt-5 xl:mt-0">
                     <img
                       src="images/Group33.webp"
@@ -348,7 +349,7 @@ const Carousal = () => {
                   </h1>
                 </div>
 
-                <div className="flex  mt-1 lg:flex-row my-auto justify-between   2xl:mt-[65px]  ">
+                <div className="flex  mt-1 lg:flex-row my-auto justify-between   2xl:mt-[20px] ">
                   <div className=" lg:my-auto  2xl:w-[535px] w-2/6 sm:w-2/6 lg:w-2/6 md:mt-4 lg:mt-5 xl:mt-0">
                     <img
                       src="images/Group44.webp"
@@ -427,24 +428,25 @@ const Carousal = () => {
         {/* Slider controls */}
         <button
           type="button"
-          className="absolute top-[45%] bottom-[50%] 2xl:mt-[300px] start-0 z-30 flex items-center justify-center h-4 w-4 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-10 xl:w-10  cursor-pointer group focus:outline-none border rounded-full "
+          className="absolute top-[45%] bottom-[50%] 2xl:mt-[300px] start-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-20 2xl:w-20  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
           data-carousel-prev=""
           onClick={handlePrevClick}
         >
           <img
             src="/images/arrow-left.svg"
-            className=" 2xl:w-14 xl:w-5 lg:w-9 md:w-8 sm:w-7 w-3 opacity-[100%] "
+            className=" 2xl:w-10 xl:w-6 lg:w-5 md:w-5 sm:w-5 w-3 opacity-[100%] "
           />
         </button>
         <button
           type="button"
-          className="absolute top-[45%]  bottom-[50%] 2xl:mt-[300px] end-0 z-30 flex items-center justify-center h-4 w-4 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-10 xl:w-10 cursor-pointer group focus:outline-none border rounded-full "
+          className="absolute top-[45%] bottom-[50%] 2xl:mt-[300px] end-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-20 2xl:w-20  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
           data-carousel-next=""
           onClick={handleNextClick}
         >
           <img
             src="/images/arrow-right.svg"
-            className=" 2xl:w-14 xl:w-5 lg:w-9 md:w-8 sm:w-7 w-3 "
+            className=" 2xl:w-10 xl:w-6 lg:w-5 md:w-5 sm:w-5 w-3 opacity-[100%] "
+
           />
         </button>
       </div>
