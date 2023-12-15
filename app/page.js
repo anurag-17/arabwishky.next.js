@@ -384,7 +384,7 @@ const page = () => {
                        "
                         id="pera3"
                       >
-                        וויסקי 1888 גראן רזרב 700 מ"ל
+                        {/* וויסקי 1888 גראן רזרב 700 מ" */}
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
@@ -431,7 +431,7 @@ const page = () => {
                        "
                         id="pera3"
                       >
-                        וויסקי 1888 גראן רזרב 700 מ"ל
+                        {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
@@ -478,7 +478,7 @@ const page = () => {
                        "
                         id="pera3"
                       >
-                        וויסקי 1888 גראן רזרב 700 מ"ל
+                        {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
@@ -526,7 +526,7 @@ const page = () => {
                        "
                         id="pera3"
                       >
-                        וויסקי 1888 גראן רזרב 700 מ"ל
+                        {/* וויסקי 1888 גראן רזרב 700 מ"ל */}
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
