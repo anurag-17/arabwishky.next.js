@@ -26,9 +26,6 @@ import div44 from "../public/images/div44.png";
 import div455 from "../public/images/div455.webp";
 import instaa from "../public/images/instagg.svg";
 import facebookk from "../public/images/facebookk.svg";
-import american from "../public/images/american.jpeg";
-import mastercard from "../public/images/mastercard.jpg";
-import visa from "../public/images/visa.jpg";
 import giftcaed from "../public/images/giftcaed.svg";
 import Carousal from "./carousal";
 
@@ -384,7 +381,7 @@ const page = () => {
                        "
                         id="pera3"
                       >
-                        {/* וויסקי 1888 גראן רזרב 700 מ" */}
+                        וויסקי 1888 גראן רזרב 700 מ"ל
                       </h1>
                       <h1
                         className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
@@ -593,9 +590,12 @@ const page = () => {
               >
                 דילים לאירועים
               </h1>
-            <img src="images/ring.svg" className=" z-10 absolute  
+              <img
+                src="images/ring.svg"
+                className=" z-10 absolute  
             xl:w-[50px] xl:h-[106px] xl:top-[87px] xl:right-[240px]
-            2xl:h-[106px] 2xl:top-[118px] 2xl:right-[325px]" />
+            2xl:h-[106px] 2xl:top-[118px] 2xl:right-[325px]"
+              />
 
               <div className="flex flex-col mx-auto sm:flex-col lg:mb-20 lg:flex-row 2xl:gap-[30px] 2xl:mt-16 xl:gap-[20px] xl:mt-12  lg:mt-6  lg:gap-[12px] ">
                 <div
@@ -608,7 +608,6 @@ const page = () => {
                   />
                 </div>
                 <div className=" relative  flex flex-wrap gap-[10px] mt-[10px] lg:mt-0 mx-auto 2xl:gap-[30px]  2xl:w-[630px] xl:gap-[20px] lg:gap-[12px] lg:pb-12 xl:pb-16 2xl:pb-16">
-
                   <Image
                     className="w-[135px] md:w-[290px] mx-auto sm:w-[240px] lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div422}
@@ -647,8 +646,14 @@ const page = () => {
                   />
                 </div>
                 <div className="z-10 absolute bottom-60 right-28 opacity-[0.2] 2xl:w-[150px]">
-                  <img src="images/minis.svg" className=" mx-auto 2xl:w-[76px] 2xl:h-[76px]"/>
-                  <img src="images/miniss.svg" className=" 2xl:w-[46px] 2xl:h-[46px]"/>
+                  <img
+                    src="images/minis.svg"
+                    className=" mx-auto 2xl:w-[76px] 2xl:h-[76px]"
+                  />
+                  <img
+                    src="images/miniss.svg"
+                    className=" 2xl:w-[46px] 2xl:h-[46px]"
+                  />
                 </div>
               </div>
             </div>
@@ -694,11 +699,11 @@ const page = () => {
               </div>
             </div>
             <div className="bg-[#9B2A0C] sm:py-10  lg:py-16 xl:py-20 2xl:p-16 mx-auto">
-              <div className="flex flex-col items-center lg:flex-row mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
-                <div className=" w-full lg:w-8/12 mx-auto lg:mx-0  lg:my-0 sm:w-1/2">
+              <div className="flex flex-col justify-between items-center lg:flex-row mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[208px]">
+                <div className="flex w-full lg:w-8/12 mx-auto lg:mx-0  lg:my-0 sm:w-1/2 2xl:w-[779px] 2xl:h-[70px]">
                   <span
-                    className="bg-[#C1B505] text-[#FFFFFF] text-[10px] py-1 px-2  rounded-sm sm:p-2 md:p-3
-                     lg:p-[10px] xl:p-[14px] 2xl:p-[18px] 2xl:px-[30px] lg:rounded-md rounded-r-none lg:rounded-r-none 2xl:text-[20px] 2xl:leading-[30px]"
+                    className="bg-[#C1B505] text-[#FFFFFF] text-[10px] py-1 px-2  rounded-sm sm:p-2 md:p-3 items-center   text-center 
+                     lg:p-[10px] xl:p-[14px] 2xl:p-[18px] 2xl:px-[30px] lg:rounded-md rounded-r-none lg:rounded-r-none 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[208px] "
                     id="pera4"
                   >
                     הירשם
@@ -708,20 +713,19 @@ const page = () => {
                     placeholder="הזן את כתובת הדואר האלקטרוני שלך"
                     className="bg-[#A9482E]   my-auto focus:outline-none
                     sm:w-[82%]  md:w-[77%] sm:p-2 md:p-3
-                    xl:w-5/6 cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-2 xl:p-3  2xl:p-6 text-right mt-0"
+                     cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-2 xl:p-3  2xl:p-7   text-right mt-0 bottm-input"
                   />
                 </div>
 
-              
-                <div className="text-right my-2  mx-auto lg:w-4/12 lg:flex lg:flex-col lg:justify-between lg:text-right ">
+                <div className=" my-2 flex flex-col justify-end 2xl:w-[353px]">
                   <h1
-                    className=" text-white text-[16px] sm:text-[25px] lg:text-[25px] xl:text-[35px] xl:leading-[50px] 2xl:text-[50px] 2xl:leading-[60px]"
+                    className="text-right text-white text-[16px] sm:text-[25px] lg:text-[25px] xl:text-[35px] xl:leading-[50px] 2xl:text-[50px] 2xl:leading-[60px] "
                     id="head2"
                   >
-                    בלי מחוייבות!
+                    !תיויומח מבל
                   </h1>
                   <p
-                    className="text-white text-[10px] sm:text-[16px] lg:mt-2 lg:text-[14px] xl:mt-4 xl:text-[16px] xl:leading-[20px] 2xl:mt-6 2xl:text-[18px] 2xl:leading-[28px]"
+                    className="text-white text-right text-[10px] sm:text-[16px] lg:mt-2 lg:text-[14px] xl:mt-4 xl:text-[16px] xl:leading-[20px] 2xl:mt-6 2xl:text-[18px] 2xl:leading-[28px] "
                     id="pera"
                   >
                     אנחנו נציע לך מוצרים ומבצעים משתלמים
@@ -732,7 +736,7 @@ const page = () => {
           </div>
           <footer className="bg-[#060201] lg:pt-12 xl:pt-24 pt-5">
             <div className="flex flex-col-reverse lg:flex-row justify-between mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px]  w-[280px]">
-              <div className=" lg:my-0  lg:w-full lg:mx-0">
+              <div className=" lg:my-0  lg:mx-0">
                 <h1
                   className=" mt-2 text-[10px] sm:text-[12px] md:text-[14px] text-white lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] 2xl:text-[18px] 2xl:leading-[26px] text-center lg:text-right"
@@ -741,21 +745,20 @@ const page = () => {
                   בוא נהיה חברים!
                 </h1>
                 <ul className=" my-2 flex justify-center gap-4 2xl:my-6 lg:justify-end lg:gap-5 lg:my-3 xl:gap-7 xl:my-4  lg:text-right">
-                <li>
-                    <Image
-                      src={facebookk}
+                  <li>
+                    <img
+                      src="images/facebookk.svg"
                       className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full"
                     />
                     {""}
                   </li>
                   <li>
-                    <Image
-                      src={instaa}
+                    <img
+                      src="images/instagg.svg"
                       className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full "
                     />
                     {""}
                   </li>
-               
                 </ul>
                 <p
                   className=" text-[8px] sm:text-[10px] md:text-[12px] my-2 text-center lg:text-right text-[#FFFFFF] lg:text-[12px] xl:text-[14px] xl:leading-[24px] 2xl:text-[18px] 2xl:leading-[26px]"
@@ -764,21 +767,25 @@ const page = () => {
                   קנייתך באתר מאובטחת ומוכרת ע”י חברות האשראי
                 </p>
                 <ul className="flex gap-1 justify-center lg:justify-end lg:my-6 xl:my-10">
-                  <Image
-                    src={visa}
-                    className=" w-8  sm:w-10 md:w-12 2xl:w-[50px] 2xl:h-[30px] xl:w-[40px] xl:h-[24px] lg:w-[25px] lg:h-[20px] rounded-md"
+                  <img
+                    src="images/visa.jpg"
+                    className=" w-8  sm:w-10 md:w-12 2xl:w-[58px] 2xl:h-[34px] xl:w-[40px] xl:h-[24px] lg:w-[25px] lg:h-[20px] rounded-md"
                   />
-                  <Image
-                    src={mastercard}
-                    className=" w-8  sm:w-10 md:w-12 2xl:w-[50px] 2xl:h-[30px] xl:w-[40px] xl:h-[24px] lg:w-[25px] lg:h-[20px] rounded-md"
+                  <img
+                    src="images/mastercard.jpg"
+                    className=" w-8  sm:w-10 md:w-12 2xl:w-[58px] 2xl:h-[34px] xl:w-[40px] xl:h-[24px] lg:w-[25px] lg:h-[20px] rounded-md"
                   />
-                  <Image
-                    src={american}
-                    className=" w-8  sm:w-10 md:w-12  2xl:w-[50px] 2xl:h-[30px] xl:w-[40px] xl:h-[24px] lg:w-[25px] lg:h-[20px] rounded-md"
+                  <img
+                    src="images/american.jpeg"
+                    className=" w-8  sm:w-10 md:w-12  2xl:w-[58px] 2xl:h-[34px] xl:w-[40px] xl:h-[24px] lg:w-[25px] lg:h-[20px] rounded-md"
+                  />
+                  <img
+                    src="images/Diners-Club.png"
+                    className=" w-8  sm:w-10 md:w-12  2xl:w-[58px] 2xl:h-[34px] xl:w-[40px] xl:h-[24px] lg:w-[25px] lg:h-[20px] rounded-md"
                   />
                 </ul>
               </div>
-              <div className=" lg:my-0 mx-auto lg:w-full xl:w-5/6 lg:mx-0">
+              <div className=" lg:my-0 mx-auto  lg:mx-0">
                 <h1
                   className="text-[10px] sm:text-[12px] md:text-[14px] mt-2 text-white lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] xl:leading-[30px] 2xl:leading-[26px] 2xl:text-[18px] text-center lg:text-right"
@@ -795,7 +802,7 @@ const page = () => {
                   </li>
                 </ul>
               </div>
-              <div className=" lg:my-0  mx-auto lg:w-3/4 lg:mx-0 ">
+              <div className=" lg:my-0  mx-auto  lg:mx-0 ">
                 <h1
                   className="text-[10px] sm:text-[12px] md:text-[14px] mt-2  text-[#FFFFFF]  lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] xl:leading-[30px] 2xl:leading-[26px] 2xl:text-[18px] text-center lg:text-right"
@@ -815,15 +822,15 @@ const page = () => {
                   </li>
                 </ul>
               </div>
-              <div className=" lg:my-0 lg:w-3/6 xl:w-4/6 lg:mx-0">
+              <div className=" lg:my-0 lg:mx-0">
                 <ul className="flex justify-end">
-                <img
+                  <img
                     src="images/logo.webp"
-                    className=" 2xl:w-[146px] 2xl:h-[146px]
-                  xl:w-[100px] xl:h-[100px]
-                  lg:w-[80px] lg:h-[80px]
-                  md:w-[60px] md:h-[60px]
-                  sm:w-[45px] sm:h-[45px]
+                    className=" 2xl:w-[120px] 2xl:h-[120px]
+                  xl:w-[80px] xl:h-[80px]
+                  lg:w-[60px] lg:h-[60px]
+                  md:w-[45px] md:h-[45px]
+                  sm:w-[40px] sm:h-[40px]
                   w-[20px] h-[20px]"
                   />
                 </ul>
