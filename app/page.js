@@ -283,7 +283,7 @@ const page = () => {
                       id="pera4"
                     >
                       {" "}
-                      hello
+                      ג'ין
                     </h1>
                   </div>
                   <div>
@@ -552,7 +552,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="2xl:h-[985px]" id="div3">
+          <div className="lg:h-[985px] xl:h-screen" id="div3">
             <Carousal />
           </div>
           <div
@@ -706,7 +706,7 @@ const page = () => {
                 <div className="flex w-full lg:w-8/12 mx-auto lg:mx-0  lg:my-0 sm:w-1/2 2xl:w-[779px] 2xl:h-[70px]">
                   <span
                     className="bg-[#C1B505] text-[#FFFFFF] text-[10px] py-1 px-2  rounded-sm sm:p-2 md:p-3 items-center   text-center 
-                     lg:p-[10px] xl:p-[14px] 2xl:p-[18px] 2xl:px-[30px] lg:rounded-md rounded-r-none lg:rounded-r-none 2xl:text-[20px] 2xl:leading-[30px] 2xl:w-[208px] "
+                     lg:p-[10px] xl:p-[14px] 2xl:p-[18px] 2xl:px-[30px] lg:rounded-md rounded-r-none lg:rounded-r-none 2xl:text-[20px] 2xl:leading-[30px] xl:w-[108px] 2xl:w-[208px] "
                     id="pera4"
                   >
                     הירשם
@@ -716,7 +716,7 @@ const page = () => {
                     placeholder="הזן את כתובת הדואר האלקטרוני שלך"
                     className="bg-[#A9482E]   my-auto focus:outline-none
                     sm:w-[82%]  md:w-[77%] sm:p-2 md:p-3
-                     cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-3 xl:p-3  2xl:p-7   text-right mt-0 bottm-input"
+                     cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-3 xl:p-4  2xl:p-7   text-right mt-0 bottm-input"
                   />
                 </div>
 
