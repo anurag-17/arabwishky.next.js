@@ -66,7 +66,7 @@ const Carousal = () => {
                     2xl:text-[40px] 2xl:leading-[50px] 2xl:w-[415px] 2xl:mt-0 2xl:ml-[21%] xl:mt-6"
                         id="head2"
                       >
-                        קבל 20% הנחה על ההזמנה הראשונה שלך
+                        קבל 10% הנחה על ההזמנה הראשונה שלך
                       </h1>
                       <p
                       id="pera"
@@ -168,7 +168,7 @@ const Carousal = () => {
                     2xl:text-[40px] 2xl:leading-[50px] 2xl:w-[415px] 2xl:mt-0 2xl:ml-[21%] xl:mt-6"
                         id="head2"
                       >
-                        קבל 20% הנחה על ההזמנה הראשונה שלך
+                        קבל 40% הנחה על ההזמנה הראשונה שלך
                       </h1>
                       <p
                         className="flex justify-end text-right text-white text-[7px] w-[130px] ml-[15px] mt-1
@@ -183,11 +183,11 @@ const Carousal = () => {
                         אחר, כלל פיסיקה צרפתית אגרונומיה אל,
                       </p>
                       <div
-                        className="flex justify-end lg:gap-2 2xl:my-14 my-2 2xl:mr-[4%] mr-4 sm:mr-0"
+                        className="flex justify-end lg:gap-2 2xl:my-8 my-2 2xl:mr-[4%] mr-4 sm:mr-0"
                         id="pera4"
                       >
                         <del
-                          className="text-[#834F42] opacity-[23%]
+                          className="text-[#ffffffe6] opacity-[23%]
                     lg:w-[161px] "
                         >
                           <h2
@@ -269,7 +269,7 @@ const Carousal = () => {
                     2xl:text-[40px] 2xl:leading-[50px] 2xl:w-[415px] 2xl:mt-0 2xl:ml-[21%] xl:mt-6"
                         id="head2"
                       >
-                        קבל 20% הנחה על ההזמנה הראשונה שלך
+                        קבל 50% הנחה על ההזמנה הראשונה שלך
                       </h1>
                       <p
                         className="flex justify-end text-right text-white text-[7px] w-[130px] ml-[15px] mt-1
@@ -284,11 +284,11 @@ const Carousal = () => {
                         אחר, כלל פיסיקה צרפתית אגרונומיה אל,
                       </p>
                       <div
-                        className="flex justify-end lg:gap-2 2xl:my-14 my-2 2xl:mr-[4%] mr-4 sm:mr-0"
+                        className="flex justify-end lg:gap-2 2xl:my-8 my-2 2xl:mr-[4%] mr-4 sm:mr-0"
                         id="pera4"
                       >
                         <del
-                          className="text-[#834F42] opacity-[23%]
+                          className="text-[#ffffffe6] opacity-[23%]
                     lg:w-[161px] "
                         >
                           <h2
@@ -384,11 +384,11 @@ const Carousal = () => {
                         אחר, כלל פיסיקה צרפתית אגרונומיה אל,
                       </p>
                       <div
-                        className="flex justify-end lg:gap-2 2xl:my-14 my-2 2xl:mr-[4%] mr-4 sm:mr-0"
+                        className="flex justify-end lg:gap-2 2xl:my-8 my-2 2xl:mr-[4%] mr-4 sm:mr-0"
                         id="pera4"
                       >
                         <del
-                          className="text-[#834F42] opacity-[23%]
+                          className="text-[#ffffffe6] opacity-[23%]
                     lg:w-[161px] "
                         >
                           <h2
@@ -405,7 +405,6 @@ const Carousal = () => {
                           ₪ 125.00
                         </h1>
                       </div>
-
                       <div className=" ">
                         <button
                           className=" border border-[#C1B505] text-[#C1B505] 
