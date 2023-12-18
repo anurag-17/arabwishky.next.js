@@ -380,8 +380,8 @@ const page = () => {
                         2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
                        "
                         id="pera3"
-                      >
-                     `   וויסקי 1888 גראן רזרב 700 מ"ל`
+                      >`&quot;`
+                        וויסקי 1888 גראן רזרב 700 מ"ל
                       </div>
                       <h1
                         className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
