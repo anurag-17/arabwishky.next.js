@@ -13,7 +13,7 @@ const Carousal = () => {
   };
 
   return (
-    <div className="pt-2 sm:pt-5 sm:pb-5 md:pt-8 lg:pt-10 xl:pt-[1px]  2xl:pt-0 ">
+    <div className="pt-2 sm:pt-5 sm:pb-5 md:pt-8 lg:pt-10   lg:pb-0  xl:pt-[1px]  2xl:pt-0 ">
       <div
         id="animation-carousel"
         className="relative  mx-auto xl:my-10  2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px] 2xl:py-0 2xl:my-0 xl:py-0"
@@ -428,7 +428,7 @@ const Carousal = () => {
         {/* Slider controls */}
         <button
           type="button"
-          className="absolute top-[68%] bottom-[40%] 2xl:mt-[300px] start-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-[68px] 2xl:w-[68px]  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
+          className="absolute 2xl:top-[57%] 2xl:bottom-[40%]  2xl:mt-[300px] xl:top-[50%] xl:bottom-[40%] lg:top-[50%] lg:bottom-[40%] start-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-[68px] 2xl:w-[68px]  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
           data-carousel-prev=""
           onClick={handlePrevClick}
         >
@@ -439,7 +439,7 @@ const Carousal = () => {
         </button>
         <button
           type="button"
-          className="absolute top-[68%] bottom-[40%] 2xl:mt-[300px] end-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-[68px] 2xl:w-[68px]  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
+          className="absolute 2xl:top-[57%] 2xl:bottom-[40%]  2xl:mt-[300px] xl:top-[50%] xl:bottom-[40%] lg:top-[50%] lg:bottom-[40%]  end-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-[68px] 2xl:w-[68px]  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
           data-carousel-next=""
           onClick={handleNextClick}
         >

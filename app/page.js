@@ -561,7 +561,7 @@ const page = () => {
           >
             <img
               src="images/glas.svg"
-              className="absolute opacity-[0.1] lg:w-16 lg:top-[35%] xl:w-24 xl:left-[-20px] 2xl:w-40  xl:top-[18%] 2xl:left-[-40px] vert-move"
+              className="absolute opacity-[0.1] lg:w-16 lg:left-[-10px] lg:top-[23%] xl:w-24 xl:left-[-20px] 2xl:w-40  xl:top-[18%] 2xl:left-[-40px]  vert-move"
             />
             <img
               src="images/glas2.svg"
@@ -571,7 +571,7 @@ const page = () => {
             <img
               src="images/star.svg"
               className="absolute opacity-[0.3]
-           lg:w-12 lg:top-3 lg:left-44
+           lg:w-8 lg:top-3 lg:left-44
            xl:w-24 xl:top-16 xl:left-56 
            2xl:w-[76px] 2xl:h-[76px] 2xl:top-16 2xl:left-96  
            zoom-in-out-box"
@@ -579,7 +579,7 @@ const page = () => {
             <img
               src="images/star2.svg"
               className="absolute 
-           lg:w-24 lg:bottom-4 lg:left-32
+           lg:w-16 lg:bottom-12 lg:left-28
           xl:w-[180px] xl:bottom-24 xl:left-32
           2xl:w-[200px] 2xl:h-[240px] 2xl:bottom-14 2xl:left-52  starroted"
             />
@@ -593,11 +593,12 @@ const page = () => {
               <img
                 src="images/ring.svg"
                 className=" z-10 absolute  
+                lg:w-[50px] lg:h-[106px] lg:top-[50px] lg:right-[150px]
             xl:w-[50px] xl:h-[106px] xl:top-[87px] xl:right-[240px]
             2xl:h-[106px] 2xl:top-[118px] 2xl:right-[325px]"
               />
 
-              <div className="flex flex-col mx-auto sm:flex-col lg:mb-20 lg:flex-row 2xl:gap-[30px] 2xl:mt-16 xl:gap-[20px] xl:mt-12  lg:mt-6  lg:gap-[12px] ">
+              <div className="flex flex-col mx-auto sm:flex-col lg:mb-0 lg:flex-row 2xl:gap-[30px] 2xl:mt-16 xl:gap-[20px] xl:mt-12  lg:mt-10  lg:gap-[12px] ">
                 <div
                   className=" w-full h-auto mx-auto
                 2xl:w-[539px] xl:w-[750px] lg:w-[620px]"
@@ -607,7 +608,7 @@ const page = () => {
                     src={div411}
                   />
                 </div>
-                <div className=" relative  flex flex-wrap gap-[10px] mt-[10px] lg:mt-0 mx-auto 2xl:gap-[30px]  2xl:w-[630px] xl:gap-[20px] lg:gap-[12px] lg:pb-12 xl:pb-16 2xl:pb-16">
+                <div className=" relative  flex flex-wrap gap-[10px] mt-[10px] lg:mt-0 mx-auto 2xl:gap-[30px]  2xl:w-[630px] xl:gap-[20px] lg:gap-[12px] lg:pb-0 xl:pb-16 2xl:pb-16">
                   <Image
                     className="w-[135px] md:w-[290px] mx-auto sm:w-[240px] lg:w-[160px]  lg:h-[170px] xl:w-[200px]  xl:h-[200px] 2xl:w-[300px]  2xl:h-[300px]"
                     src={div422}
@@ -618,6 +619,7 @@ const page = () => {
                       <h1
                         id="head2"
                         className="   mx-auto text-right
+                        lg:w-[110px] lg:h-[60px] lg:text-[20px] lg:leading-[30px]
                         xl:w-[150px] xl:h-[80px] xl:text-[28px] xl:leading-[40px] 
                          2xl:w-[209px] 2xl:h-[100px] 2xl:text-[40px] 2xl:leading-[50px] "
                       >
@@ -628,7 +630,7 @@ const page = () => {
                         className=" text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
                  text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
-                  lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
+                  lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-8 
                    xl:text-[14px] xl:leading-[20px] xl:mt-4 xl:py-2 xl:px-7 xl:w-[150px] xl:h-[37px]
                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-8  2xl:w-[208px] 2xl:h-[54px]"
                       >
@@ -645,14 +647,14 @@ const page = () => {
                     src={div455}
                   />
                 </div>
-                <div className="z-10 absolute bottom-60 right-28 opacity-[0.2] 2xl:w-[150px]">
+                <div className="z-10 absolute xl:bottom-60 xl:right-28 lg:bottom-40 lg:right-24 opacity-[0.2] 2xl:w-[150px]">
                   <img
                     src="images/minis.svg"
-                    className=" mx-auto 2xl:w-[76px] 2xl:h-[76px]"
+                    className=" mx-auto 2xl:w-[76px] 2xl:h-[76px] lg:w-[56px] lg:h-[56px]"
                   />
                   <img
                     src="images/miniss.svg"
-                    className=" 2xl:w-[46px] 2xl:h-[46px]"
+                    className=" 2xl:w-[46px] 2xl:h-[46px] lg:w-[36px] lg:h-[36px]"
                   />
                 </div>
               </div>
@@ -714,7 +716,7 @@ const page = () => {
                     placeholder="הזן את כתובת הדואר האלקטרוני שלך"
                     className="bg-[#A9482E]   my-auto focus:outline-none
                     sm:w-[82%]  md:w-[77%] sm:p-2 md:p-3
-                     cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-2 xl:p-3  2xl:p-7   text-right mt-0 bottm-input"
+                     cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md text-[10px] py-1 lg:rounded-l-none lg:p-3 xl:p-3  2xl:p-7   text-right mt-0 bottm-input"
                   />
                 </div>
 
