@@ -283,7 +283,7 @@ const page = () => {
                       id="pera4"
                     >
                       {" "}
-                      ג'ין
+                      גין
                     </h1>
                   </div>
                   <div>
