@@ -373,7 +373,7 @@ const page = () => {
                            mx-auto lg:w-[90px] lg:h-[250px] xl:w-[130px] xl:h-[360px] 2xl:w-[170px] 2xl:h-[448px] "
                         />
                       </div>
-                      <h1
+                      <div
                         className="text-center  sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
                         lg:text-[8px] lg:leading-[16px] lg:mt-3
                         xl:text-[10px] xl:leading-[20px] xl:mt-5
@@ -382,7 +382,7 @@ const page = () => {
                         id="pera3"
                       >
                         וויסקי 1888 גראן רזרב 700 מ"ל
-                      </h1>
+                      </div>
                       <h1
                         className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
                           lg:text-[14px] xl:text-[22px] xl:leading-[20px] xl:mt-2 2xl:text-[34px] 2xl:leading-[30px] 2xl:mt-2"
