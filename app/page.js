@@ -552,7 +552,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="2xl:h-screen " id="div3">
+          <div className="2xl:h-[985px]" id="div3">
             <Carousal />
           </div>
           <div

@@ -121,7 +121,9 @@ font-family: 'Cooperative';
   font-weight: 300;
 }
 
-
+li:hover {
+  text-decoration: underline;
+}
 
 
 
