@@ -659,12 +659,13 @@ const page = () => {
             </div>
           </div>
           <div className="bg-[#F6F5E6] ">
-            <div className="flex justify-center pb-10 lg:justify-between flex-col lg:flex-row mx-auto sm:py-12  lg:py-16 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
+            <div className="flex justify-center pb-0 lg:justify-between flex-col lg:flex-row mx-auto sm:py-12  lg:py-16 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
               <div className="w-full 2xl:mt-24 mx-auto pt-10 sm:pt-0 ">
                 <Image
                   src={giftcaed}
                   className="2xl:w-[573px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px]  lg:w-[280px] sm:w-[300px] md:w-[350px] mx-auto lg:mx-0"
                 />
+                <img src="images/underline.svg" className="w-[1070px] h-[23px] 2xl:mt-5"/>
               </div>
               <div className="w-full 2xl:mt-36 2xl:w-[421px] xl:w-[340px] xl:mt-24 mx-auto">
                 <h1
