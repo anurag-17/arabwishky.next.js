@@ -123,7 +123,7 @@ const Page = () => {
                           id="hover-underline-animation"
                           className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-[10px] text-[8px] first-letter:uppercase text-center mx-auto"
                         >
-                          About Me
+                        Orders
                         </li>
                         <br />
                         <li
@@ -636,18 +636,18 @@ const Page = () => {
             <Carousal />
           </div>
           <div
-            className="h-[750px] sm:h-[1200px] md:h-[1450px] lg:h-[500px] xl:h-[700px] 2xl:h-[1020px] 2xl:py-20  lg:pt-10 pt-10 relative"
+            className="h-[750px] sm:h-[1200px] md:h-[1450px] lg:h-[500px] xl:h-[700px] 2xl:h-[1010px] 2xl:py-20  lg:pt-10 pt-10 relative"
             id="div4"
           >
             <img
             id="hidden"
               src="images/glas.svg"
-              className="absolute opacity-[0.1] lg:w-16 lg:left-[-10px] lg:top-[23%] xl:w-24 xl:left-[-20px] 2xl:w-40  xl:top-[18%] 2xl:left-[-40px]  vert-move"
+              className="absolute opacity-[0.1] lg:w-16 lg:left-[-10px] lg:top-[23%] xl:w-24 xl:left-[-20px] 2xl:w-40  xl:top-[25%] 2xl:left-[-40px]  vert-move"
             />
             <img
               id="hidden"
               src="images/glas2.svg"
-              className="absolute opacity-[0.1] lg:w-16 xl:w-24  2xl:w-32  xl:xl:top-[28%] 2xl:xl:top-[38%] lg:top-[35%] right-0 vert-move "
+              className="absolute opacity-[0.1] lg:w-16 xl:w-24  2xl:w-32  xl:xl:top-[28%] 2xl:xl:top-[30%] lg:top-[35%] right-0 vert-move "
             />
 
             <img
@@ -656,7 +656,7 @@ const Page = () => {
               className="absolute opacity-[0.3]
            lg:w-8 lg:top-3 lg:left-44
            xl:w-24 xl:top-16 xl:left-56 
-           2xl:w-[76px] 2xl:h-[76px] 2xl:top-16 2xl:left-96  
+           2xl:w-[76px] 2xl:h-[76px] 2xl:top-28 2xl:left-96  
            zoom-in-out-box"
             />
             <img
@@ -680,7 +680,7 @@ const Page = () => {
                 className=" z-10 absolute  
                 lg:w-[50px] lg:h-[106px] lg:top-[50px] lg:right-[150px]
             xl:w-[50px] xl:h-[106px] xl:top-[87px] xl:right-[240px]
-            2xl:h-[106px] 2xl:top-[118px] 2xl:right-[325px]"
+            2xl:w-[90px] 2xl:h-[106px] 2xl:top-[188px] 2xl:right-[325px]"
               />
 
               <div className="flex flex-col mx-auto sm:flex-col lg:mb-0 lg:flex-row 2xl:gap-[30px] 2xl:mt-20 xl:gap-[20px] xl:mt-12  lg:mt-10  lg:gap-[12px] md:my-4 sm:my-3 my-5">
@@ -769,7 +769,7 @@ const Page = () => {
                 <p
                   className="my-3 mx-auto text-center lg:text-right  start text-[12px] leading-[15px] sm:text-[16px] sm:leading-[25px] sm:w-[350px]  md:w-[350px]  md:text-[16px] md:leading-[25px] lg:ml-0 lg:text-[12px] lg:leading-[20px] lg:mt-3 lg:w-[260px]
                    xl:text-[14px] xl:leading-[20px] xl:mt-5 xl:w-[305px] xl:ml-9 2xl:ml-0
-                   2xl:w-[421px] 2xl:h-[84px] 2xl:text-[18px] 2xl:leading-28px] 2xl:mt-8"
+                   2xl:w-[421px] 2xl:h-[84px] 2xl:text-[18px] 2xl:leading-[28px] 2xl:mt-8"
                   id="pera"
                 >
                   חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות משחקים

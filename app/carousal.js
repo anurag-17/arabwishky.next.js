@@ -140,7 +140,7 @@ const Carousal = () => {
               md:my-0 md:text-[35px] md:leading-[45px]
               lg:my-0 lg:text-[30px] lg:leading-[40px] lg:mt-0
               xl:text-[35px] xl:leading-45px]
-              2xl:text-[50px] 2xl:leading-[60px]
+              2xl:text-[50px] 2xl:leading-[60px] 2xl:mt-7
                "
                     id="head2"
                   >
@@ -148,7 +148,7 @@ const Carousal = () => {
                   </h1>
                 </div>
 
-                <div className="flex flex-col mt-1 lg:flex-row my-auto justify-between  xl:mt-[35px] 2xl:mt-[50px]  ">
+                <div className="flex flex-col mt-1 lg:flex-row my-auto justify-between  xl:mt-[35px] 2xl:mt-[70px]  ">
                 <div className=" lg:my-auto  2xl:w-[535px] w-2/6 sm:w-2/6 lg:w-2/6 md:mt-6 sm:mt-6 mt-3 lg:mt-5 xl:mt-0 mx-auto">
                     <img
                       src="images/Group22.webp"
@@ -243,7 +243,7 @@ const Carousal = () => {
               md:my-0 md:text-[35px] md:leading-[45px]
               lg:my-0 lg:text-[30px] lg:leading-[40px] lg:mt-0
               xl:text-[35px] xl:leading-45px]
-              2xl:text-[50px] 2xl:leading-[60px]
+              2xl:text-[50px] 2xl:leading-[60px] 2xl:mt-7
                "
                     id="head2"
                   >
@@ -251,7 +251,7 @@ const Carousal = () => {
                   </h1>
                 </div>
 
-                <div className="flex flex-col mt-1 lg:flex-row my-auto justify-between  xl:mt-[35px] 2xl:mt-[50px]  ">
+                <div className="flex flex-col mt-1 lg:flex-row my-auto justify-between  xl:mt-[35px] 2xl:mt-[70px]  ">
                 <div className=" lg:my-auto  2xl:w-[535px] w-2/6 sm:w-2/6 lg:w-2/6 md:mt-6 sm:mt-6 mt-3 lg:mt-5 xl:mt-0 mx-auto">
                 <img
                       src="images/Group33.webp"
@@ -346,7 +346,7 @@ const Carousal = () => {
               md:my-0 md:text-[35px] md:leading-[45px]
               lg:my-0 lg:text-[30px] lg:leading-[40px] lg:mt-0
               xl:text-[35px] xl:leading-45px]
-              2xl:text-[50px] 2xl:leading-[60px]
+              2xl:text-[50px] 2xl:leading-[60px] 2xl:mt-7
                "
                     id="head2"
                   >
@@ -354,7 +354,7 @@ const Carousal = () => {
                   </h1>
                 </div>
 
-                <div className="flex flex-col mt-1 lg:flex-row my-auto justify-between  xl:mt-[35px] 2xl:mt-[50px]  ">
+                <div className="flex flex-col mt-1 lg:flex-row my-auto justify-between  xl:mt-[35px] 2xl:mt-[70px]  ">
                 <div className=" lg:my-auto  2xl:w-[535px] w-2/6 sm:w-2/6 lg:w-2/6 md:mt-6 sm:mt-6 mt-3 lg:mt-5 xl:mt-0 mx-auto">
                 <img
                       src="images/Group44.webp"
