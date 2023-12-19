@@ -45,7 +45,7 @@ const Page = () => {
     <>
       <section>
         <div>
-          <div className="md:h-[390px] xl:h-screen lg:w-full " id="poster-img">
+          <div className="md:h-[390px] lg:h-[520px] xl:h-screen lg:w-full " id="poster-img">
             <nav
               className=" 
               pt-2
