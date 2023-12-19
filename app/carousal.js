@@ -63,7 +63,7 @@ const Carousal = () => {
                     md:text-[18px] md:leading-[25px] md:ml-[190px] md:w-[140px]
                     lg:w-[200px] lg:text-[20px] lg:leading-[25px] lg:mt-16 lg:ml-[133px]
                     xl:w-[240px] xl:text-[25px] xl:leading-[35px] xl:ml-[48%]
-                    2xl:text-[40px] 2xl:leading-[50px] 2xl:w-[415px] 2xl:mt-0 2xl:ml-[21%] xl:mt-6"
+                    2xl:text-[40px] 2xl:leading-[50px] 2xl:w-[405px] 2xl:mt-0 2xl:ml-[21%] xl:mt-6"
                         id="head2"
                       >
                         קבל 10% הנחה על ההזמנה הראשונה שלך
@@ -108,9 +108,8 @@ const Carousal = () => {
                         <button
                           className=" border border-[#C1B505] text-[#C1B505] 
                         text-[8px] py-[2px] px-[6px] mr-4 mb-2
-                        
-                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1  lg:my-3 xl:text-[18px] xl:py-1 xl:px-8 xl:my-3
-                    2xl:text-[20px] 2xl:leading-[30px] 2xl:py-[10px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-4 2xl:mr-[4%]"
+                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1  lg:my-3  xl:my-3   xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  
+                    2xl:text-[20px] 2xl:leading-[30px]  2xl:w-[208px] 2xl:h-[54px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-4 2xl:mr-[4%]"
                           id="pera4"
                         >
                           קנה עכשיו
@@ -207,11 +206,10 @@ const Carousal = () => {
 
                       <div className=" ">
                         <button
-                          className=" border border-[#C1B505] text-[#C1B505] 
+                        className=" border border-[#C1B505] text-[#C1B505] 
                         text-[8px] py-[2px] px-[6px] mr-4 mb-2
-                        
-                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1  lg:my-3 xl:text-[18px] xl:py-1 xl:px-8 xl:my-3
-                    2xl:text-[20px] 2xl:leading-[30px] 2xl:py-[10px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-4 2xl:mr-[4%]"
+                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1  lg:my-3  xl:my-3   xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  
+                    2xl:text-[20px] 2xl:leading-[30px]  2xl:w-[208px] 2xl:h-[54px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-4 2xl:mr-[4%]"
                           id="pera4"
                         >
                           קנה עכשיו
@@ -310,9 +308,8 @@ const Carousal = () => {
                         <button
                           className=" border border-[#C1B505] text-[#C1B505] 
                         text-[8px] py-[2px] px-[6px] mr-4 mb-2
-                        
-                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1  lg:my-3 xl:text-[18px] xl:py-1 xl:px-8 xl:my-3
-                    2xl:text-[20px] 2xl:leading-[30px] 2xl:py-[10px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-4 2xl:mr-[4%]"
+                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1  lg:my-3  xl:my-3   xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  
+                    2xl:text-[20px] 2xl:leading-[30px]  2xl:w-[208px] 2xl:h-[54px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-4 2xl:mr-[4%]"
                           id="pera4"
                         >
                           קנה עכשיו
@@ -407,11 +404,10 @@ const Carousal = () => {
                       </div>
                       <div className=" ">
                         <button
-                          className=" border border-[#C1B505] text-[#C1B505] 
+                className=" border border-[#C1B505] text-[#C1B505] 
                         text-[8px] py-[2px] px-[6px] mr-4 mb-2
-                        
-                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1  lg:my-3 xl:text-[18px] xl:py-1 xl:px-8 xl:my-3
-                    2xl:text-[20px] 2xl:leading-[30px] 2xl:py-[10px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-4 2xl:mr-[4%]"
+                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1  lg:my-3  xl:my-3   xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  
+                    2xl:text-[20px] 2xl:leading-[30px]  2xl:w-[208px] 2xl:h-[54px] 2xl:px-[60px] 2xl:border-[3px] 2xl:my-4 2xl:mr-[4%]"
                           id="pera4"
                         >
                           קנה עכשיו

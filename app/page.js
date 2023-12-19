@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import menu from "../public/images/menu.webp";
@@ -30,6 +31,16 @@ import giftcaed from "../public/images/giftcaed.svg";
 import Carousal from "./carousal";
 
 const page = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+
+  const openDrawer = () => {
+    setIsDrawerOpen(true);
+  };
+
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+  };
   return (
     <>
       <section>
@@ -43,16 +54,95 @@ const page = () => {
               xl:pt-1 
               2xl:pt-2 "
             >
+            
               <div className="flex mx-auto justify-between 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
                 <ul className="flex  ">
                   <ul className="flex gap-2 justify-around my-auto 2xl:gap-[70px] xl:gap-[40px] lg:gap-[40px] ">
-                    <Link href="#">
-                      <Image
+                  <div className=" ml-3" id="nav-drawer">
+                <div className="text-center my-auto">
+                  <button
+                    className="  focus:ring-4  font-medium rounded-lg text-[10px] mx-auto focus:outline-none "
+                    type="button"
+                    onClick={openDrawer}
+                  >
+                    <div className="">
+                    <Image
                         src={menu}
                         alt="icon"
                         className=" w-2 sm:w-5 md:w-6 lg:w-5 xl:w-[30px] 2xl:w-[42px]"
                       />
-                    </Link>
+                    </div>
+                  </button>
+                </div>
+                {/* Drawer */}
+                {isDrawerOpen && (
+                  <div
+                    id="drawer-form"
+                    className="fixed top-0 left-0 z-40 h-screen  overflow-y-auto transition-transform -translate-x-5 bg-[#180412] w-5/12 sm:w-3/12 dark:bg-gray-800 xsm-drawer"
+                    tabIndex={-1}
+                    aria-labelledby="drawer-form-label"
+                  >
+                    <div>
+                      <button
+                        type="button"
+                        onClick={closeDrawer}
+                        className="text-gray-400  shadow-2xl text-sm  p-1 mt-2 mr-2 border rounded-lg float-right absolute right-0 top-3"
+                      >
+                        <img
+                          src="images/wrong.svg"
+                          className="mx-auto md:w-4 sm:w-3 w-2 lg:w-4 xl:w-5 2xl:w-8"
+                        />
+                      </button>
+                    </div>
+                    <div className="mt-10 ">
+                      <div className=" lg:w-3/12 xl:w-1/3 md:w-full sm:w-full my-4 mx-auto">
+                      <img
+                    src="images/logo.webp"
+                    className="2xl:w-[120px] 2xl:h-[120px] mx-auto
+                  sm:w-[25px] sm:h-[25px]
+                  xl:w-[80px] xl:h-[80px]
+                  lg:w-[60px] lg:h-[60px]
+                  md:w-[45px] md:h-[45px]
+                  w-[18px] h-[18px]"
+                  />
+
+                        
+                      </div>
+                      <hr />
+                      <ul className="flex flex-col">
+                      <br/>
+                        <li
+                          id="hover-underline-animation"
+                          className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px] sm:text-sm first-letter:uppercase text-center mt-2 mx-auto"
+                        >
+                          Home
+                        </li>
+                        <br />
+                        <li
+                          id="hover-underline-animation"
+                          className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-sm first-letter:uppercase text-center mx-auto"
+                        >
+                          About Me
+                        </li>
+                        <br />
+                        <li
+                          id="hover-underline-animation"
+                          className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-sm first-letter:uppercase text-center mx-auto"
+                        >
+                          Contact Us
+                        </li>
+                        <br />
+                        <li
+                          id="hover-underline-animation"
+                          className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-sm first-letter:uppercase text-center mx-auto"
+                        >
+                          About Me
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                )}
+              </div>
                     <Link href="#">
                       <Image
                         src={trash}
@@ -71,42 +161,31 @@ const page = () => {
                       <Image
                         src={search}
                         alt="icon"
-                        className=" w-2 ml-2 absolute sm:w-3 sm:ml-3 sm:mt-1  md:w-4 lg:w-1 lg:mt-[2px] md:ml-3 md:mt-2  xl:w-[14px]  2xl:w-[22px] xl:ml-4 xl:mt-2 2xl:mt-2 2xl:ml-4"
+                        className=" w-2 ml-2 absolute sm:w-3 sm:ml-3 sm:mt-1  md:w-4 lg:w-3 lg:mt-[5px] md:ml-3 md:mt-2  xl:w-[14px]  2xl:w-[22px] xl:ml-4 xl:mt-3 2xl:mt-3 2xl:ml-4"
                       />
                     </Link>
                   </ul>
                   <input
                     placeholder="חפש מוצרים"
                     type="search"
-                    className="  my-auto focus:outline-none text-[5px] py-[5px]
+                    className="  my-auto focus:outline-none  py-[5px] text-[8px]
                     rounded-md bg-[#FFFFFF0D] text-right cursor-pointer text-[#878787] relative p-0 
-                  sm:p-[2px] sm:w-5/12
-                  md:h-[30px]  md:w-[220px]
-                  lg:h-[30px]  lg:w-[280px]
-                  xl:h-[45px]  xl:w-[350px]
-                  2xl:h-[57px]  2xl:w-[437px] nav-input"
+                  sm:p-[2px] sm:w-5/12 sm:text-[10px]
+                  md:h-[30px]  md:w-[220px] md:text-[12px]
+                  lg:h-[30px]  lg:w-[280px] lg:text-[14px]
+                  xl:h-[45px]  xl:w-[350px] xl:text-[16px]
+                  2xl:h-[57px]  2xl:w-[437px] 2xl:text-[22px] nav-input"
                   />
                 </ul>
                 <ul className="">
-                  {/* <h1
-                    className="text-[#B15953] 
-                    sm:text-[20px]
-                    md:text-[25px]
-                   lg:text-[20px] leading-normal
-                   xl:text-[30px] 
-                  2xl:text-[48px] 2xl:leading-[58px]"
-                    id="heading1"
-                  >
-                    Logo
-                  </h1> */}
                   <img
                     src="images/logo.webp"
-                    className="2xl:w-[146px] 2xl:h-[146px]
-                  xl:w-[100px] xl:h-[100px]
-                  lg:w-[80px] lg:h-[80px]
-                  md:w-[60px] md:h-[60px]
-                  sm:w-[45px] sm:h-[45px]
-                  w-[20px] h-[20px]"
+                    className="2xl:w-[120px] 2xl:h-[120px]
+                  sm:w-[25px] sm:h-[25px]
+                  xl:w-[80px] xl:h-[80px]
+                  lg:w-[60px] lg:h-[60px]
+                  md:w-[45px] md:h-[45px]
+                  w-[18px] h-[18px]"
                   />
                 </ul>
               </div>
@@ -115,7 +194,7 @@ const page = () => {
               <div className=" text-right ">
                 <h1
                   className="text-[16px] leading-[18px] w-[100px]  mt-12 sm:w-[200px] 
-                  lg:text-right ml-auto  sm:text-[30px] sm:mt-8 sm:leading-[35px] md:text-[35px] md:mt-8 md:leading-[40px] lg:text-[45px]  lg:mt-8 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[45px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-20 2xl:w-[564px]"
+                  lg:text-right ml-auto  sm:text-[30px] sm:mt-8 sm:leading-[35px] md:text-[35px] md:mt-8 md:leading-[40px] lg:text-[45px]  lg:mt-8 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[90px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-36 2xl:w-[564px]"
                   id="head1"
                 >
                   ויסקי בלנדד סקוטי חדש
@@ -126,7 +205,7 @@ const page = () => {
                sm:text-[10px] sm:leading-[14px] sm:mt-2 sm:w-[250px]
                md:text-[12px] md:leading-[16px] md:mt-2   md:w-[300px]
                lg:text-[10px] lg:leading-[20px] lg:mt-10 lg:w-[320px]  
-                 xl:text-[13px] xl:mt-12 xl:leading-[26px] xl:w-[415px] 2xl:text-[18px] 2xl:mt-[45px] 2xl:leading-[28px] 2xl:w-[571px]"
+                 xl:text-[13px] xl:mt-12 xl:leading-[26px] xl:w-[415px] 2xl:text-[18px] 2xl:mt-[70px] 2xl:leading-[28px] 2xl:w-[571px]"
                   id="pera"
                 >
                   חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות משחקים
@@ -141,8 +220,8 @@ const page = () => {
                   sm:text-[14px] sm:mt-4 sm:py-[2px] sm:px-4 sm:mb-8
                   md:text-[16px] md:mt-4 md:py-1 md:px-5 md:mb-12
                   lg:text-[14px] lg:mt-8 lg:py-1 lg:px-6 lg:mb-0
-                   xl:text-[18px] xl:mt-8 xl:py-[6px] xl:px-8 
-                   2xl:text-[25px]  2xl:mt-12  2xl:w-[208px] 2xl:h-[54px]"
+                   xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  xl:mt-8
+                   2xl:text-[20px] 2xl:leading-[30px] 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px] 2xl:mt-12 2xl:py-[0px] "
                   >
                     קנה עכשיו
                   </button>
@@ -397,8 +476,8 @@ const page = () => {
                                    sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
                                 md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                                lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                                  xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
-                                            2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
+                               xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8 
+                                            2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
                         >
                           הוספה לסל
                         </button>
@@ -444,8 +523,8 @@ const page = () => {
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
                     md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                     lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                    xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
-                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
+                    xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8
+                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
                         >
                           הוספה לסל
                         </button>
@@ -491,8 +570,8 @@ const page = () => {
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
                  my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                   xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
-                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
+                  xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  xl:mt-8 
+                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
                         >
                           {" "}
                           הוספה לסל
@@ -537,10 +616,10 @@ const page = () => {
                           id="button"
                           className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 text-[10px] py-[3px] px-[12px]
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
-                 text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
+                my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                   xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
-                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
+                  xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8 
+                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
                         >
                           הוספה לסל
                         </button>
@@ -639,8 +718,8 @@ const page = () => {
                  text-[8px] py-[2px] px-[8px] my-1  
                  md:text-[16px]  md:mt-4 md:py-2 md:px-14
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-8 
-                   xl:text-[14px] xl:leading-[20px] xl:mt-4 xl:py-2 xl:px-7 xl:w-[150px] xl:h-[37px]
-                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-8  2xl:w-[208px] 2xl:h-[54px]"
+                  xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  xl:mt-4  
+                   2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-8 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
                       >
                         הוספה לסל
                       </button>
@@ -686,8 +765,8 @@ const page = () => {
                   כרטיס נטען
                 </h1>
                 <p
-                  className=" text-right  start text-[12px] leading-[15px] sm:text-[16px] sm:leading-[25px] sm:w-[350px] sm:ml-[30%]  md:w-[350px] md:ml-[42%] md:text-[16px] md:leading-[25px] lg:ml-0 lg:text-[12px] lg:leading-[20px] lg:mt-3 
-                   xl:text-[14px] xl:leading-[20px] xl:mt-5 xl:w-[305px]
+                  className=" text-right  start text-[12px] leading-[15px] sm:text-[16px] sm:leading-[25px] sm:w-[350px] sm:ml-[30%]  md:w-[350px] md:ml-[42%] md:text-[16px] md:leading-[25px] lg:ml-0 lg:text-[12px] lg:leading-[20px] lg:mt-3 lg:w-[260px]
+                   xl:text-[14px] xl:leading-[20px] xl:mt-5 xl:w-[305px] xl:ml-9 2xl:ml-0
                    2xl:w-[421px] 2xl:h-[84px] 2xl:text-[18px] 2xl:leading-28px] 2xl:mt-8"
                   id="pera"
                 >
@@ -702,8 +781,8 @@ const page = () => {
                      sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
                   md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:mt-8 lg:py-1 lg:px-6 
-                   xl:text-[14px]  xl:mt-8 xl:py-2 xl:px-10
-                   2xl:text-[20px]  2xl:mt-14 2xl:mb-60 2xl:w-[208px] 2xl:h-[54px]"
+                  xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8 
+                    2xl:mt-14 2xl:mb-60 2xl:text-[20px] 2xl:leading-[30px] 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
                   >
                     מתנה עכשיו
                   </button>
