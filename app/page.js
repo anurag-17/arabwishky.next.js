@@ -34,18 +34,18 @@ const page = () => {
     <>
       <section>
         <div>
-          <div className="lg:h-screen lg:w-full " id="poster-img">
+          <div className="xl:h-screen lg:w-full " id="poster-img">
             <nav
               className=" 
-              sm:py-3
-              md:py-4
-            lg:py-6
-              xl:py-8 
-              2xl:py-5 "
+              sm:pt-1
+              md:pt-1
+            lg:pt-1
+              xl:pt-1 
+              2xl:pt-2 "
             >
               <div className="flex mx-auto justify-between 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
                 <ul className="flex  ">
-                  <ul className="flex gap-2 justify-around my-auto 2xl:gap-[70px] xl:gap-[40px] lg:gap-[35px] ">
+                  <ul className="flex gap-2 justify-around my-auto 2xl:gap-[70px] xl:gap-[40px] lg:gap-[40px] ">
                     <Link href="#">
                       <Image
                         src={menu}
@@ -71,20 +71,20 @@ const page = () => {
                       <Image
                         src={search}
                         alt="icon"
-                        className=" w-2 ml-12 absolute sm:w-3 sm:ml-3 sm:mt-1  md:w-4 lg:w-3 lg:mt-1 md:ml-3 md:mt-2  xl:w-[14px]  2xl:w-[22px] xl:ml-4 xl:mt-1 2xl:mt-2 2xl:ml-4"
+                        className=" w-2 ml-2 absolute sm:w-3 sm:ml-3 sm:mt-1  md:w-4 lg:w-1 lg:mt-[2px] md:ml-3 md:mt-2  xl:w-[14px]  2xl:w-[22px] xl:ml-4 xl:mt-2 2xl:mt-2 2xl:ml-4"
                       />
                     </Link>
                   </ul>
                   <input
                     placeholder="חפש מוצרים"
                     type="search"
-                    className=" w-1/2  my-auto focus:outline-none
+                    className="  my-auto focus:outline-none text-[5px] py-[5px]
                     rounded-md bg-[#FFFFFF0D] text-right cursor-pointer text-[#878787] relative p-0 
                   sm:p-[2px] sm:w-5/12
-                  md:p-1 md:w-2/4
-                  lg:h-8
-                  xl:h-10
-                  2xl:h-14  2xl:w-[437px] nav-input"
+                  md:h-[30px]  md:w-[220px]
+                  lg:h-[30px]  lg:w-[280px]
+                  xl:h-[45px]  xl:w-[350px]
+                  2xl:h-[57px]  2xl:w-[437px] nav-input"
                   />
                 </ul>
                 <ul className="">
@@ -112,35 +112,35 @@ const page = () => {
               </div>
             </nav>
             <div className=" flex justify-end mx-auto  2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
-              <div className=" text-right">
+              <div className=" text-right ">
                 <h1
-                  className="text-[16px] leading-[18px] w-[100px]  mt-3 sm:w-[200px] 
-                  lg:text-right ml-auto  sm:text-[30px] sm:mt-8 sm:leading-[35px] md:text-[35px] md:mt-8 md:leading-[40px] lg:text-[45px]  lg:mt-14 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[65px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-32 2xl:w-[564px]"
+                  className="text-[16px] leading-[18px] w-[100px]  mt-12 sm:w-[200px] 
+                  lg:text-right ml-auto  sm:text-[30px] sm:mt-8 sm:leading-[35px] md:text-[35px] md:mt-8 md:leading-[40px] lg:text-[45px]  lg:mt-8 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[45px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-20 2xl:w-[564px]"
                   id="head1"
                 >
                   ויסקי בלנדד סקוטי חדש
                 </h1>
 
                 <p
-                  className="text-white text-right ml-auto text-[6px] leading-[8px] w-[135px] mt-2 w-
+                  className="text-white text-right ml-auto text-[6px] leading-[8px] w-[145px] mt-3 w-
                sm:text-[10px] sm:leading-[14px] sm:mt-2 sm:w-[250px]
                md:text-[12px] md:leading-[16px] md:mt-2   md:w-[300px]
                lg:text-[10px] lg:leading-[20px] lg:mt-10 lg:w-[320px]  
-                 xl:text-[13px] xl:mt-14 xl:leading-[26px] xl:w-[415px] 2xl:text-[18px] 2xl:mt-[70px] 2xl:leading-[28px] 2xl:w-[571px]"
+                 xl:text-[13px] xl:mt-12 xl:leading-[26px] xl:w-[415px] 2xl:text-[18px] 2xl:mt-[45px] 2xl:leading-[28px] 2xl:w-[571px]"
                   id="pera"
                 >
                   חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות משחקים
                   אל, בדף ב יכול בויקיפדיה. או לערכים אווירונאוטיקה אחר, כלל
                   פיסיקה צרפתית אגרונומיה אל, בשפות היסטוריה של היא.
                 </p>
-                <div className="flex lg:mb-36 2xl:mt-8 mt-3 mb-7">
+                <div className="flex lg:mb-28 2xl:mt-8 mt-3 mb-7 ">
                   <button
                     id="button"
                     className=" border text-center border-[#C1B505] ml-auto text-[#C1B505] 
-                    text-[4px] px-[7px] 
+                    text-[5px] py-[2px] px-[10px] mb-8
                   sm:text-[14px] sm:mt-4 sm:py-[2px] sm:px-4 sm:mb-8
                   md:text-[16px] md:mt-4 md:py-1 md:px-5 md:mb-12
-                  lg:text-[14px] lg:mt-8 lg:py-1 lg:px-6
+                  lg:text-[14px] lg:mt-8 lg:py-1 lg:px-6 lg:mb-0
                    xl:text-[18px] xl:mt-8 xl:py-[6px] xl:px-8 
                    2xl:text-[25px]  2xl:mt-12  2xl:w-[208px] 2xl:h-[54px]"
                   >
@@ -164,7 +164,7 @@ const page = () => {
               <div className=" w-full ">
                 <h1
                   className="text-center text-black 
-                text-[14px] mt-5 mb-1
+                text-[20px] mt-5 mb-1
               sm:text-[25px] sm:leading-[40px] sm:mt-7 sm:mb-3
               md:text-[25px] md:leading-[40px] md:mt-9 md:mb-4
              lg:text-[25px] lg:leading-[30px] lg:my-5
@@ -175,7 +175,7 @@ const page = () => {
                 >
                   קניות לפי קטגוריות
                 </h1>
-                <div className="flex flex-col lg:flex-row gap-5 justify-center">
+                <div className="flex flex-col lg:flex-row gap-5 justify-center 2xl:mt-5 mt-3">
                   <div>
                     <Image
                       src="/images/Rectangle15.png"
@@ -192,7 +192,7 @@ const page = () => {
                     />
                     <h1
                       className="text-center 
-                      text-[10px] mt-2
+                      text-[12px] mt-2
                 sm:text-[14px] sm:leading-[25px]
                 md:t6xt-[18px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
@@ -220,7 +220,7 @@ const page = () => {
                     />
                     <h1
                       className="text-center
-                      text-[10px] mt-2 
+                      text-[12px] mt-2 
                       sm:text-[14px] sm:leading-[25px]
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
@@ -246,7 +246,7 @@ const page = () => {
                     />
                     <h1
                       className="text-center 
-                      text-[10px] mt-2
+                      text-[12px] mt-2
                       sm:text-[14px] sm:leading-[25px]
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
@@ -274,7 +274,7 @@ const page = () => {
                     />
                     <h1
                       className="text-center 
-                      text-[10px] mt-2
+                      text-[12px] mt-2
                       sm:text-[14px] sm:leading-[25px]
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
@@ -300,7 +300,7 @@ const page = () => {
                     />
                     <h1
                       className="text-center 
-                      text-[10px] mt-2
+                      text-[12px] mt-2
                       sm:text-[14px] sm:leading-[25px]
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
@@ -328,7 +328,7 @@ const page = () => {
                     />
                     <h1
                       className="text-center 
-                      text-[10px] mt-2
+                      text-[12px] mt-2
                       sm:text-[14px] sm:leading-[25px]
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
@@ -342,9 +342,9 @@ const page = () => {
                   </div>
                 </div>
 
-                <div className="2xl:mt-32 mx:auto 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] mx-auto">
+                <div className="2xl:mt-32 mx:auto 2xl:w-[1200px] xl:w-[850px] lg:w-[650px]  mx-auto">
                   <h1
-                    className="text-center text-black mt-5
+                    className="text-center text-black text-[25px] mt-10
                 sm:text-[25px] sm:leading-[25px] sm:mt-14  
                 md:text-[30px] md:leading-[25px] md:mt-16  
           lg:text-[25px] lg:leading-[35px] lg:mb-3 lg:mt-16  
@@ -363,7 +363,7 @@ const page = () => {
                       "
                     >
                       <div
-                        className=" mt-3 lg:mt-0 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px] 2xl:pb-10"
+                        className=" mt-3 lg:mt-0 w-full sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px] 2xl:pb-10"
                         id="imgbg"
                       >
                         <Image
@@ -374,7 +374,7 @@ const page = () => {
                         />
                       </div>
                       <div
-                        className="text-center  sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
+                        className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
                         lg:text-[8px] lg:leading-[16px] lg:mt-3
                         xl:text-[10px] xl:leading-[20px] xl:mt-5
                         2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
@@ -393,7 +393,7 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-center border  border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[8px] py-[2px] px-[8px] mt-1 mb-5
+                          className="text-center border  border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[10px] py-[3px] px-[12px] mt-1 mb-5
                                    sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
                                 md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                                lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
@@ -410,7 +410,7 @@ const page = () => {
                       "
                     >
                       <div
-                        className=" mt-3 lg:mt-0 w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
+                        className=" mt-3 lg:mt-0 w-full sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
                         id="imgbg"
                       >
                         <Image
@@ -421,7 +421,7 @@ const page = () => {
                         />
                       </div>
                       <h1
-                        className="text-center sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
+                        className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
                         lg:text-[8px] lg:leading-[16px] lg:mt-3
                     xl:text-[10px] xl:leading-[20px] xl:mt-5
                      2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
@@ -440,7 +440,7 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[8px] py-[2px] px-[8px] mt-1 mb-5
+                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[10px] py-[3px] px-[12px] mt-1 mb-5
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
                     md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                     lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
@@ -457,7 +457,7 @@ const page = () => {
                       "
                     >
                       <div
-                        className=" w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
+                        className=" w-full sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
                         id="imgbg"
                       >
                         <Image
@@ -468,7 +468,7 @@ const page = () => {
                         />
                       </div>
                       <h1
-                        className="text-center sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
+                        className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
                         lg:text-[8px] lg:leading-[16px] lg:mt-3
                     xl:text-[10px] xl:leading-[20px] xl:mt-5
                      2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
@@ -487,9 +487,9 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mt-1 mb-5
+                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mt-1 mb-5 text-[10px] py-[3px] px-[12px]
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
-                 text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
+                 my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
                    xl:text-[14px] xl:leading-[20px] xl:mt-8 xl:py-2 xl:px-7
                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:w-[208px] 2xl:h-[54px]"
@@ -505,7 +505,7 @@ const page = () => {
                       "
                     >
                       <div
-                        className=" w-[140px] sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
+                        className="w-full sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
                         id="imgbg"
                       >
                         <Image
@@ -516,7 +516,7 @@ const page = () => {
                         />
                       </div>
                       <h1
-                        className="text-center sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
+                        className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
                         lg:text-[8px] lg:leading-[16px] lg:mt-3
                     xl:text-[10px] xl:leading-[20px] xl:mt-5
                      2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
@@ -535,7 +535,7 @@ const page = () => {
                       <div className="flex ">
                         <button
                           id="button"
-                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 
+                          className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 text-[10px] py-[3px] px-[12px]
                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
                  text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
@@ -552,23 +552,26 @@ const page = () => {
             </div>
           </div>
 
-          <div className="lg:h-[985px] xl:h-screen" id="div3">
+          <div className=" xl:h-screen pt-2 sm:pt-5 sm:pb-5 md:pt-2 lg:pt-10  md:pb-0 lg:pb-0  xl:pt-[1px]  2xl:pt-20 " id="div3">
             <Carousal />
           </div>
           <div
-            className="2xl:h lg:h-screen xl:py-16 lg:pt-10 pt-10 relative"
+            className="2xl:h lg:h-screen xl:py-16  lg:pt-10 pt-10 relative"
             id="div4"
           >
             <img
+            id="hidden"
               src="images/glas.svg"
               className="absolute opacity-[0.1] lg:w-16 lg:left-[-10px] lg:top-[23%] xl:w-24 xl:left-[-20px] 2xl:w-40  xl:top-[18%] 2xl:left-[-40px]  vert-move"
             />
             <img
+              id="hidden"
               src="images/glas2.svg"
               className="absolute opacity-[0.1] lg:w-16 xl:w-24  2xl:w-32  xl:xl:top-[28%] 2xl:xl:top-[38%] lg:top-[35%] right-0 vert-move "
             />
 
             <img
+              id="hidden"
               src="images/star.svg"
               className="absolute opacity-[0.3]
            lg:w-8 lg:top-3 lg:left-44
@@ -577,20 +580,22 @@ const page = () => {
            zoom-in-out-box"
             />
             <img
+              id="hidden"
               src="images/star2.svg"
               className="absolute 
            lg:w-16 lg:bottom-12 lg:left-28
           xl:w-[180px] xl:bottom-24 xl:left-32
           2xl:w-[200px] 2xl:h-[240px] 2xl:bottom-14 2xl:left-52  starroted"
             />
-            <div className="mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px]  w-[280px]">
+            <div className="mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px]  w-[280px] ">
               <h1
-                className=" text-center text-white 2xl:text-[50px] 2xl:leading-[60px] xl:text-[35px] xl:leading-[40px] lg:text-[22px] lg:leading-[30px]"
+                className=" text-center text-white 2xl:text-[50px] 2xl:leading-[60px] xl:text-[35px] xl:leading-[40px] lg:text-[22px] lg:leading-[30px] md:text-[30px] sm:text-[25px] text-[25px] "
                 id="head2"
               >
                 דילים לאירועים
               </h1>
               <img
+                id="hidden"
                 src="images/ring.svg"
                 className=" z-10 absolute  
                 lg:w-[50px] lg:h-[106px] lg:top-[50px] lg:right-[150px]
@@ -598,7 +603,7 @@ const page = () => {
             2xl:h-[106px] 2xl:top-[118px] 2xl:right-[325px]"
               />
 
-              <div className="flex flex-col mx-auto sm:flex-col lg:mb-0 lg:flex-row 2xl:gap-[30px] 2xl:mt-16 xl:gap-[20px] xl:mt-12  lg:mt-10  lg:gap-[12px] ">
+              <div className="flex flex-col mx-auto sm:flex-col lg:mb-0 lg:flex-row 2xl:gap-[30px] 2xl:mt-16 xl:gap-[20px] xl:mt-12  lg:mt-10  lg:gap-[12px] md:my-4 sm:my-3 my-5">
                 <div
                   className=" w-full h-auto mx-auto
                 2xl:w-[539px] xl:w-[750px] lg:w-[620px]"
@@ -619,6 +624,8 @@ const page = () => {
                       <h1
                         id="head2"
                         className="   mx-auto text-right
+                        sm:w-[140px] sm:h-[90px] sm:text-[25px] sm:leading-[30px]
+                        md:w-[170px] md:h-[100px] md:text-[30px] md:leading-[40px]
                         lg:w-[110px] lg:h-[60px] lg:text-[20px] lg:leading-[30px]
                         xl:w-[150px] xl:h-[80px] xl:text-[28px] xl:leading-[40px] 
                          2xl:w-[209px] 2xl:h-[100px] 2xl:text-[40px] 2xl:leading-[50px] "
@@ -628,8 +635,9 @@ const page = () => {
                       <button
                         id="button"
                         className=" text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 
-                    sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
-                 text-[8px] py-[2px] px-[8px] my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
+                    sm:text-[14px]  sm:mt-0 sm:py-2 sm:px-10
+                 text-[8px] py-[2px] px-[8px] my-1  
+                 md:text-[16px]  md:mt-4 md:py-2 md:px-14
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-8 
                    xl:text-[14px] xl:leading-[20px] xl:mt-4 xl:py-2 xl:px-7 xl:w-[150px] xl:h-[37px]
                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-8  2xl:w-[208px] 2xl:h-[54px]"
@@ -647,7 +655,7 @@ const page = () => {
                     src={div455}
                   />
                 </div>
-                <div className="z-10 absolute xl:bottom-60 xl:right-28 lg:bottom-40 lg:right-24 opacity-[0.2] 2xl:w-[150px]">
+                <div   id="hidden" className="z-10 absolute xl:bottom-60 xl:right-28 lg:bottom-40 lg:right-24 opacity-[0.2] 2xl:w-[150px]">
                   <img
                     src="images/minis.svg"
                     className=" mx-auto 2xl:w-[76px] 2xl:h-[76px] lg:w-[56px] lg:h-[56px]"
@@ -667,8 +675,9 @@ const page = () => {
                   src={giftcaed}
                   className="2xl:w-[573px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px]  lg:w-[280px] sm:w-[300px] md:w-[350px] mx-auto lg:mx-0"
                 />
-                <img src="images/underline.svg" className="w-[1070px] h-[23px] 2xl:mt-5"/>
+                <img src="images/underline.svg" className="lg:w-[1070px] lg:h-[23px] 2xl:mt-5  mx-auto" />
               </div>
+              <div className="flex justify-center">
               <div className="w-full 2xl:mt-36 2xl:w-[421px] xl:w-[340px] xl:mt-24 mx-auto">
                 <h1
                   className="text-[18px] sm:text-[30px] md:text-[35px]  lg:text-[27px] lg:leading-[35px] xl:text-[40px] xl:leading-[45px] 2xl:text-[50px] 2xl:leading-[60px] text-right"
@@ -689,8 +698,8 @@ const page = () => {
                 <div className="flex justify-end">
                   <button
                     id="button"
-                    className="text-center border border-[#C1B505] ml-auto text-[#C1B505] text-[10px] py-[2px] px-[10px] my-2
-                    sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
+                    className="text-center border border-[#C1B505] ml-auto text-[#C1B505] text-[10px] py-[2px] px-[10px] mt-2 mb-10
+                     sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
                   md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:mt-8 lg:py-1 lg:px-6 
                    xl:text-[14px]  xl:mt-8 xl:py-2 xl:px-10
@@ -700,13 +709,14 @@ const page = () => {
                   </button>
                 </div>
               </div>
+              </div>
             </div>
-            <div className="bg-[#9B2A0C] sm:py-10  lg:py-16 xl:py-20 2xl:p-16 mx-auto">
+            <div className="bg-[#9B2A0C] py-10 sm:py-10  lg:py-16 xl:py-20 2xl:p-16 mx-auto">
               <div className="flex flex-col justify-between items-center lg:flex-row mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[208px]">
                 <div className="flex w-full lg:w-8/12 mx-auto lg:mx-0  lg:my-0 sm:w-1/2 2xl:w-[779px] 2xl:h-[70px]">
                   <span
-                    className="bg-[#C1B505] text-[#FFFFFF] text-[10px] py-1 px-2  rounded-sm sm:p-2 md:p-3 items-center   text-center 
-                     lg:p-[10px] xl:p-[14px] 2xl:p-[18px] 2xl:px-[30px] lg:rounded-md rounded-r-none lg:rounded-r-none 2xl:text-[20px] 2xl:leading-[30px] xl:w-[108px] 2xl:w-[208px] "
+                    className="bg-[#C1B505] text-[#FFFFFF] text-[10px] py-1 px-2  rounded-sm sm:p-2 md:p-3 items-center text-center 
+                     lg:p-[10px] xl:p-[14px] 2xl:p-[18px] 2xl:px-[30px] lg:rounded-md rounded-r-none lg:rounded-r-none 2xl:text-[20px] 2xl:leading-[30px] lg:w-[70px]  xl:w-[108px] 2xl:w-[208px] "
                     id="pera4"
                   >
                     הירשם
@@ -737,9 +747,9 @@ const page = () => {
               </div>
             </div>
           </div>
-          <footer className="bg-[#060201] lg:pt-12 xl:pt-24 pt-5">
+          <footer className="bg-[#060201] md:pt-10 lg:pt-12 xl:pt-24 pt-5">
             <div className="flex flex-col-reverse lg:flex-row justify-between mx-auto 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px]  w-[280px]">
-              <div className=" lg:my-0  lg:mx-0">
+              <div className="sm:my-2 lg:my-0  lg:mx-0">
                 <h1
                   className=" mt-2 text-[10px] sm:text-[12px] md:text-[14px] text-white lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] 2xl:text-[18px] 2xl:leading-[26px] text-center lg:text-right"
@@ -749,17 +759,21 @@ const page = () => {
                 </h1>
                 <ul className=" my-2 flex justify-center gap-4 2xl:my-6 lg:justify-end lg:gap-5 lg:my-3 xl:gap-7 xl:my-4  lg:text-right">
                   <li>
+                  <Link href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzAyOTYwMDAzLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D" target="_blank">
                     <img
                       src="images/facebookk.svg"
-                      className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full"
+                      className="cursor-pointer w-4 sm:w-3 md:w-5 lg:w-full"
                     />
+                    </Link>
                     {""}
                   </li>
                   <li>
+                  <Link href="https://www.instagram.com/accounts/login/" target="_blank">
                     <img
                       src="images/instagg.svg"
-                      className="cursor-pointer w-4 sm:w-6 md:w-8 lg:w-full "
+                      className="cursor-pointer w-4 sm:w-3 md:w-5 lg:w-full "
                     />
+                    </Link>
                     {""}
                   </li>
                 </ul>
@@ -769,7 +783,7 @@ const page = () => {
                 >
                   קנייתך באתר מאובטחת ומוכרת ע”י חברות האשראי
                 </p>
-                <ul className="flex gap-1 justify-center lg:justify-end lg:my-6 xl:my-10">
+                <ul className="flex gap-1 justify-center lg:justify-end md:my-3 lg:my-6 xl:my-10">
                   <img
                     src="images/visa.jpg"
                     className=" w-8  sm:w-10 md:w-12 2xl:w-[58px] 2xl:h-[34px] xl:w-[40px] xl:h-[24px] lg:w-[25px] lg:h-[20px] rounded-md"
@@ -788,7 +802,7 @@ const page = () => {
                   />
                 </ul>
               </div>
-              <div className=" lg:my-0 mx-auto  lg:mx-0">
+              <div className=" sm:my-2 md:my-2 lg:my-0 mx-auto  lg:mx-0">
                 <h1
                   className="text-[10px] sm:text-[12px] md:text-[14px] mt-2 text-white lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] xl:leading-[30px] 2xl:leading-[26px] 2xl:text-[18px] text-center lg:text-right"
@@ -797,15 +811,19 @@ const page = () => {
                   צור קשר
                 </h1>
                 <ul className="text-[8px] sm:text-[10px] md:text-[12px] my-2 xl:my-6 text-center lg:text-right">
-                  <li className=" text-[#FFFFFF] cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px]">
+                <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                 <Link href="mailto:alcohol.market@gmail.com" >
                     alcohol.market@gmail.com
-                  </li>
-                  <li className=" text-[#FFFFFF] cursor-pointer sm:my-2 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px]">
+                  </Link>
+                 </li>
+                 <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                 <Link href="tel:+38 9878 5897 598" >
                     +38 9878 5897 598
-                  </li>
+                  </Link>
+                 </li>
                 </ul>
               </div>
-              <div className=" lg:my-0  mx-auto  lg:mx-0 ">
+              <div className="sm:my-2 md:my-2 lg:my-0  mx-auto  lg:mx-0 ">
                 <h1
                   className="text-[10px] sm:text-[12px] md:text-[14px] mt-2  text-[#FFFFFF]  lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] xl:leading-[30px] 2xl:leading-[26px] 2xl:text-[18px] text-center lg:text-right"
@@ -813,11 +831,11 @@ const page = () => {
                 >
                   קישורים אחרים
                 </h1>
-                <ul className="text-[8px] sm:text-[10px] md:text-[12px] sm:my-3 my-2 text-[#FFFFFF]  xl:my-6 text-center lg:text-right">
-                  <li className="  cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                <ul className="text-[8px] sm:text-[10px] md:text-[12px] sm:my-1 my-2 text-[#FFFFFF]  xl:my-6 text-center lg:text-right">
+                  <li id="" className="  cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
                     אלכוהול לאירועים
                   </li>
-                  <li className=" cursor-pointer sm:my-2 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                  <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
                     מתנות ומארזים
                   </li>
                   <li className="cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
@@ -825,8 +843,8 @@ const page = () => {
                   </li>
                 </ul>
               </div>
-              <div className=" lg:my-0 lg:mx-0">
-                <ul className="flex justify-end">
+              <div className=" sm:my-2 md:my-2 lg:my-0 lg:mx-0">
+                <ul className="flex justify-center lg:justify-end">
                   <img
                     src="images/logo.webp"
                     className=" 2xl:w-[120px] 2xl:h-[120px]

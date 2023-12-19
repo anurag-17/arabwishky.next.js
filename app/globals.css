@@ -47,8 +47,17 @@
      
   }
 }
+@media (max-width:1024px){
+  #hidden{
+    display: none;
+  }
+}
 
-
+@media (max-width:1024px){
+  #div4{
+    background-color: #180B04;
+  }
+}
 
 .nav-input ::placeholder{
   color: #878787;
@@ -121,9 +130,9 @@ font-family: 'Cooperative';
   font-weight: 300;
 }
 
-li:hover {
+/* li:hover {
   text-decoration: underline;
-}
+} */
 
 
 
@@ -190,60 +199,56 @@ img.vert-move {
 
 
 
-/* 
 #w3rcontainer{
   border: 1px solid #cccfdb;
   border-radius: 1px;
 } 
 #hover-underline-animation {
- display: inline-block;
- position: relative;
-
+  display: inline-block;
+  position: relative;
 }
 
 #hover-underline-animation:after {
- content: '';
-
- width: 100%;
- transform: scaleX(0);
- height: 2px;
- bottom: 0;
- left: 0;
- background-color: #000000;
- transform-origin: bottom right;
- transition: transform 0.25s ease-out;
+  content: '';
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out, width 0.25s ease-out; /* Added width transition */
 }
 
 #hover-underline-animation:hover:after {
- transform: scaleX(1);
- transform-origin: bottom left;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
-
 
 li {
   position: relative;
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 
 li:hover {
-  color: #000;
+  color: #fff;
 }
 
 li::before {
   content: "";
   position: absolute;
   display: block;
-  width: 100%; 
+  width: 0; /* Set initial width to 0 */
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #fff;
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, width 0.3s ease; /* Added width transition */
 }
 
 li:hover::before {
   transform: scaleX(1);
+  width: 100%; /* Set width to 100% on hover */
 }
- */

@@ -13,7 +13,7 @@ const Carousal = () => {
   };
 
   return (
-    <div className="pt-2 sm:pt-5 sm:pb-5 md:pt-8 lg:pt-10   lg:pb-0  xl:pt-[1px]  2xl:pt-0 ">
+    <div className=" ">
       <div
         id="animation-carousel"
         className="relative  mx-auto xl:mt-10  2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px] 2xl:py-0 2xl:my-0 xl:py-0"
@@ -29,7 +29,7 @@ const Carousal = () => {
             data-carousel-item=""
           >
             <div className=" ">
-              <div className="flex flex-col mx-auto 2xl:w-[1000px] xl:w-[700px]  lg:w-[500px] sm:w-[400px] md:w-[500px] w-[240px] 2xl:py-28 xl:py-10">
+              <div className="flex flex-col mx-auto 2xl:w-[1000px] xl:w-[700px]  lg:w-[500px] sm:w-[400px] md:w-[500px] w-[240px] 2xl:py-0 xl:py-10">
                 <div>
                   <h1
                     className="text-center text-white 
@@ -131,7 +131,7 @@ const Carousal = () => {
             data-carousel-item=""
           >
             <div className=" ">
-              <div className="flex flex-col mx-auto 2xl:w-[1000px] xl:w-[700px]  lg:w-[500px] sm:w-[400px] md:w-[500px] w-[240px] 2xl:py-28 xl:py-10">
+              <div className="flex flex-col mx-auto 2xl:w-[1000px] xl:w-[700px]  lg:w-[500px] sm:w-[400px] md:w-[500px] w-[240px] 2xl:py-0 xl:py-10">
                 <div>
                   <h1
                     className="text-center text-white 
@@ -232,7 +232,7 @@ const Carousal = () => {
             data-carousel-item=""
           >
             <div className=" ">
-              <div className="flex flex-col mx-auto 2xl:w-[1000px] xl:w-[700px]  lg:w-[500px] sm:w-[400px] md:w-[500px] w-[240px] 2xl:py-28 xl:py-10">
+              <div className="flex flex-col mx-auto 2xl:w-[1000px] xl:w-[700px]  lg:w-[500px] sm:w-[400px] md:w-[500px] w-[240px] 2xl:py-0 xl:py-10">
                 <div>
                   <h1
                     className="text-center text-white 
@@ -332,7 +332,7 @@ const Carousal = () => {
             data-carousel-item=""
           >
             <div className=" ">
-              <div className="flex flex-col mx-auto 2xl:w-[1000px] xl:w-[700px]  lg:w-[500px] sm:w-[400px] md:w-[500px] w-[240px] 2xl:py-28 xl:py-10">
+              <div className="flex flex-col mx-auto 2xl:w-[1000px] xl:w-[700px]  lg:w-[500px] sm:w-[400px] md:w-[500px] w-[240px] 2xl:py-0 xl:py-10">
                 <div>
                   <h1
                     className="text-center text-white 
@@ -427,7 +427,7 @@ const Carousal = () => {
         {/* Slider controls */}
         <button
           type="button"
-          className="absolute 2xl:top-[57%] 2xl:bottom-[40%]  2xl:mt-[300px] xl:top-[72%] xl:bottom-[40%] lg:top-[50%] lg:bottom-[40%] start-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-[68px] 2xl:w-[68px]  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
+          className="absolute 2xl:top-[30%] 2xl:bottom-[40%]  2xl:mt-[300px] xl:top-[72%] xl:bottom-[40%] lg:top-[50%] lg:bottom-[40%] md:top-[45%] md:bottom-[40%] sm:top-[45%] sm:bottom-[40%] top-[45%] bottom-[40%] start-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-[68px] 2xl:w-[68px]  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
           data-carousel-prev=""
           onClick={handlePrevClick}
         >
@@ -438,7 +438,7 @@ const Carousal = () => {
         </button>
         <button
           type="button"
-          className="absolute 2xl:top-[57%] 2xl:bottom-[40%]  2xl:mt-[300px] xl:top-[72%] xl:bottom-[40%] lg:top-[50%] lg:bottom-[40%]  end-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-[68px] 2xl:w-[68px]  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
+          className="absolute 2xl:top-[30%] 2xl:bottom-[40%]  2xl:mt-[300px] xl:top-[72%] xl:bottom-[40%] lg:top-[50%] lg:bottom-[40%] md:top-[45%] md:bottom-[40%]  sm:top-[45%] sm:bottom-[40%] top-[45%] bottom-[40%] end-0 z-30 flex items-center justify-center h-4 w-4 sm:h-8 sm:w-8 md:h-8 md:w-8 lg:h-10 lg:w-10 xl:h-12 xl:w-12 2xl:h-[68px] 2xl:w-[68px]  cursor-pointer group focus:outline-none bg-[#ffffff33] 2xl:p-1 rounded-full "
           data-carousel-next=""
           onClick={handleNextClick}
         >
