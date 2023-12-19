@@ -718,7 +718,7 @@ const Page = () => {
                  text-[8px] py-[2px] px-[8px] my-1  
                  md:text-[16px]  md:mt-4 md:py-2 md:px-14
                   lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-8 
-                  xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  xl:mt-4  
+                  xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[150px] xl:h-[38px]  xl:mt-4  
                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-8 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
                       >
                         הוספה לסל
