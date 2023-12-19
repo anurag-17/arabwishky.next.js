@@ -30,7 +30,7 @@ import facebookk from "../public/images/facebookk.svg";
 import giftcaed from "../public/images/giftcaed.svg";
 import Carousal from "./carousal";
 
-const page = () => {
+const Page = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
 
@@ -950,4 +950,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
