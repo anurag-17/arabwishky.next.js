@@ -137,7 +137,7 @@ const Page = () => {
                           id="hover-underline-animation"
                           className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-[10px] text-[8px] first-letter:uppercase text-center mx-auto"
                         >
-                          About Me
+                          About Us
                         </li>
                       </ul>
                     </div>
