@@ -33,7 +33,6 @@ import Carousal from "./carousal";
 const Page = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-
   const openDrawer = () => {
     setIsDrawerOpen(true);
   };
@@ -45,187 +44,46 @@ const Page = () => {
     <>
       <section>
         <div>
-          <div className="md:h-[390px] lg:h-[520px] xl:h-screen lg:w-full " id="poster-img">
-            <nav
-              className=" 
-              pt-2
-              sm:pt-1
-              md:pt-1
-            lg:pt-1
-              xl:pt-1 
-              2xl:pt-2 "
+            <div className="h-[100vh] lg:w-full  flexCenter flex-col"
+              id="poster-img"
             >
-            
-              <div className="flex mx-auto my-auto justify-between 2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
-                <ul className="flex  ">
-                  <ul className="flex gap-2 justify-around my-auto 2xl:gap-[70px] xl:gap-[40px] lg:gap-[40px] md:gap-20 w-1/2">
-                  <div className=" ml-3" id="nav-drawer">
-                 <div className="text-center ">
-                  <button
-                    className="  focus:ring-4  font-medium rounded-lg text-[10px] mx-auto focus:outline-none "
-                    type="button"
-                    onClick={openDrawer}
-                  >
-                    <div className="">
-                    <Image
-                        src={menu}
-                        alt="icon"
-                        className=" w-3 sm:w-4 md:w-6 lg:w-5 xl:w-[30px] 2xl:w-[42px]"
-                      />
-                    </div>
-                  </button>
-                  </div>
-                  {/* Drawer */}
-                  {isDrawerOpen && (
-                  <div
-                    id="drawer-form"
-                    className="fixed top-0 left-0 z-40 h-screen  overflow-y-auto transition-transform -translate-x-5 bg-[#180412] w-5/12 sm:w-3/12 dark:bg-gray-800 xsm-drawer"
-                    tabIndex={-1}
-                    aria-labelledby="drawer-form-label"
-                  >
-                    <div>
-                      <button
-                        type="button"
-                        onClick={closeDrawer}
-                        className="text-gray-400  shadow-2xl text-sm  p-1 mt-2 mr-2 border rounded-lg float-right absolute right-0 top-3"
-                      >
-                        <img
-                          src="images/wrong.svg"
-                          className="mx-auto md:w-4 sm:w-3 w-2 lg:w-4 xl:w-5 2xl:w-8"
-                        />
-                      </button>
-                    </div>
-                    <div className="mt-10 ">
-                      <div className=" lg:w-3/12 xl:w-1/3 md:w-full sm:w-full my-4 mx-auto">
-                      <img
-                    src="images/logo.webp"
-                    className="2xl:w-[120px] 2xl:h-[120px] mx-auto
-                  sm:w-[35px] sm:h-[35px]
-                  xl:w-[80px] xl:h-[80px]
-                  lg:w-[60px] lg:h-[60px]
-                  md:w-[45px] md:h-[45px]
-                  w-[30px] h-[30px]"
-                  />
-
-                        
-                      </div>
-                      <hr />
-                      <ul className="flex flex-col">
-                      <br/>
-                        <li
-                          id="hover-underline-animation"
-                          className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-[10px] text-[8px]  first-letter:uppercase text-center mt-2 mx-auto"
-                        >
-                          Home
-                        </li>
-                        <br />
-                        <li
-                          id="hover-underline-animation"
-                          className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-[10px] text-[8px] first-letter:uppercase text-center mx-auto"
-                        >
-                        Orders
-                        </li>
-                        <br />
-                        <li
-                          id="hover-underline-animation"
-                          className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-[10px] text-[8px] first-letter:uppercase text-center mx-auto"
-                        >
-                          Contact Us
-                        </li>
-                        <br />
-                        <li
-                          id="hover-underline-animation"
-                          className=" text-[#fff] md:text-[10px] 2xl:text-[18px] xl:text-[14px] lg:text-[10px]  sm:text-[10px] text-[8px] first-letter:uppercase text-center mx-auto"
-                        >
-                          About Us
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                )}
-              </div>
-                    <Link href="#">
-                      <Image
-                        src={trash}
-                        alt="icon"
-                        className="  w-3 sm:w-4 md:w-5 lg:w-5 xl:w-[25px] 2xl:w-[36px] sm:my-1 my-[6px]"
-                      />
-                    </Link>
-                    <Link href="#">
-                      <Image
-                        src={userr}
-                        alt="icon"
-                        className=" w-3 sm:w-4 md:w-5 lg:w-5 xl:w-[25px] 2xl:w-[34px]  sm:my-1 my-[6px]"
-                      />
-                    </Link>
-                    <Link href="#">
-                      <Image
-                        src={search}
-                        alt="icon"
-                        className=" w-2 ml-2 mt-2 absolute sm:w-3 sm:ml-3 sm:mt-1  md:w-4 lg:w-3 lg:mt-[5px] md:ml-3 md:mt-2  xl:w-[14px]  2xl:w-[22px] xl:ml-4 xl:mt-3 2xl:mt-3 2xl:ml-4"
-                      />
-                    </Link>
-                  </ul>
-                  <input
-                    placeholder="חפש מוצרים"
-                    type="search"
-                    className="  my-auto focus:outline-none  py-[5px] text-[8px]
-                    rounded-md bg-[#FFFFFF0D] text-right cursor-pointer text-[#878787] relative p-0 
-                  sm:p-[2px] sm:w-5/12 sm:text-[10px]
-                  md:h-[30px]  md:w-[220px] md:text-[12px]
-                  lg:h-[30px]  lg:w-[280px] lg:text-[14px]
-                  xl:h-[45px]  xl:w-[350px] xl:text-[16px]
-                  2xl:h-[57px]  2xl:w-[437px] 2xl:text-[22px] nav-input"
-                  />
-                </ul>
-                <ul className="">
-                  <img
-                    src="images/logo.webp"
-                    className="2xl:w-[120px] 2xl:h-[120px]
-                  sm:w-[35px] sm:h-[35px]
-                  xl:w-[80px] xl:h-[80px]
-                  lg:w-[60px] lg:h-[60px]
-                  md:w-[45px] md:h-[45px]
-                  w-[30px] h-[30px]"
-                  />
-                </ul>
-              </div>
-            </nav>
-            <div className=" flex justify-end mx-auto  2xl:w-[1200px] xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
-              <div className=" text-right ">
-                <h1
-                  className="text-[16px] leading-[18px] w-[100px]  mt-12 sm:w-[200px] 
+          <div className="container mx-auto">
+              <div className=" flex justify-end items-center">
+                <div className=" text-right  flex justify-center flex-col">
+                  <h1
+                    className="text-[16px] leading-[18px] w-[100px]  mt-12 sm:w-[200px] 
                   lg:text-right ml-auto  sm:text-[30px] sm:mt-8 sm:leading-[35px] md:text-[35px] md:mt-14 md:leading-[40px] lg:text-[45px] mt-  lg:mt-8 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[90px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-36 2xl:w-[564px]"
-                  id="head1"
-                >
-                  ויסקי בלנדד סקוטי חדש
-                </h1>
+                    id="head1"
+                  >
+                    ויסקי בלנדד סקוטי חדש
+                  </h1>
 
-                <p
-                  className="text-white text-right ml-auto text-[6px] leading-[8px] w-[145px] mt-3 w-
+                  <p
+                    className="text-white text-right ml-auto text-[6px] leading-[8px] w-[145px] mt-3 w-
                sm:text-[10px] sm:leading-[14px] sm:mt-2 sm:w-[250px]
                md:text-[12px] md:leading-[16px] md:mt-2   md:w-[300px]
                lg:text-[10px] lg:leading-[20px] lg:mt-10 lg:w-[320px]  
                  xl:text-[13px] xl:mt-12 xl:leading-[26px] xl:w-[415px] 2xl:text-[18px] 2xl:mt-[70px] 2xl:leading-[28px] 2xl:w-[571px]"
-                  id="pera"
-                >
-                  חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות משחקים
-                  אל, בדף ב יכול בויקיפדיה. או לערכים אווירונאוטיקה אחר, כלל
-                  פיסיקה צרפתית אגרונומיה אל, בשפות היסטוריה של היא.
-                </p>
-                <div className="flex lg:mb-28 2xl:mt-8 mt-3 mb-7 ">
-                  <button
-                    id="button"
-                    className=" border text-center border-[#C1B505] ml-auto text-[#C1B505] 
-                    text-[5px] py-[2px] px-[10px] mb-8
-                  sm:text-[14px] sm:mt-4 sm:py-[2px] sm:px-4 sm:mb-8
-                  md:text-[16px] md:mt-4 md:py-1 md:px-5 md:mb-12
-                  lg:text-[14px] lg:mt-8 lg:py-1 lg:px-6 lg:mb-0
+                    id="pera"
+                  >
+                    חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות
+                    משחקים אל, בדף ב יכול בויקיפדיה. או לערכים אווירונאוטיקה
+                    אחר, כלל פיסיקה צרפתית אגרונומיה אל, בשפות היסטוריה של היא.
+                  </p>
+                  <div className="flex 2xl:mt-8 mt-3  ">
+                    <button
+                      id="button"
+                      className=" border text-center border-[#C1B505] ml-auto text-[#C1B505] 
+                    text-[5px] py-[2px] px-[10px]
+                  sm:text-[14px] sm:mt-4 sm:py-[2px] sm:px-4 
+                  md:text-[16px] md:mt-4 md:py-1 md:px-5
+                  lg:text-[14px] lg:mt-8 lg:py-1 lg:px-6 
                    xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  xl:mt-8
                    2xl:text-[20px] 2xl:leading-[30px] 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px] 2xl:mt-12 2xl:py-[0px] "
-                  >
-                    קנה עכשיו
-                  </button>
+                    >
+                      קנה עכשיו
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -632,7 +490,10 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="h-[370px] sm:h-[530px] md:h-[650px]  lg:h-[480px] xl:h-[620px] 2xl:h-[970px] pt-2 sm:pt-5 sm:pb-5 md:pt-2 lg:pt-14  md:pb-0 lg:pb-0  xl:pt-[1px]  2xl:pt-20  " id="div3">
+          <div
+            className="h-[370px] sm:h-[530px] md:h-[650px]  lg:h-[480px] xl:h-[620px] 2xl:h-[970px] pt-2 sm:pt-5 sm:pb-5 md:pt-2 lg:pt-14  md:pb-0 lg:pb-0  xl:pt-[1px]  2xl:pt-20  "
+            id="div3"
+          >
             <Carousal />
           </div>
           <div
@@ -640,7 +501,7 @@ const Page = () => {
             id="div4"
           >
             <img
-            id="hidden"
+              id="hidden"
               src="images/glas.svg"
               className="absolute opacity-[0.1] lg:w-16 lg:left-[-10px] lg:top-[23%] xl:w-24 xl:left-[-20px] 2xl:w-40  xl:top-[25%] 2xl:left-[-40px]  vert-move"
             />
@@ -736,7 +597,10 @@ const Page = () => {
                     src={div455}
                   />
                 </div>
-                <div   id="hidden" className="z-10 absolute xl:bottom-60 xl:right-28 lg:bottom-40 lg:right-24 opacity-[0.2] 2xl:w-[150px]">
+                <div
+                  id="hidden"
+                  className="z-10 absolute xl:bottom-60 xl:right-28 lg:bottom-40 lg:right-24 opacity-[0.2] 2xl:w-[150px]"
+                >
                   <img
                     src="images/minis.svg"
                     className=" mx-auto 2xl:w-[76px] 2xl:h-[76px] lg:w-[56px] lg:h-[56px]"
@@ -756,40 +620,43 @@ const Page = () => {
                   src={giftcaed}
                   className="2xl:w-[573px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px]  lg:w-[280px] sm:w-[300px] md:w-[350px] mx-auto lg:mx-0"
                 />
-                <img src="images/underline.svg" className="lg:w-[1070px] lg:h-[23px] 2xl:mt-5  mx-auto" />
+                <img
+                  src="images/underline.svg"
+                  className="lg:w-[1070px] lg:h-[23px] 2xl:mt-5  mx-auto"
+                />
               </div>
               <div className="flex justify-center">
-              <div className="w-full 2xl:mt-36 2xl:w-[421px] xl:w-[340px] xl:mt-24 mx-auto">
-                <h1
-                  className="text-[18px] sm:text-[30px] md:text-[35px]  lg:text-[27px] lg:leading-[35px] xl:text-[40px] xl:leading-[45px] 2xl:text-[50px] 2xl:leading-[60px] text-center lg:text-right"
-                  id="head2"
-                >
-                  כרטיס נטען
-                </h1>
-                <p
-                  className="my-3 mx-auto text-center lg:text-right  start text-[12px] leading-[15px] sm:text-[16px] sm:leading-[25px] sm:w-[350px]  md:w-[350px]  md:text-[16px] md:leading-[25px] lg:ml-0 lg:text-[12px] lg:leading-[20px] lg:mt-3 lg:w-[260px]
+                <div className="w-full 2xl:mt-36 2xl:w-[421px] xl:w-[340px] xl:mt-24 mx-auto">
+                  <h1
+                    className="text-[18px] sm:text-[30px] md:text-[35px]  lg:text-[27px] lg:leading-[35px] xl:text-[40px] xl:leading-[45px] 2xl:text-[50px] 2xl:leading-[60px] text-center lg:text-right"
+                    id="head2"
+                  >
+                    כרטיס נטען
+                  </h1>
+                  <p
+                    className="my-3 mx-auto text-center lg:text-right  start text-[12px] leading-[15px] sm:text-[16px] sm:leading-[25px] sm:w-[350px]  md:w-[350px]  md:text-[16px] md:leading-[25px] lg:ml-0 lg:text-[12px] lg:leading-[20px] lg:mt-3 lg:w-[260px]
                    xl:text-[14px] xl:leading-[20px] xl:mt-5 xl:w-[305px] xl:ml-9 2xl:ml-0
                    2xl:w-[421px] 2xl:h-[84px] 2xl:text-[18px] 2xl:leading-[28px] 2xl:mt-8"
-                  id="pera"
-                >
-                  חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות משחקים
-                  אל, בדף ב יכול בויקיפדיה. או לערכים אווירונאוטיקה אחר, כלל
-                  פיסיקה צרפתית אגרונומיה אל,
-                </p>
-                <div className="flex  lg:justify-end">
-                  <button
-                    id="button"
-                    className="mx-auto lg:mx-0 text-center border border-[#C1B505] ml-auto text-[#C1B505] text-[10px] py-[2px] px-[10px] mt-2 mb-10
+                    id="pera"
+                  >
+                    חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות
+                    משחקים אל, בדף ב יכול בויקיפדיה. או לערכים אווירונאוטיקה
+                    אחר, כלל פיסיקה צרפתית אגרונומיה אל,
+                  </p>
+                  <div className="flex  lg:justify-end">
+                    <button
+                      id="button"
+                      className="mx-auto lg:mx-0 text-center border border-[#C1B505] ml-auto text-[#C1B505] text-[10px] py-[2px] px-[10px] mt-2 mb-10
                      sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
                   md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:mt-8 lg:py-1 lg:px-6 
                   xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8 
                     2xl:mt-14 2xl:mb-60 2xl:text-[20px] 2xl:leading-[30px] 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
-                  >
-                    מתנה עכשיו
-                  </button>
+                    >
+                      מתנה עכשיו
+                    </button>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
             <div className="bg-[#9B2A0C] py-10 sm:py-10  lg:py-16 xl:py-20 2xl:p-16 mx-auto">
@@ -840,20 +707,26 @@ const Page = () => {
                 </h1>
                 <ul className=" my-2 flex justify-center gap-4 2xl:my-6 lg:justify-end lg:gap-5 lg:my-3 xl:gap-7 xl:my-4  lg:text-right">
                   <li>
-                  <Link href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzAyOTYwMDAzLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D" target="_blank">
-                    <img
-                      src="images/facebookk.svg"
-                      className="cursor-pointer w-4 sm:w-4 md:w-5 lg:w-full"
-                    />
+                    <Link
+                      href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzAyOTYwMDAzLCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"
+                      target="_blank"
+                    >
+                      <img
+                        src="images/facebookk.svg"
+                        className="cursor-pointer w-4 sm:w-4 md:w-5 lg:w-full"
+                      />
                     </Link>
                     {""}
                   </li>
                   <li>
-                  <Link href="https://www.instagram.com/accounts/login/" target="_blank">
-                    <img
-                      src="images/instagg.svg"
-                      className="cursor-pointer w-4 sm:w-4 md:w-6 lg:w-full "
-                    />
+                    <Link
+                      href="https://www.instagram.com/accounts/login/"
+                      target="_blank"
+                    >
+                      <img
+                        src="images/instagg.svg"
+                        className="cursor-pointer w-4 sm:w-4 md:w-6 lg:w-full "
+                      />
                     </Link>
                     {""}
                   </li>
@@ -892,16 +765,14 @@ const Page = () => {
                   צור קשר
                 </h1>
                 <ul className="text-[8px] sm:text-[10px] md:text-[12px] my-2 xl:my-6 text-center lg:text-right">
-                <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
-                 <Link href="mailto:alcohol.market@gmail.com" >
-                    alcohol.market@gmail.com
-                  </Link>
-                 </li>
-                 <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
-                 <Link href="tel:+38 9878 5897 598" >
-                    +38 9878 5897 598
-                  </Link>
-                 </li>
+                  <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                    <Link href="mailto:alcohol.market@gmail.com">
+                      alcohol.market@gmail.com
+                    </Link>
+                  </li>
+                  <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                    <Link href="tel:+38 9878 5897 598">+38 9878 5897 598</Link>
+                  </li>
                 </ul>
               </div>
               <div className="sm:my-2 md:my-2 lg:my-0  mx-auto  lg:mx-0 ">
@@ -913,7 +784,10 @@ const Page = () => {
                   קישורים אחרים
                 </h1>
                 <ul className="text-[8px] sm:text-[10px] md:text-[12px] sm:my-1 my-2 text-[#FFFFFF]  xl:my-6 text-center lg:text-right">
-                  <li id="" className="  cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                  <li
+                    id=""
+                    className="  cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]"
+                  >
                     אלכוהול לאירועים
                   </li>
                   <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
