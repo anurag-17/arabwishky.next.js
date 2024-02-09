@@ -1,116 +1,108 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lexend&display=swap'); */
-@font-face{
-    font-family : 'Inter';
-    src: url(../public/Inter/Inter-VariableFont_slnt\,wght.ttf);
-    font-style: normal;
-}
-@font-face{
-  font-family : 'Cooperative';
-  src: url(../public//cooperative/Hafontia\ -\ Cooperative\ Regular.otf);
+@font-face {
+  font-family: "Inter";
+  src: url(../public/Inter/Inter-VariableFont_slnt,wght.ttf);
   font-style: normal;
 }
-@font-face{
-  font-family : 'Assistant';
+@font-face {
+  font-family: "Cooperative";
+  src: url(../public/cooperative/Hafontia\ -\ Cooperative\ Regular.otf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "Assistant";
   src: url(../public/Assistant/Assistant-VariableFont_wght.ttf);
   font-style: normal;
 }
 
-
-#heading1{
-  font-family: 'Inter';
+#heading1 {
+  font-family: "Inter";
   /* font-family: 'Lexend'; */
   font-weight: 700;
 }
 
-
-
-@media (min-width:1280px){
-  #poster-img{
+@media (min-width: 1280px) {
+  #poster-img {
     background-image: url(../public//images/poster.webp);
     background-repeat: no-repeat;
-      background-size: cover;
-      /* background-size: 100%; */
-      background-position: top center;
-     
+    background-size: cover;
+    /* background-size: 100%; */
+    background-position: top center;
   }
 }
-@media (max-width:1280px){
-  #poster-img{
+@media (max-width: 1280px) {
+  #poster-img {
     background-image: url(../public//images/poster.webp);
     background-repeat: no-repeat;
-      background-size: cover;
-      background-size: 100%;
-      background-position: top center;
-     
+    background-size: cover;
+    background-size: 100%;
+    background-position: top center;
   }
 }
-@media (max-width:1024px){
-  #hidden{
+@media (max-width: 1024px) {
+  #hidden {
     display: none;
   }
 }
 
-@media (max-width:1023px){
-  #div4{
-    background-color: #180B04;
-    background-size: 0px !important;
-
-  }
-}
-@media (max-width:1023px){
-  #div3{
-    background-color: #641C0B;
+@media (max-width: 1023px) {
+  #div4 {
+    background-color: #180b04;
     background-size: 0px !important;
   }
 }
-@media (max-width:1024px){
-.bottm-input ::placeholder{
-  font-size: 3px !important; 
+@media (max-width: 1023px) {
+  #div3 {
+    background-color: #641c0b;
+    background-size: 0px !important;
+  }
 }
+@media (max-width: 1024px) {
+  .bottm-input ::placeholder {
+    font-size: 3px !important;
+  }
 }
 
-
-.nav-input ::placeholder{
+.nav-input ::placeholder {
   color: #878787;
   /* font-size: 10px; */
 }
 
-#head1{
-  background: linear-gradient(267deg, #C1B505 15.48%, #BE4E28 100.83%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-family: 'Cooperative';
+#head1 {
+  background: linear-gradient(267deg, #c1b505 15.48%, #be4e28 100.83%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Cooperative";
   font-weight: 400;
 }
-#head2{
-  font-family: 'Cooperative';
+#head2 {
+  font-family: "Cooperative";
   font-weight: 400;
 }
-#para2{
-  font-family: 'Cooperative';
+#para2 {
+  font-family: "Cooperative";
   font-weight: 700;
 }
-#pera{
-  font-family: 'Assistant';
+#pera {
+  font-family: "Assistant";
   font-weight: 300;
 }
-#pera3{
-  font-family: 'Assistant';
+#pera3 {
+  font-family: "Assistant";
   font-weight: 600;
 }
-#pera4{
-  font-family: 'Assistant';
+#pera4 {
+  font-family: "Assistant";
   font-weight: 700;
 }
-#button{
-  font-family: 'Assistant';
+#button {
+  font-family: "Assistant";
   font-weight: 700;
 }
-#imgbg{
+#imgbg {
   background-image: url(../public//images/img-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,66 +110,60 @@ font-family: 'Cooperative';
   background-position: bottom;
   padding-bottom: 15px;
 }
-#div3{
+#div3 {
   background-image: url(../public//images/div3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
-  background-position: right; 
+  background-position: right;
   padding-bottom: 20px;
- 
 }
-#div4{
+#div4 {
   background-image: url(../public//images/div4.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
   background-position: bottom;
   padding-bottom: 0px;
- 
 }
 
-.bottm-input::placeholder{
+.bottm-input::placeholder {
   font-size: 16px;
   line-height: 26px;
-  font-family: 'Assistant';
+  font-family: "Assistant";
   font-weight: 300;
 }
 
-
-
-
-
-
-
-
-
 img.vert-move {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
 }
 img.vert-move {
-  -webkit-animation: mover 1s infinite  alternate;
-  animation: mover 1s infinite  alternate;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
 }
 @-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 @keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
-
-
-
-
 
 .zoom-in-out-box {
   margin: 24px;
   width: 50px;
   height: 50px;
- 
+
   animation: zoom-in-zoom-out 2s ease infinite;
 }
 
@@ -193,9 +179,7 @@ img.vert-move {
   }
 }
 
-
-
-.starroted{
+.starroted {
   margin: auto;
   width: 200px;
   height: 100px;
@@ -204,24 +188,22 @@ img.vert-move {
 }
 
 @keyframes mymove {
-  100% {transform: rotate(360deg);}
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-
-
-
-
-#w3rcontainer{
+#w3rcontainer {
   border: 1px solid #cccfdb;
   border-radius: 1px;
-} 
+}
 #hover-underline-animation {
   display: inline-block;
   position: relative;
 }
 
 #hover-underline-animation:after {
-  content: '';
+  content: "";
   width: 100%;
   transform: scaleX(0);
   height: 2px;
@@ -265,8 +247,6 @@ li:hover::before {
   width: 100%; /* Set width to 100% on hover */
 }
 
-
-
 .flexCenter {
   @apply flex items-center justify-center;
 }
@@ -281,4 +261,9 @@ li:hover::before {
 
 .flexEnd {
   @apply flex items-center justify-end;
+}
+
+.alcohol-market-content li {
+  color: black;
+  font-size: 14px;
 }

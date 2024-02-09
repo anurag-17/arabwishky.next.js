@@ -14,6 +14,10 @@ export const NAV_LINKS = [
     href: "/about",
   },
   {
+    label: "וויסקי",
+    href: "/whisky",
+  },
+  {
     label: "קניות לפי קטגוריות",
     href: "/coctails",
   },

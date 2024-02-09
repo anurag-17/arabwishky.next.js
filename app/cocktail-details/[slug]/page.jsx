@@ -44,8 +44,8 @@ const CocktailDetailsPage = ({ params }) => {
                 <h2 className="text-[24px] lg:text-[34px] 2xl:text-[38px] font-medium  my-2">
                 {cocktailDetails?.name}
                 </h2>
-                <p className="text-[15px] lg:text-[16px] font-medium  my-2">פרטי קוקטייל: {cocktailDetails?.description}</p>
                 <p className="text-[14px]">מחיר: ${cocktailDetails?.price}</p>
+                <p className="text-[15px] lg:text-[16px] font-medium  my-2">פרטי קוקטייל: {cocktailDetails?.description}</p>
               </div>
             </div>
           </div>
