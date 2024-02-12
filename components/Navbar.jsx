@@ -2,13 +2,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const NAV_LINKS = [
-  {
-    label: "צור קשר",
-    href: "/contact",
-  },
+  // {
+  //   label: "צור קשר",
+  //   href: "/contact",
+  // },
   {
     label: "אודות",
     href: "/about",
@@ -30,11 +30,26 @@ const Navbar = () => {
 
     const pathname = usePathname()
 
+    const [bgColor, setBgColor] = useState(pathname === "/" ? "transparent" : "#070301");
+    const [scroll, setscroll] = useState("");
+
+
+    console.log(pathname,bgColor)
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const newColor = window.scrollY === 200 ? "transparent" : "#070301";
+        setBgColor(newColor);
+        setscroll(true)
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+    
   return (
     <>
-      <section className={` fixed w-full top-0 z-50
-      ${pathname == "/"  ? "bg-transparent" : "bg-[#070301] " }
-      `}>
+      <section  className={`fixed w-full top-0 z-50 ${bgColor === "transparent" ? "bg-transparent" : "bg-[#070301]"} `}>
         <div className="container mx-auto">
           <div className=" flexBetween py-4 ">
             <button className=" text-white regular-16 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold focus-visible:outline-none">
