@@ -1,7 +1,6 @@
 "use client";
 import Heading from "@/components/Heading";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -12,7 +11,7 @@ const About = () => {
         <div className="alcohol-market-content">
           <div className="grid md:grid-cols-2 2xl:gap-20 md:gap-10 gap-5 py-[40px]">
             <div className="">
-              <Image src="/images/about4.avif" alt="about" height={400} width={400} />
+              <Image src="/images/about4.webp" alt="about" height={400} width={400} />
             </div>
             <div className="flex flex-col gap-3">
               <div className="">
@@ -89,12 +88,12 @@ const About = () => {
               </div>
             </div>
             <div className="">
-              <Image src="/images/about.avif" alt="about" height={400} width={400} />
+              <Image src="/images/about.webp" alt="about" height={400} width={400} />
             </div>
           </div>
           <div className="grid md:grid-cols-2 2xl:gap-20 md:gap-10 gap-5 py-[40px]">
             <div className="">
-              <Image src="/images/about3.avif" alt="about" height={500} width={500} />
+              <Image src="/images/about3.webp" alt="about" height={500} width={500} />
             </div>
             <div className="flex flex-col gap-3">
               <div className="">
@@ -179,7 +178,7 @@ const About = () => {
               </div>
             </div>
             <div className="">
-              <Image src="/images/about1.avif" alt="about" height={400} width={400} />
+              <Image src="/images/about1.webp" alt="about" height={400} width={400} />
             </div>
           </div>
         </div>
