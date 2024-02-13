@@ -16,7 +16,7 @@ const Carousal = () => {
     <div className=" ">
       <div
         id="animation-carousel"
-        className="relative  mx-auto xl:mt-10  2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px] 2xl:py-0 2xl:my-0 xl:py-0"
+        className="relative  mx-auto xl:mt-10  2xl:w-[1500px]  xl:w-[1000px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[70%] 2xl:py-0 2xl:my-0 xl:py-0"
         data-carousel="static"
       >
         {/* Carousel wrapper */}
