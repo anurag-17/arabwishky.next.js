@@ -5,6 +5,9 @@ import Heading from "@/components/Heading";
 import Image from "next/image";
 import { useCart } from "@/app/context-cart/context-cart";
 import { useRouter } from "next/navigation";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const CocktailDetailsPage = ({ params }) => {
   const { addToCart, cart } = useCart();
@@ -31,6 +34,7 @@ const CocktailDetailsPage = ({ params }) => {
   return (
     <>
        <section className="pt-[70px] md:pb-[50px] 2xl:lg:pt-[150px] lg:pt-[100px] pt-20px pb-[20px]">
+       <ToastContainer/>
            <div className=" mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[550px] md:w-[600px] w-[70%]">
 
           <Heading title={cocktailDetails?.name} />
@@ -63,7 +67,7 @@ const CocktailDetailsPage = ({ params }) => {
             <button
                 onClick={() => {
                   addToCart(cocktailDetails);
-                  alert("product Added");
+                  toast.success("Product added to Cart");
                 }}
                 className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[12px] lg:text-[14px] 2xl:text-[18px] w-full mt-3 2xl:mt-5 "
               >
@@ -73,7 +77,7 @@ const CocktailDetailsPage = ({ params }) => {
              <button
                 onClick={() => {
                   addToWishlist(cocktailDetails);
-                  alert("product Added to Wishlist");
+                  toast.success("Product added to Wishlist");
                 }}
                 className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[12px] lg:text-[14px] 2xl:text-[18px] w-full mt-3 2xl:mt-5 "
               >
