@@ -306,4 +306,31 @@ export const whiskys = [
     smell: "קליל ופרחוני עם הפכים של דבש, וניל ואלון.",
     image: "/whisky/whisky14.webp",
   },
-]
+];
+
+export const products = [
+  {
+    name: "וויסקי 1888 גראן רזרב 700 מל",
+    price: " ₪ 125.00",
+    image: "/images/bottle1.webp",
+    id: "1",
+  },
+  {
+    name: "וויסקי 1888 גראן רזרב 700 מל",
+    price: " ₪ 125.00",
+    image: "/images/bottle2.webp",
+    id: "2",
+  },
+  {
+    name: "וויסקי 1888 גראן רזרב 700 מל",
+    price: " ₪ 125.00",
+    image: "/images/bottle3.webp",
+    id: "3",
+  },
+  {
+    name: "וויסקי 1888 גראן רזרב 700 מל",
+    price: " ₪ 125.00",
+    image: "/images/bottle4.webp",
+    id: "4",
+  },
+];

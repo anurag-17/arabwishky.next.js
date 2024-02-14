@@ -5,23 +5,23 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="pt-[120px] md:pb-[50px] pt-20px pb-[20px]">
-      <div className="container mx-auto">
+    <section className=" md:pb-[50px] pt-20px pb-[20px] mx-5 md:mx-0">
+      <div className="2xl:w-[1500px] xl:w-[1000px]  lg:w-[880px]  md:w-[600px] sm:w-[500px]   m-auto mt-10 2xl:mt-44 lg:mt-28 sm:mt-24  nav" >
         <Heading title="אודות" />
         <div className="alcohol-market-content">
           <div className="grid md:grid-cols-2 2xl:gap-20 md:gap-10 gap-5 py-[40px]">
-            <div className="">
-              <Image src="/images/about4.webp" alt="about" height={400} width={400} />
+            <div className="flex mx-auto items-center">
+              <Image src="/images/about4.webp" alt="about" height={400} width={400} className="w-[200px] h-[200px] md-w-[400px]] md:h-[200px]" />
             </div>
             <div className="flex flex-col gap-3">
               <div className="">
                 <h2 className="text-[16px] font-medium">
                   מוצרים נבחרים וביקורות:
                 </h2>
-                <ul className="list-disc list-inside">
+                <ul className="list-disc list-inside text-[5px] lg:text-[16px] 2xl:text-[18px]">
                   <li>
                     כתוב ביקורות ותיאורים מפורטים של יינות פופולריים, מותגי
-                    וויסקי ורכיבים לקוקטיילים הזמינים בשוק שלך.
+                    וויסקי ורכיבים לקוקטיילים הזמינים בשוק שלך.fff
                   </li>
                   <li>
                     הדגש תכונות ייחודיות, תוויות טעם והמלצות להגשה לכל מוצר.
@@ -87,13 +87,13 @@ const About = () => {
                 </ul>
               </div>
             </div>
-            <div className="">
-              <Image src="/images/about.webp" alt="about" height={400} width={400} />
+            <div className="flex mx-auto  items-center">
+              <Image src="/images/about.webp" alt="about" height={400} width={400} className="w-[200px] h-[200px] md-w-[400px]] md:h-[200px]"/>
             </div>
           </div>
           <div className="grid md:grid-cols-2 2xl:gap-20 md:gap-10 gap-5 py-[40px]">
-            <div className="">
-              <Image src="/images/about3.webp" alt="about" height={500} width={500} />
+            <div className="flex mx-auto  items-center">
+              <Image src="/images/about3.webp" alt="about" height={400} width={400} className="w-[200px] h-[200px] md-w-[400px]] md:h-[200px]"/>
             </div>
             <div className="flex flex-col gap-3">
               <div className="">
@@ -176,9 +176,9 @@ const About = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className="">
-              <Image src="/images/about1.webp" alt="about" height={400} width={400} />
+            </div> 
+            <div className="flex mx-auto  items-center">
+              <Image src="/images/about1.webp" alt="about" height={400} width={400} className="w-[200px] h-[200px] md-w-[400px]] md:h-[200px]" />
             </div>
           </div>
         </div>

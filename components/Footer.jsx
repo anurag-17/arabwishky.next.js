@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-[#060201] md:pt-10 lg:pt-12 xl:pt-24 pt-5">
-        <div className="flex mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[70%]">
+        <div className="flex mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[70%]">
           <div className="container mx-auto">
             <div className="flex flex-col-reverse lg:flex-row justify-between">
               <div className="sm:my-2 lg:my-0  lg:mx-0">
@@ -82,46 +82,46 @@ const Footer = () => {
               </div>
               <div className=" sm:my-2 md:my-2 lg:my-0 mx-auto  lg:mx-0">
                 <h1
-                  className="text-[10px] sm:text-[12px] md:text-[14px] mt-2 text-white lg:text-[14px] lg:leading-[20px]
+                  className="text-[12px] sm:text-[12px] md:text-[14px] mt-2 text-white lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] xl:leading-[30px] 2xl:leading-[26px] 2xl:text-[18px] text-center lg:text-right"
                   id="head2"
                 >
                   צור קשר
                 </h1>
                 <ul className=" my-2 xl:my-6 text-center lg:text-right">
-                  <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                  <li className="  my-1 cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
                     <Link href="mailto:alcohol.market@gmail.com">
                       alcohol.market@gmail.com
                     </Link>
                   </li>
-                  <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                  <li className="  my-1 cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 text-[10px] sm:text-[12px] md:text-[14px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
                     <Link href="tel:+38 9878 5897 598">+38 9878 5897 598</Link>
                   </li>
                 </ul>
               </div>
               <div className="sm:my-2 md:my-2 lg:my-0  mx-auto  lg:mx-0 ">
                 <h1
-                  className="text-[10px] sm:text-[12px] md:text-[14px] mt-2  text-[#FFFFFF]  lg:text-[14px] lg:leading-[20px]
+                  className="text-[12px] sm:text-[12px] md:text-[14px] mt-2  text-[#FFFFFF]  lg:text-[14px] lg:leading-[20px]
                 xl:text-[16px] xl:leading-[30px] 2xl:leading-[26px] 2xl:text-[18px] text-center lg:text-right"
                   id="head2"
                 >
                   קישורים אחרים
                 </h1>
-                <ul className="text-[8px] sm:text-[10px] md:text-[12px] sm:my-1 my-2 text-[#FFFFFF]  xl:my-6 text-center lg:text-right">
+                <ul className="text-[10px] sm:text-[10px] md:text-[12px] sm:my-1 my-2 text-[#FFFFFF]  xl:my-6 text-center lg:text-right">
                 <Link href="/term&condition">  <li
                     id=""
-                    className="  cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]"
+                    className="  cursor-pointer my-1 lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]"
                   >
                  תנאים ותנאים
                   </li>
                   </Link>
                   <Link href="/privacypolicy">
-                  <li className=" cursor-pointer sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                  <li className=" cursor-pointer  my-1 sm:my-1 lg:my-1 xl:my-[6px] 2xl:my-3 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
                   מדיניות הפרטיות
                   </li>
                   </Link>
                   <Link href="/about">
-                    <li className="cursor-pointer lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
+                    <li className="cursor-pointer  my-1 lg:my-1 xl:my-0 2xl:my-0 lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 2xl:leading-[24px]">
                       אודות
                     </li>
                   </Link>
@@ -129,7 +129,8 @@ const Footer = () => {
               </div>
               <div className=" sm:my-2 md:my-2 lg:my-0 lg:mx-0">
                 <ul className="flex justify-center lg:justify-end">
-                  <Image
+                 <Link href="/">
+                 <Image
                     src="/images/logo.webp"
                     alt="loading"
                     height={80}
@@ -141,11 +142,12 @@ const Footer = () => {
                       sm:w-[60px] sm:h-[60px]
                       w-[50px] h-[50px]"
                   />
+                 </Link>
                 </ul>
               </div>
             </div>
             <hr
-              className="opacity-[20%] text-[#FFFFFF] mt-4 2xl:w-[1500px]  xl:w-[1000px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[85%] mx-auto 2xl:mt-5"
+              className="opacity-[20%] text-[#FFFFFF] mt-4 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[85%] mx-auto 2xl:mt-5"
             />
             <h1 className="text-[#FFFFFF]  text-center text-[8px] sm:text-[10px] md:text-[12px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] xl:py-3 py-2">
               © 2024 לולו. כל הזכויות שמורות.

@@ -34,11 +34,11 @@ const WhiskyDetailsPage = ({ params }) => {
 
   return (
     <>
-      <section className="pt-[100px] 2xl:pt-[120px] md:pb-[50px]  pb-[20px]">
-        <div className="container mx-auto">
+    <section className="pt-[70px] md:pb-[50px] lg:pt-[100px] 2xl:lg:pt-[150px] pb-[20px]">
+      <div className=" mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[70%]">
           <Heading title={whiskyDetails?.name} />
           <div
-            className="grid grid-cols-1 sm:grid-cols-2  gap-5 lg:gap-10 p-3  2xl:p-8  2xl:mt-6 justify-center items-center border 
+            className="grid grid-cols-1 sm:grid-cols-2  gap-5 lg:gap-10 px-3  2xl:p-8  2xl:mt-6 justify-center items-center border 
            border-[#d6d1d1] rounded-lg"
           >
             <div className="">
@@ -49,6 +49,7 @@ const WhiskyDetailsPage = ({ params }) => {
                 width={300}
                 className="mx-auto h-auto"
               />
+          
             </div>
             <div className="flex  flex-col gap-y-3 text-right">
               <div className=" ">
@@ -56,40 +57,35 @@ const WhiskyDetailsPage = ({ params }) => {
                   {whiskyDetails?.name}
                 </h2>
               </div>
-              <p className="text-[14px]">גודל: {whiskyDetails?.size}</p>
-              <p className="text-[14px]">מחיר: ₪ {whiskyDetails?.price}.00</p>
-              <p className="text-[14px]">
+              <p className="text-[12px] lg:text-[16px] 2xl:text-[22px]">גודל: {whiskyDetails?.size}</p>
+              <p className="text-[12px] lg:text-[16px] 2xl:text-[22px]">מחיר: ₪ {whiskyDetails?.price}.00</p>
+              <p className="text-[12px] lg:text-[16px] 2xl:text-[22px]">
                 מדינת מוצא: {whiskyDetails?.origin_country}
               </p>
-              <p className="text-[14px]">
-                סוג רוח: {whiskyDetails?.spirit_type}
-              </p>
-              <p className="text-[14px]">
-                רכיבים : {whiskyDetails?.ingredients}
-              </p>
-              <p className="text-[14px]">אף: {whiskyDetails?.smell}</p>
-              <p className="text-[15px] lg:text-[16px] font-medium  my-2">
+            
+              <p className="text-[12px] lg:text-[16px] 2xl:text-[22px]">אף: {whiskyDetails?.smell}</p>
+              <p className="   text-[12px] lg:text-[16px] 2xl:text-[22px]font-medium  my-2">
                 פרטי קוקטייל: {whiskyDetails?.description}
               </p>
-              <div className="flex justify-around w-full">
-                <div className="w-1/3">
+              <div className="flex justify-end lg:mb-4">
+              <div className="w-8/12 lg:w-2/4 ">
+
                   <button
                     onClick={() => {
                       addToCart(whiskyDetails);
                       alert("product Added");
                     }}
-                    className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[16px] 2xl:text-[18px] w-full  "
+                    className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[12px] lg:text-[14px] 2xl:text-[18px] w-full  mt-3 2xl:mt-5  "
                   >
                     Add to Cart
                   </button>
-                </div>
-                <div className="w-1/3">
+            
                   <button
                     onClick={() => {
                       addToWishlist(whiskyDetails);
                       alert("product Added to Wishlist");
                     }}
-                    className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[16px] 2xl:text-[18px] w-full  "
+                    className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[12px] lg:text-[14px] 2xl:text-[18px] w-full  mt-3 2xl:mt-5  "
                   >
                     Add to Wishlist
                   </button>

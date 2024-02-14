@@ -15,10 +15,6 @@ import Rectangle3 from "../public/images/Rectangle11.png";
 import Rectangle4 from "../public/images/Rectangle12.svg";
 import Rectangle5 from "../public/images/Rectangle13.png";
 import Rectangle6 from "../public/images/Rectangle15.png";
-import bottle1 from "../public/images/bottle1.webp";
-import bottle2 from "../public/images/bottle2.webp";
-import bottle3 from "../public/images/bottle3.webp";
-import bottle4 from "../public/images/bottle4.webp";
 import Group11 from "../public/images/Group11.webp";
 import div411 from "../public/images/div411.webp";
 import div422 from "../public/images/div422.webp";
@@ -29,8 +25,12 @@ import instaa from "../public/images/instagg.svg";
 import facebookk from "../public/images/facebookk.svg";
 import giftcaed from "../public/images/giftcaed.svg";
 import Carousal from "./carousal";
+import { useCart } from "./context-cart/context-cart";
+import { products } from "@/configs/data";
 
-const Page = () => {
+const Page = ({ params }) => {
+  const { addToCart, cart } = useCart();
+
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const openDrawer = () => {
@@ -40,21 +40,22 @@ const Page = () => {
   const closeDrawer = () => {
     setIsDrawerOpen(false);
   };
+
   return (
     <>
       <section>
         <div>
           <div
-            className="h-[250px] sm:h-[325px] md:h-[100vh] lg:w-full  flexCenter flex-col"
+            className="h-[250px] sm:h-[325px] md:h-[100vh] lg:w-full  flexCenter flex-col "
             id="poster-img"
           >
-            <div className="flex mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[70%]">
+            <div className="flex mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[70%]">
               <div className="container mx-auto ">
                 <div className=" flex justify-end items-center">
                   <div className=" text-right  flex justify-center flex-col">
                     <h1
                       className="text-[16px] leading-[18px] w-[100px]  mt-0 sm:w-[200px] 
-                  lg:text-right ml-auto  sm:text-[30px] sm:mt-0 sm:leading-[35px] md:text-[35px] md:mt-14 md:leading-[40px] lg:text-[45px] mt-  lg:mt-8 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[90px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-36 2xl:w-[564px]"
+                  lg:text-right ml-auto  sm:text-[30px] sm:mt-0 sm:leading-[35px] md:text-[35px] md:mt-0 md:leading-[40px] lg:text-[45px] mt-  lg:mt-8 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[90px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-36 2xl:w-[564px]"
                       id="head1"
                     >
                       ויסקי בלנדד סקוטי חדש
@@ -64,8 +65,9 @@ const Page = () => {
                       className="text-white text-right ml-auto text-[6px] leading-[8px] w-[145px] mt-3 w-
                sm:text-[10px] sm:leading-[14px] sm:mt-2 sm:w-[250px]
                md:text-[12px] md:leading-[16px] md:mt-2   md:w-[300px]
-               lg:text-[10px] lg:leading-[20px] lg:mt-10 lg:w-[320px]  
-                 xl:text-[13px] xl:mt-12 xl:leading-[26px] xl:w-[415px] 2xl:text-[18px] 2xl:mt-[70px] 2xl:leading-[28px] 2xl:w-[571px]"
+               lg:text-[14px] lg:leading-[20px] lg:mt-6 lg:w-[340px]  
+                 xl:text-[13px] xl:mt-12 xl:leading-[26px] xl:w-[415px] 
+                 2xl:text-[21px] 2xl:mt-[50px] 2xl:leading-[28px] 2xl:w-[571px]"
                       id="pera"
                     >
                       חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות
@@ -82,7 +84,7 @@ const Page = () => {
                   md:text-[16px] md:mt-4 md:py-1 md:px-5
                   lg:text-[14px] lg:mt-8 lg:py-1 lg:px-6 
                    xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  xl:mt-8
-                   2xl:text-[20px] 2xl:leading-[30px] 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px] 2xl:mt-12 2xl:py-[0px] "
+                   2xl:text-[20px] 2xl:leading-[30px] 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px] 2xl:mt-8 2xl:py-[0px] "
                       >
                         קנה עכשיו
                       </button>
@@ -103,7 +105,7 @@ const Page = () => {
               className="absolute right-0 2xl:w-[124px] 2xl:h-[260px] xl:w-[94px] xl:h-[180px] lg:w-[64px] lg:h-[140px] md:w-[64px] md:h-[140px] sm:w-[64px] sm:h-[140px] sm:top-[82%] w-[64px] h-[140px] top-[82%] md:top-[82%] xl:top-[82.5%] lg:top-[79.5%]"
             />
             <div className="flex justify-center">
-              <div className="flex mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[208px]">
+              <div className="flex mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[208px]">
                 <div className=" w-full ">
                   <h1
                     className="text-center text-black 
@@ -140,7 +142,7 @@ const Page = () => {
                 md:t6xt-[18px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[20px] 2xl:leading-[30px]
+                2xl:text-[25px] 2xl:leading-[30px]
              "
                         id="pera4"
                       >
@@ -168,7 +170,7 @@ const Page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[20px] 2xl:leading-[30px]"
+                2xl:text-[25px] 2xl:leading-[30px]"
                         id="pera4"
                       >
                         טקילה
@@ -194,7 +196,7 @@ const Page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[20px] 2xl:leading-[30px]"
+                2xl:text-[25px] 2xl:leading-[30px]"
                         id="pera4"
                       >
                         וויסקי
@@ -222,7 +224,7 @@ const Page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[20px] 2xl:leading-[30px]"
+                2xl:text-[25px] 2xl:leading-[30px]"
                         id="pera4"
                       >
                         {" "}
@@ -248,7 +250,7 @@ const Page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[20px] 2xl:leading-[30px]"
+                2xl:text-[25px] 2xl:leading-[30px]"
                         id="pera4"
                       >
                         {" "}
@@ -276,7 +278,7 @@ const Page = () => {
                 md:text-[16px] md:leading-[35px]
                 lg:text-[16px] lg:leading-[30px]
                  xl:text-[18px] xl:leading-[40px]
-                2xl:text-[20px] 2xl:leading-[30px]"
+                2xl:text-[25px] 2xl:leading-[30px]"
                         id="pera4"
                       >
                         {" "}
@@ -284,11 +286,21 @@ const Page = () => {
                       </h1>
                     </div>
                   </div>
-                 <Link href="/coctails">
-                 <button className="border border-[#C1B505] text-[#C1B505] py-1 px-4 mx-auto flex my-5" >View All</button>
-                 </Link>
+                  <Link href="/coctails">
+                   <div className="flex justify-center">
+                   <button  className="  my-3 lg:my-5 2xl:my-7  border border-[#C1B505] text-[#C1B505] text-[12px]
+                        sm:text-[10px] py-[3px] px-[17px] sm:py-[4px] sm:px-[20px] mb-2 
+                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-3  lg:text-[14px] lg:py-1 xl:my-3 xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  
+                    2xl:text-[20px] 2xl:leading-[30px]  2xl:w-[208px] 2xl:h-[54px] 2xl:px-[60px] 2xl:border-[3px]   ">
+                      View All
+                    </button>
+                   </div>
+                  </Link>
 
-                  <div className="2xl:mt-32 mx:auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[208px]  mx-auto">
+
+
+
+                  <div className="2xl:mt-32 mx:auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[208px]  mx-auto">
                     <h1
                       className="text-center text-black text-[25px] mt-10
                 sm:text-[25px] sm:leading-[25px] sm:mt-14  
@@ -303,199 +315,60 @@ const Page = () => {
                       טעימה ממבצעי החודש
                     </h1>
                     <div className="flex flex-col lg:flex-row lg:gap-4 xl:gap-6 2xl:gap-[40px] justify-center">
-                      <div
-                        className="  sm:my-10  md:my-10 mx-auto lg:w-48 
-                           xl:w-60  2xl:w-80
-                      "
-                      >
+                      {products.map((product) => (
                         <div
-                          className=" mt-3 lg:mt-0 w-full sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px] 2xl:pb-10"
-                          id="imgbg"
+                          key={product.id}
+                          className="sm:my-5 md:my-10 mx-auto lg:w-48 xl:w-60 2xl:w-80"
                         >
-                          <Image
-                            src={bottle1}
-                            alt="icon"
-                            className="w-[100px] h-[258px] sm:w-[120px] sm:h-[300px] md:w-[140px] md:h-[350px]
-                           mx-auto lg:w-[90px] lg:h-[250px] xl:w-[130px] xl:h-[360px] 2xl:w-[170px] 2xl:h-[448px] "
-                          />
-                        </div>
-                        <div
-                          className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
-                        lg:text-[8px] lg:leading-[16px] lg:mt-3
-                        xl:text-[10px] xl:leading-[20px] xl:mt-5
-                        2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
-                       "
-                          id="pera3"
-                        >
-                          וויסקי 1888 גראן רזרב 700 מל
-                        </div>
-                        <h1
-                          className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
-                          lg:text-[14px] xl:text-[22px] xl:leading-[20px] xl:mt-2 2xl:text-[34px] 2xl:leading-[30px] 2xl:mt-2"
-                          id="pera4"
-                        >
-                          ₪ 125.00
-                        </h1>
-                        <div className="flex ">
-                          <button
-                            id="button"
-                            className="text-center border  border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[10px] py-[3px] px-[12px] mt-1 mb-5
-                                   sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
-                                md:text-[14px]  md:mt-6 md:py-1 md:px-6 
-                               lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                               xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8 
-                                            2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
+                          <div
+                            className="mt-3 lg:mt-0 w-full sm:w-[180px] md:w-[220px] 2xl:w-[300px] xl:w-[194px] lg:w-[200px] 2xl:pb-10 flex mx-auto"
+                            id="imgbg"
                           >
-                            הוספה לסל
-                          </button>
-                        </div>
-                      </div>
-                      <div
-                        className="sm:my-10  md:my-10 mx-auto lg:w-48 
-                           xl:w-60  2xl:w-80
-                      "
-                      >
-                        <div
-                          className=" mt-3 lg:mt-0 w-full sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
-                          id="imgbg"
-                        >
-                          <Image
-                            src={bottle2}
-                            alt="icon"
-                            className="w-[100px] h-[258px] sm:w-[120px] sm:h-[300px] md:w-[140px] md:h-[350px]
-                           mx-auto lg:w-[90px] lg:h-[250px] xl:w-[130px] xl:h-[360px] 2xl:w-[170px] 2xl:h-[448px]"
-                          />
-                        </div>
-                        <h1
-                          className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
-                        lg:text-[8px] lg:leading-[16px] lg:mt-3
-                    xl:text-[10px] xl:leading-[20px] xl:mt-5
-                     2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
-                       "
-                          id="pera3"
-                        >
-                          וויסקי 1888 גראן רזרב 700 מל
-                        </h1>
-                        <h1
-                          className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
-                         lg:text-[14px] xl:text-[22px] xl:leading-[20px] xl:mt-2 2xl:text-[34px] 2xl:leading-[30px] 2xl:mt-2"
-                          id="pera4"
-                        >
-                          ₪ 125.00
-                        </h1>
-                        <div className="flex ">
-                          <button
-                            id="button"
-                            className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[10px] py-[3px] px-[12px] mt-1 mb-5
-                    sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
-                    md:text-[14px]  md:mt-6 md:py-1 md:px-6 
-                    lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                    xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8
-                    2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
+                            <Image
+                              src={product.image}
+                              width={80}
+                              height={80}
+                              alt="icon"
+                              className="w-[100px] h-[258px] sm:w-[120px] sm:h-[300px] md:w-[140px] md:h-[350px] mx-auto lg:w-[90px] lg:h-[250px] xl:w-[130px] xl:h-[360px] 2xl:w-[170px] 2xl:h-[448px]"
+                            />
+                          </div>
+                          <div
+                            className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] lg:text-[14px] lg:leading-[18px] lg:mt-3 xl:text-[16px] xl:leading-[20px] xl:mt-5 2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-6"
+                            id="pera3"
                           >
-                            הוספה לסל
-                          </button>
-                        </div>
-                      </div>
-                      <div
-                        className="  sm:my-10  md:my-10 mx-auto lg:w-48 
-                           xl:w-60  2xl:w-[268px]
-                      "
-                      >
-                        <div
-                          className=" w-full sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
-                          id="imgbg"
-                        >
-                          <Image
-                            src={bottle3}
-                            alt="icon"
-                            className="w-[100px] h-[258px] sm:w-[120px] sm:h-[300px] md:w-[140px] md:h-[350px]
-                           mx-auto  lg:w-[90px] lg:h-[250px] xl:w-[130px] xl:h-[360px] 2xl:w-[170px] 2xl:h-[448px]"
-                          />
-                        </div>
-                        <h1
-                          className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
-                        lg:text-[8px] lg:leading-[16px] lg:mt-3
-                    xl:text-[10px] xl:leading-[20px] xl:mt-5
-                     2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
-                       "
-                          id="pera3"
-                        >
-                          וויסקי 1888 גראן רזרב 700 מל
-                        </h1>
-                        <h1
-                          className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px]
-                         lg:text-[14px] xl:text-[22px] xl:leading-[20px] xl:mt-2 2xl:text-[34px] 2xl:leading-[30px] 2xl:mt-2"
-                          id="pera4"
-                        >
-                          ₪ 125.00
-                        </h1>
-                        <div className="flex ">
-                          <button
-                            id="button"
-                            className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mt-1 mb-5 text-[10px] py-[3px] px-[12px]
-                            sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 sm:mb-0
-                           my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
-                           lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                           xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  xl:mt-8 
-                            2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
+                            {product.name}
+                          </div>
+                          <h1
+                            className="text-center text-[12px] mt-1 sm:text-[16px] md:text-[20px] lg:text-[14px] xl:text-[22px] xl:leading-[20px] xl:mt-2 2xl:text-[34px] 2xl:leading-[30px] 2xl:mt-2"
+                            id="pera4"
                           >
-                            {" "}
-                            הוספה לסל
-                          </button>
+                            {product.price}
+                          </h1>
+                          {/* <div className="flex">
+                            <button
+                              onClick={() => {
+                                addToCart(filterProduct.id);
+                                alert("product Added");
+                              }}
+                              className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto text-[10px] py-[3px] px-[12px] mt-1 mb-5 sm:text-[14px] sm:mt-4 sm:py-1 sm:px-6 sm:mb-0 md:text-[14px] md:mt-6 md:py-1 md:px-6 lg:text-[10px] lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px] xl:mt-8 2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
+                            >
+                              הוספה לסל
+                            </button>
+                          </div> */}
                         </div>
-                      </div>
-                      <div
-                        className="  sm:my-10  md:my-10 mx-auto lg:w-48 
-                           xl:w-60  2xl:w-80
-                      "
-                      >
-                        <div
-                          className="w-full sm:w-[180px] md:w-[220px] 2xl:w-[268px] xl:w-[194px] lg:w-[135px]"
-                          id="imgbg"
-                        >
-                          <Image
-                            src={bottle4}
-                            alt="icon"
-                            className=" w-[100px] h-[258px] sm:w-[120px] sm:h-[300px] md:w-[140px] md:h-[350px]
-                          mx-auto   lg:w-[90px] lg:h-[250px] xl:w-[130px] xl:h-[360px] 2xl:w-[170px] 2xl:h-[448px]"
-                          />
-                        </div>
-                        <h1
-                          className="text-center text-[10px] my-1 sm:text-[12px] sm:leading-[24px] md:text-[14px] md:leading-[28px] 
-                        lg:text-[8px] lg:leading-[16px] lg:mt-3
-                    xl:text-[10px] xl:leading-[20px] xl:mt-5
-                     2xl:text-[16px] 2xl:leading-[30px] 2xl:mt-6
-                       "
-                          id="pera3"
-                        >
-                          וויסקי 1888 גראן רזרב 700 מל
-                        </h1>
-                        <h1
-                          className="text-center text-[12px] mt-1  sm:text-[16px] md:text-[20px]
-                         lg:text-[14px] xl:text-[22px] xl:leading-[20px] xl:mt-2 2xl:text-[34px] 2xl:leading-[30px] 2xl:mt-2"
-                          id="pera4"
-                        >
-                          ₪ 125.00
-                        </h1>
-                        <div className="flex ">
-                          <button
-                            id="button"
-                            className="text-center border border-[#C1B505] ml-auto text-[#C1B505] mx-auto mb-5 text-[10px] py-[3px] px-[12px]
-                                     first-letter:       sm:text-[14px]  sm:mt-4 sm:py-1 sm:px-6 
-                           my-1  md:text-[14px]  md:mt-6 md:py-1 md:px-6 
-                           lg:text-[10px]  lg:leading-[18px] lg:mt-3 lg:py-1 lg:px-5 
-                           xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8 
-                             2xl:text-[20px] 2xl:leading-[30px] 2xl:mt-12 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
-                          >
-                            הוספה לסל
-                          </button>
-                        </div>
-                      </div>
+                      ))}
                     </div>
+
                     <Link href="/whisky">
-                 <button className="border border-[#C1B505] py-1 px-4 mx-auto flex text-[#C1B505] " >View All</button>
-                 </Link>
+                    <div className="flex justify-center">
+                   <button  className="  my-3 lg:my-5 2xl:my-7  border border-[#C1B505] text-[#C1B505] text-[12px]
+                        sm:text-[10px] py-[3px] px-[17px] sm:py-[4px] sm:px-[20px] mb-2 
+                       sm:mr-0  lg:px-4   md:text-[14px] md:py-1 md:px-6 md:mt-0  lg:text-[14px] lg:py-1 xl:my-3 xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]  
+                    2xl:text-[20px] 2xl:leading-[30px]  2xl:w-[208px] 2xl:h-[54px] 2xl:px-[60px] 2xl:border-[3px]   ">
+                      View All
+                    </button>
+                   </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -508,6 +381,8 @@ const Page = () => {
           >
             <Carousal />
           </div>
+
+
           <div
             className="h-[750px] sm:h-[1200px] md:h-[1450px] lg:h-[500px] xl:h-[700px] 2xl:h-[1010px] 2xl:py-20  lg:pt-10 pt-10 relative"
             id="div4"
@@ -626,11 +501,12 @@ const Page = () => {
             </div>
           </div>
           <div className="bg-[#F6F5E6] ">
+
             <div className="flex justify-center pb-0 lg:justify-between flex-col lg:flex-row mx-auto sm:py-12  lg:py-16 2xl:w-[1200px]  xl:w-[850px]  lg:w-[650px] sm:w-[500px] md:w-[600px] w-[280px]">
               <div className="w-full 2xl:mt-24 mx-auto pt-10 sm:pt-0 ">
                 <Image
                   src={giftcaed}
-                  className="2xl:w-[573px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px]  lg:w-[280px] sm:w-[300px] md:w-[350px] mx-auto lg:mx-0"
+                  className="2xl:w-[543px]  2xl:h-[419px] xl:w-[440px] xl:h-[390px]  lg:w-[280px] sm:w-[300px] md:w-[350px] mx-auto lg:mx-0"
                 />
                 <img
                   src="images/underline.svg"
@@ -638,7 +514,7 @@ const Page = () => {
                 />
               </div>
               <div className="flex justify-center">
-                <div className="w-full 2xl:mt-36 2xl:w-[421px] xl:w-[340px] xl:mt-24 mx-auto">
+                <div className="w-full 2xl:mt-36 2xl:w-[452px] xl:w-[340px] xl:mt-24 mx-auto">
                   <h1
                     className="text-[18px] sm:text-[30px] md:text-[35px]  lg:text-[27px] lg:leading-[35px] xl:text-[40px] xl:leading-[45px] 2xl:text-[50px] 2xl:leading-[60px] text-center lg:text-right"
                     id="head2"
@@ -648,7 +524,7 @@ const Page = () => {
                   <p
                     className="my-3 mx-auto text-center lg:text-right  start text-[12px] leading-[15px] sm:text-[16px] sm:leading-[25px] sm:w-[350px]  md:w-[350px]  md:text-[16px] md:leading-[25px] lg:ml-0 lg:text-[12px] lg:leading-[20px] lg:mt-3 lg:w-[260px]
                    xl:text-[14px] xl:leading-[20px] xl:mt-5 xl:w-[305px] xl:ml-9 2xl:ml-0
-                   2xl:w-[421px] 2xl:h-[84px] 2xl:text-[18px] 2xl:leading-[28px] 2xl:mt-8"
+                   2xl:w-[451px] 2xl:h-[84px] 2xl:text-[22px] 2xl:leading-[28px] 2xl:mt-8"
                     id="pera"
                   >
                     חפש צרפתית איטליה או. מיזם מאמרשיחהצפה תנך אם, בדף שמות
@@ -663,7 +539,7 @@ const Page = () => {
                   md:text-[14px]  md:mt-6 md:py-1 md:px-6 
                   lg:text-[10px]  lg:mt-8 lg:py-1 lg:px-6 
                   xl:text-[14px] xl:leading-[22px] xl:py-[0px] xl:px-0 xl:w-[140px] xl:h-[38px]   xl:mt-8 
-                    2xl:mt-14 2xl:mb-60 2xl:text-[20px] 2xl:leading-[30px] 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px]"
+                    2xl:mt-14 2xl:mb-60 2xl:text-[20px] 2xl:leading-[30px] 2xl:border-[3px] 2xl:w-[208px] 2xl:h-[54px] "
                     >
                       מתנה עכשיו
                     </button>
@@ -671,6 +547,9 @@ const Page = () => {
                 </div>
               </div>
             </div>
+
+
+
             <div className="bg-[#9B2A0C] py-10 sm:py-10  lg:py-16 xl:py-20 2xl:p-16 mx-auto">
               <div className="flex flex-col justify-between items-center lg:flex-row mx-auto 2xl:w-[1200px]  xl:w-[850px] lg:w-[650px] sm:w-[500px] md:w-[600px] w-[208px]">
                 <div className="flex w-full lg:w-8/12 mx-auto lg:mx-0  lg:my-0 sm:w-2/3 2xl:w-[779px] 2xl:h-[70px]">
@@ -685,10 +564,10 @@ const Page = () => {
                     type="search"
                     placeholder="הזן את כתובת הדואר האלקטרוני שלך"
                     className="bg-[#A9482E]   my-auto focus:outline-none w-[80%] 
-                    sm:w-[80%]  md:w-[90%] sm:p-1 md:p-3 p-1
-                     cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md lg:text-[10px]  lg:rounded-l-none lg:p-3 xl:p-4  2xl:p-7   text-right mt-0 bottm-input"
+                    sm:w-[80%]  md:w-[90%] lg:w-[70%] sm:p-1 md:p-3 p-1
+                     cursor-pointer text-[#FFFFFF] rounded-sm rounded-l-none lg:rounded-md lg:text-[10px]  lg:rounded-l-none lg:p-3 xl:p-4  2xl:p-5   text-right mt-0 bottm-input 2xl:text-[20px]"
                   />
-                </div>
+                </div>  
 
                 <div className=" my-2 flex flex-col justify-center lg:justify-end 2xl:w-[353px]">
                   <h1
@@ -698,7 +577,7 @@ const Page = () => {
                     !תיויומח מבל
                   </h1>
                   <p
-                    className="text-white text-right text-[10px] sm:text-[16px] lg:mt-2 lg:text-[14px] xl:mt-4 xl:text-[16px] xl:leading-[20px] 2xl:mt-6 2xl:text-[18px] 2xl:leading-[28px] "
+                    className="text-white text-right text-[10px] sm:text-[16px] lg:mt-2 lg:text-[14px] xl:mt-4 xl:text-[16px] xl:leading-[20px] 2xl:mt-4 2xl:text-[20px] 2xl:leading-[28px] "
                     id="pera"
                   >
                     אנחנו נציע לך מוצרים ומבצעים משתלמים

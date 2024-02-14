@@ -55,6 +55,15 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  const clearCart = () => {
+    setCart([]);
+    saveCartToLocalStorage([]);
+  }
+
+  const clearWishlist = ()=>{
+    setWishlist([]);
+    saveWishlistToLocalStorage([]);
+  }
   return (
     <CartContext.Provider
       value={{
@@ -64,6 +73,8 @@ export const CartProvider = ({ children }) => {
         wishlist,
         addToWishlist,
         removeFromWishlist,
+        clearCart,
+        clearWishlist
       }}
     >
       {children}
