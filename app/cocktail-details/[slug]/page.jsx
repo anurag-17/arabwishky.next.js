@@ -56,7 +56,10 @@ const CocktailDetailsPage = ({ params }) => {
                   פרטי קוקטייל: {cocktailDetails?.description}
                 </p>
               </div>
-              <button
+              <div className="flex justify-around w-full">
+              <div className="w-1/3">
+
+            <button
                 onClick={() => {
                   addToCart(cocktailDetails);
                   alert("product Added");
@@ -65,7 +68,9 @@ const CocktailDetailsPage = ({ params }) => {
               >
                 Add to Cart
               </button>
-              <button
+            </div>
+             <div className="w-1/3">
+             <button
                 onClick={() => {
                   addToWishlist(cocktailDetails);
                   alert("product Added to Wishlist");
@@ -74,6 +79,8 @@ const CocktailDetailsPage = ({ params }) => {
               >
                 Add to Wishlist
               </button>
+             </div>
+              </div>
             </div>
           </div>
         </div>

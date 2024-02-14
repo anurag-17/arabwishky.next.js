@@ -8,6 +8,8 @@ import { useRouter } from "next/navigation";
 
 const WhiskyDetailsPage = ({ params }) => {
   const { addToCart, cart } = useCart();
+  const { addToWishlist, wishlist } = useCart();
+
   const router = useRouter();
   const slug = params?.slug || "";
 
@@ -69,15 +71,30 @@ const WhiskyDetailsPage = ({ params }) => {
               <p className="text-[15px] lg:text-[16px] font-medium  my-2">
                 פרטי קוקטייל: {whiskyDetails?.description}
               </p>
-              <button
-                onClick={() => {
-                  addToCart(whiskyDetails);
-                  alert("product Added");
-                }}
-                className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[16px] 2xl:text-[18px] w-full "
-              >
-                Add to Cart
-              </button>
+              <div className="flex justify-around w-full">
+                <div className="w-1/3">
+                  <button
+                    onClick={() => {
+                      addToCart(whiskyDetails);
+                      alert("product Added");
+                    }}
+                    className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[16px] 2xl:text-[18px] w-full  "
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <div className="w-1/3">
+                  <button
+                    onClick={() => {
+                      addToWishlist(whiskyDetails);
+                      alert("product Added to Wishlist");
+                    }}
+                    className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white  py-2 px-4 2xl:py-3 2xl:px-8 rounded text-[16px] 2xl:text-[18px] w-full  "
+                  >
+                    Add to Wishlist
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
