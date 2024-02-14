@@ -38,7 +38,8 @@ const WhiskyDetailsPage = ({ params }) => {
   return (
     <>
     <section className="pt-[70px] md:pb-[50px] lg:pt-[100px] 2xl:lg:pt-[150px] pb-[20px]">
-    <ToastContainer/>
+    <ToastContainer autoClose={1000} />
+
 
       <div className=" mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[70%]">
           <Heading title={whiskyDetails?.name} />

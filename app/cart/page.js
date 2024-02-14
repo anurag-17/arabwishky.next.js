@@ -12,13 +12,14 @@ const Cart = () => {
 
   return (
     <>
-      <div className="mx-10 h-screen">
+      <div className="mx-10 ">
         <div className="2xl:w-[1500px] xl:w-[1000px]  lg:w-[880px]  md:w-[620px] sm:w-[550px] flex justify-between m-auto mt-20 2xl:mt-44 lg:mt-28 sm:mt-18  nav">
-          <ToastContainer />
+          <ToastContainer autoClose={1000} />
           {cart.length === 0 ? (
             <div className="w-full">
               
-              <div className="flex mt-16">
+            <div className="flex my-16 h-screen">
+
                 <div className="mx-auto">
                   <p className="text-3xl font-semibold text-center">
                     Cart Empty
@@ -75,7 +76,7 @@ const Cart = () => {
                     <img
                       src="/images/wrongb.svg"
                       alt="Remove"
-                      className="w-6 lg:w-10 cursor-pointer"
+                      className="w-6 2xl:w-10 cursor-pointer"
                       onClick={() => {
                         removeFromCart(item.slug);
                         toast.success("Product removed");
