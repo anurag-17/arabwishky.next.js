@@ -65,15 +65,15 @@ export const CartProvider = ({ children }) => {
     saveWishlistToLocalStorage([]);
   }
 
-  const addToCart = (product) => {
+  const addToCart = (item) => {
     setCart((prevCart) => {
-      const existingProduct = prevCart.find((p) => p.id === product.id);
+      const existingProduct = prevCart.find((p) => p.slug === item.slug);
       if (existingProduct) {
         // Increment quantity if the product is already in the cart
         existingProduct.quantity += 1;
       } else {
         // Add a new product with quantity 1 to the cart
-        prevCart = [...prevCart, { ...product, quantity: 1 }];
+        prevCart = [...prevCart, { ...item, quantity: 1 }];
       }
       saveCartToLocalStorage(prevCart);
       return prevCart;
@@ -81,7 +81,7 @@ export const CartProvider = ({ children }) => {
   };
   const addToWishlist = (product) => {
     setWishlist((prevCart) => {
-      const existingProduct = prevCart.find((p) => p.id === product.id);
+      const existingProduct = prevCart.find((p) => p.slug === product.slug);
       if (existingProduct) {
         // Increment quantity if the product is already in the cart
         existingProduct.quantity += 1;
