@@ -46,13 +46,13 @@ const Page = ({ params }) => {
       <section>
         <div>
           <div
-            className="h-[250px] sm:h-[325px] md:h-[100vh] lg:w-full  flexCenter flex-col "
+            className="h-[200px] sm:h-[325px] md:h-[100vh] lg:w-full  flexCenter flex-col "
             id="poster-img"
           >
-            <div className="flex mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[70%]">
+            <div className="flex mx-auto 2xl:w-[1500px]  xl:w-[1000px] lg:w-[880px] sm:w-[500px] md:w-[600px] w-[75%]">
               <div className="container mx-auto ">
                 <div className=" flex justify-end items-center">
-                  <div className=" text-right  flex justify-center flex-col">
+                  <div className=" text-right  flex justify-center flex-col mt-2">
                     <h1
                       className="text-[16px] leading-[18px] w-[100px]  mt-0 sm:w-[200px] 
                   lg:text-right ml-auto  sm:text-[30px] sm:mt-0 sm:leading-[35px] md:text-[35px] md:mt-0 md:leading-[40px] lg:text-[45px] mt-  lg:mt-8 lg:w-[300px]  lg:leading-[50px] xl:text-[60px] xl:leading-[70px] xl:mt-[90px] xl:w-[400px] 2xl:text-[100px] 2xl:leading-[110px] 2xl:mt-36 2xl:w-[564px]"
@@ -62,7 +62,7 @@ const Page = ({ params }) => {
                     </h1>
 
                     <p
-                      className="text-white text-right ml-auto text-[6px] leading-[8px] w-[145px] mt-3 w-
+                      className="text-white text-right ml-auto text-[8px] leading-[8px] w-[155px] mt-3 w-
                sm:text-[10px] sm:leading-[14px] sm:mt-2 sm:w-[250px]
                md:text-[12px] md:leading-[16px] md:mt-2   md:w-[300px]
                lg:text-[14px] lg:leading-[20px] lg:mt-6 lg:w-[340px]  

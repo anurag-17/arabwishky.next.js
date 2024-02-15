@@ -41,14 +41,14 @@ const Page = () => {
           clearWishlist();
           toast.success("Wishlist cleared");
         }}
-        className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white py-1 px-4 2xl:py-3 2xl:px-8 rounded text-sm sm:text-base lg:text-lg 2xl:text-xl sm:my-3 2xl:my-4"
+        className="bg-black hover:bg-transparent hover:text-black hover:border border hover:border-black text-white py-1 px-4 2xl:py-3 2xl:px-8 rounded text-sm sm:text-base lg:text-lg 2xl:text-xl sm:my-3 2xl:my-4 my-2"
       >
         Clear Wishlist
       </button>
     </div>
     {wishlist.map((item, index) => (
       <div key={index} className="border mb-5 lg:mb-10 2xl:mb-14 p-2 2xl:p-4 w-full flex justify-between gap-5">
-        <div className="w-2/12">
+        <div className="w-4/12 sm:w-2/12">
           <img src={item.image} alt={item.name} className="w-full" />
         </div>
         <div className="w-9/12">
