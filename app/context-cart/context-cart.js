@@ -23,21 +23,21 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem("wishlist", JSON.stringify(newWishlist));
   };
 
-  const addToCart = (item) => {
-    setCart((prevCart) => {
-      const newCart = [...prevCart, item];
-      saveCartToLocalStorage(newCart);
-      return newCart;
-    });
-  };
+  // const addToCart = (item) => {
+  //   setCart((prevCart) => {
+  //     const newCart = [...prevCart, item];
+  //     saveCartToLocalStorage(newCart);
+  //     return newCart;
+  //   });
+  // };
 
-  const addToWishlist = (item) => {
-    setWishlist((prevCart) => {
-      const newWishlist = [...prevCart, item];
-      saveWishlistToLocalStorage(newWishlist);
-      return newWishlist;
-    });
-  };
+  // const addToWishlist = (item) => {
+  //   setWishlist((prevCart) => {
+  //     const newWishlist = [...prevCart, item];
+  //     saveWishlistToLocalStorage(newWishlist);
+  //     return newWishlist;
+  //   });
+  // };
 
   const removeFromWishlist = (slug) => {
     setWishlist((prevCart) => {
@@ -64,6 +64,35 @@ export const CartProvider = ({ children }) => {
     setWishlist([]);
     saveWishlistToLocalStorage([]);
   }
+
+  const addToCart = (product) => {
+    setCart((prevCart) => {
+      const existingProduct = prevCart.find((p) => p.id === product.id);
+      if (existingProduct) {
+        // Increment quantity if the product is already in the cart
+        existingProduct.quantity += 1;
+      } else {
+        // Add a new product with quantity 1 to the cart
+        prevCart = [...prevCart, { ...product, quantity: 1 }];
+      }
+      saveCartToLocalStorage(prevCart);
+      return prevCart;
+    });
+  };
+  const addToWishlist = (product) => {
+    setWishlist((prevCart) => {
+      const existingProduct = prevCart.find((p) => p.id === product.id);
+      if (existingProduct) {
+        // Increment quantity if the product is already in the cart
+        existingProduct.quantity += 1;
+      } else {
+        // Add a new product with quantity 1 to the cart
+        prevCart = [...prevCart, { ...product, quantity: 1 }];
+      }
+      saveWishlistToLocalStorage(prevCart);
+      return prevCart;
+    });
+  };
   return (
     <CartContext.Provider
       value={{
